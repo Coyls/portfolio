@@ -10,8 +10,16 @@ app.get('/', (req, res) => {
 
 app.use(express.static('public'))
 
+console.log(process.env.API_KEY_LOIC)
+
+app.get('/getAPiKey', (req,res) => {
+    res.send(process.env.API_KEY_LOIC)
+})
+
+
 http.listen(port, () => {
     console.log(`http://localhost:${port}/`);
 });
+
 
 
