@@ -1,14 +1,20 @@
- export const request = () => {
-
+ export const requestToken = () => {
     const location = document.location.href
 
-     console.log(location)
-
     axios.get(`${location}getAPiKey`).then(response => {
-        // console.log(response.data, "api");
-        console.log("Oui je recup bien ma key")
+        console.log("Clef recuperer")
 
-    }).catch(function (error) {
+        let options = {
+            method: 'GET',
+            url: 'https://api.dribbble.com/v2/user/shots?access_token='+response.data,
+            dataType: 'json',
+        };
+
+        axios.request(options).then(response => {
+            console.log(response.data)
+        })
+
+    }).catch(error => {
         console.error(error);
     });
 }
