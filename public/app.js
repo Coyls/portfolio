@@ -1,5 +1,3 @@
-const axios = require('axios').default;
-
 const burgerMenu = document.querySelector("#burger-menu")
 const links = document.querySelector("#links")
 
