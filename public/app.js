@@ -1,24 +1,25 @@
-const burgerMenu = document.querySelector("#burger-menu")
-const links = document.querySelector("#links")
+import { navBarAnimation } from './js/animation.js'
+import { request } from './js/request.js'
 
-burgerMenu.addEventListener("mouseenter", (e) => {
-    links.classList.remove("displayNone")
-})
+request()
+navBarAnimation()
 
-burgerMenu.addEventListener("mouseleave", (e) => {
-    links.classList.add("displayNone")
-})
 
-axios.get("https://portfoliob1.herokuapp.com/getAPiKey").then(response => {
-    console.log(response.data, "api");
 
-}).catch(function (error) {
-    console.error(error);
-});
 
+
+
+
+
+
+
+
+
+/*
 // ----------------------------------------------------------- test api --------------------------------------------
 // Set the Access Token
-var accessToken = ';
+
+var accessToken =
 
 // Call Dribble v2 API
 $.ajax({
@@ -37,4 +38,4 @@ $.ajax({
             $('#shots').append('<p>No shots yet!</p>');
         }
     }
-});
+});*/
