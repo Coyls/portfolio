@@ -19,7 +19,7 @@ http.listen(port, () => {
     console.log(`http://localhost:${port}/`);
 });
 // -------------- //
-axios.get('https://api.dribbble.com/v2/user/shots?access_token='+process.env.API_KEY_LOIC)
+axios.get(`https://api.dribbble.com/v2/user/shots?access_token=${process.env.API_KEY_LOIC}`)
     .then(response => {
         // console.log(response);
         app.get('/getProject', (req,res) => {
