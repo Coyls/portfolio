@@ -19,10 +19,12 @@ http.listen(port, () => {
     console.log(`http://localhost:${port}/`);
 });
 // -------------- //
-axios.get(`https://api.dribbble.com/v2/user/shots?access_token=${process.env.API_KEY_LOIC}`)
+
+const requestAPiDribbble = (key,link) => {
+
+    axios.get(`https://api.dribbble.com/v2/user/shots?access_token=${key}`)
     .then(response => {
-        // console.log(response);
-        app.get('/getProject', (req,res) => {
+        app.get(link, (req,res) => {
             res.send(response.data)
         })
 
@@ -30,8 +32,15 @@ axios.get(`https://api.dribbble.com/v2/user/shots?access_token=${process.env.API
     .catch(error => {
         console.log(error);
     })
-    .then(() => {
-    });
+
+}
+
+requestAPiDribbble(process.env.API_KEY_LOIC,'/getProjectLoic')
+requestAPiDribbble(process.env.API_KEY_CHLOE,'/getProjectChloe')
+requestAPiDribbble(process.env.API_KEY_JEANNE,'/getProjectJeanne')
+
+
+    
 
 
 
