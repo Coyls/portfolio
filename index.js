@@ -34,17 +34,16 @@ app.use(function (req, res, next) {
 });
 // -------------- //
 
-const requestAPiDribbble = (key,link) => {
-    axios.get(`https://api.dribbble.com/v2/user/shots?access_token=${key}`)
-    .then(response => {
+const requestAPiDribbble = async (key,link) => {
+    const response = await axios.get(`https://api.dribbble.com/v2/user/shots?access_token=${key}`)
+    try {
         app.get(link, (req,res) => {
             res.send(response.data)
         })
-
-    })
-    .catch(error => {
-        console.log(error);
-    })
+    } catch (err) {
+        console.log(err)
+    }
+        
 }
 
 requestAPiDribbble(process.env.API_KEY_LOIC,'/getProjectLoic')
