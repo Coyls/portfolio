@@ -1,0 +1,43 @@
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: $footerColor;
+    color: $reverseTextColor;
+    height: 400px;
+    padding-left: 10vw;
+
+    h2 {
+        font-size: 36;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 25;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .social-media {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+
+        i {
+            margin-right: 40px;
+            font-size: 55px;
+        }
+    }
+
+    #to-top {
+        transition: all ease-out 0.25s;
+        position: absolute;
+        right: 10vw;
+        top: 150px;
+        font-size: 50px;
+
+        &:hover {
+            top: 140px;
+        }
+    }
+}

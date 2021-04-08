@@ -1,0 +1,102 @@
+.scroller {
+  height: 100vh;
+}
+
+.home-projects {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: $bgBodyColor;
+
+  .text-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    height: 80vh;
+
+    .panel-text {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: 900;
+      text-align: center;
+      background-color: #ffffff;
+
+      transform: translateY(100%);
+      opacity: 0;
+    }
+
+    .panel-text.project-1-text {
+      color: blue;
+    }
+
+    .panel-text.project-2-text {
+      color: red;
+    }
+
+    .panel-text.project-4-text {
+      color: purple;
+    }
+
+    .panel-text.project-3-text {
+      color: orange;
+    }
+  }
+
+  .p-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 90vh;
+
+    .panel {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: yellow;
+    }
+    
+    .panel.blue {
+      background-color: blue;
+    }
+    
+    .panel.red {
+      background-color: red;
+    }
+    
+    .panel.orange {
+      background-color: orange;
+    }
+    
+    .panel.purple {
+      background-color: purple;
+    }
+  }
+
+
+}
+
+.next-section {
+  height: 100vh;
+  background-color: $bgBodyColor;
+}
+
+
+
+
+
+
+
+
+

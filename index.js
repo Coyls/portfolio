@@ -8,12 +8,14 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }
 
+app.use(express.static(__dirname + '/public'));
+
 // -- ExpressJS -- //
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/index.html');
+    res.sendFile(__dirname + '/public/loic/index.html');
 });
 
-app.use(express.static('public'))
+
 
 http.listen(port, () => {
     console.log(`http://localhost:${port}/`);
@@ -32,7 +34,7 @@ app.use(function (req, res, next) {
     // Pass to next layer of middleware
     next();
 });
-// -------------- //
+// -------------------------------------------------------------------------------------------------- //
 
 const requestAPiDribbble = async (key,link) => {
     const response = await axios.get(`https://api.dribbble.com/v2/user/shots?access_token=${key}`)
