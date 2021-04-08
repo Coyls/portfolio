@@ -60,11 +60,17 @@
     width: 500px;
     height: 90vh;
 
+
     .panel {
       position: absolute;
       width: 100%;
       height: 100%;
       background-color: yellow;
+
+      // position: relative;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size:  120vh 90vh;
     }
     
     .panel.blue {
@@ -73,10 +79,13 @@
     
     .panel.red {
       background-color: red;
+      background-image: url("https://cdn.dribbble.com/users/7357311/screenshots/15417773/illustration_mockup.jpg");
+      
     }
     
     .panel.orange {
       background-color: orange;
+      background-image: url("https://cdn.dribbble.com/users/7357311/screenshots/15414604/papeteries_mockups__horizontal_.jpg");
     }
     
     .panel.purple {
