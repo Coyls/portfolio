@@ -15,8 +15,6 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/loic/index.html');
 });
 
-
-
 http.listen(port, () => {
     console.log(`http://localhost:${port}/`);
 });
@@ -36,8 +34,9 @@ app.use(function (req, res, next) {
 });
 // -------------------------------------------------------------------------------------------------- //
 
-const requestAPiDribbble = async (key,link) => {
-    const response = await axios.get(`https://api.dribbble.com/v2/user/shots?access_token=${key}`)
+const requestAPiDribbble = async (key,link,path) => {
+
+    const response = await axios.get(`https://api.dribbble.com/v2/${path}${key}`)
     try {
         app.get(link, (req,res) => {
             res.send(response.data)
@@ -48,9 +47,15 @@ const requestAPiDribbble = async (key,link) => {
         
 }
 
-requestAPiDribbble(process.env.API_KEY_LOIC,'/getProjectLoic')
-requestAPiDribbble(process.env.API_KEY_CHLOE,'/getProjectChloe')
-requestAPiDribbble(process.env.API_KEY_JEANNE,'/getProjectJeanne')
+requestAPiDribbble(`?access_token=${process.env.API_KEY_LOIC}`,'/getProjectLoic','user/shots')
+requestAPiDribbble(`?access_token=${process.env.API_KEY_CHLOE}`,'/getProjectChloe','user/shots')
+requestAPiDribbble(`?access_token=${process.env.API_KEY_JEANNE}`,'/getProjectJeanne','user/shots')
+
+requestAPiDribbble(`?access_token=${process.env.API_KEY_LOIC}`,'/getUserLoic','user')
+requestAPiDribbble(`?access_token=${process.env.API_KEY_JEANNE}`,'/getUserJeanne','user')
+requestAPiDribbble(`?access_token=${process.env.API_KEY_CHLOE}`,'/getUserChloe','user')
+
+
 
 
     

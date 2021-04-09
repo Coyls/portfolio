@@ -299,7 +299,6 @@ footer #to-top:hover {
 }
 
 #portfolio-projects {
-  padding: 50px;
   width: 100vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -307,6 +306,7 @@ footer #to-top:hover {
   height: auto;
   display: -ms-grid;
   display: grid;
+  margin-bottom: 50px;
   -webkit-column-gap: 30px;
           column-gap: 30px;
   row-gap: 50px;

@@ -16,17 +16,22 @@ requestProjects().then(response => {
     let creationHeight = Math.ceil(data.length / 2)
 
     const layoutGrid = (height, width) => {
-        container.style.gridTemplateColumns = `repeat(${width}, 800px)`
-        container.style.gridTemplateRows = `repeat(${height}, 600px)`
+        container.style.gridTemplateColumns = `repeat(${width}, 42vw)`
+        container.style.gridTemplateRows = `repeat(${height}, 55vh)`
     }
 
     layoutGrid(creationHeight, 2)
 
     data.forEach(project => {
-        container.innerHTML +=`
-        <div class="project" style="grid-column: ${gridColumn}; grid-row: ${gridRow}; background-color: red;">
+        container.innerHTML += `
+        <a href="" class="project" data-id-project="${project.id}" style="
+                                grid-column: ${gridColumn}; 
+                                grid-row: ${gridRow}; 
+                                background-image: url('${project.images.normal}');
+                                background-size: cover;
+                                background-position: center;">
 
-        </div>`
+        </a>`
 
         if (gridColumn > 2) {
             gridColumn = 1
@@ -36,10 +41,44 @@ requestProjects().then(response => {
         }
     })
 
+    // let projects = Array.from(document.getElementById("portfolio-projects").children)
 
 
+    let projects = document.querySelectorAll('.project')
 
+    projects.forEach(project => {
 
+        const idProject = project.dataset.idProject
+
+        console.log(idProject)
+
+        let location = document.location.origin
+
+        let projectUrl = `${location}/loic/pages/single_project.html?projectId=${idProject}`
+
+        project.href = projectUrl
+
+        console.log(project)
+        /* project.addEventListener("click", (e) => {
+            const element = e.target
+            const idProject = element.dataset.idProject
+
+            console.log(idProject)
+
+            let location = document.location.origin
+
+            let projectUrl = `${location}/loic/pages/single_project.html?projectId=${idProject}`
+
+            console.log(location)
+            console.log(projectUrl)
+
+            location = projectUrl
+
+            
+
+            
+        }) */
+    })
 
 
 
@@ -47,6 +86,16 @@ requestProjects().then(response => {
 
 
 })
+
+
+
+
+/* function testJS() {
+    var b = document.getElementById('name').value,
+        url = 'http://path_to_your_html_files/next.html?name=' + encodeURIComponent(b);
+
+    document.location.href = url;
+} */
 
 
 
