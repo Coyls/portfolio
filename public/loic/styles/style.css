@@ -227,37 +227,26 @@ footer #to-top:hover {
   position: relative;
   overflow: hidden;
   width: 450px;
-  height: 80vh;
+  height: 60vh;
+  margin-bottom: 40vh;
 }
 
 .home-projects .text-wrap .panel-text {
   position: absolute;
   width: 100%;
   height: 100%;
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: 900;
-  text-align: center;
-  background-color: #ffffff;
+  color: #FFF;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   opacity: 0;
 }
 
-.home-projects .text-wrap .panel-text.project-1-text {
-  color: blue;
+.home-projects .text-wrap .panel-text h2 {
+  font-size: 45px;
 }
 
-.home-projects .text-wrap .panel-text.project-2-text {
-  color: red;
-}
-
-.home-projects .text-wrap .panel-text.project-4-text {
-  color: purple;
-}
-
-.home-projects .text-wrap .panel-text.project-3-text {
-  color: orange;
+.home-projects .text-wrap .panel-text p {
+  font-size: 30px;
 }
 
 .home-projects .p-wrap {
@@ -271,28 +260,9 @@ footer #to-top:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: yellow;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 120vh 90vh;
-}
-
-.home-projects .p-wrap .panel.project-1-img {
-  background-color: blue;
-}
-
-.home-projects .p-wrap .panel.project-2-img {
-  background-color: red;
-  background-image: url("https://cdn.dribbble.com/users/7357311/screenshots/15417773/illustration_mockup.jpg");
-}
-
-.home-projects .p-wrap .panel.project-3-img {
-  background-color: orange;
-  background-image: url("https://cdn.dribbble.com/users/7357311/screenshots/15414604/papeteries_mockups__horizontal_.jpg");
-}
-
-.home-projects .p-wrap .panel.project-4-img {
-  background-color: purple;
 }
 
 .next-section {

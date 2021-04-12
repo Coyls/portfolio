@@ -20,7 +20,7 @@ export const scrollAnimation = () => {
 
     gsap.set(".panel", { zIndex: (i, target, targets) => targets.length - i });
 
-    let images = gsap.utils.toArray('.panel:not(.project-4-img)');
+    let images = gsap.utils.toArray('.panel:not(.project-3-img)');
 
     images.forEach((image, i) => {
 

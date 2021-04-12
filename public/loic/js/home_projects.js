@@ -6,19 +6,38 @@ export const homeProjectsCreation = () => {
     requestProjects().then(response => {
 
         const data = response.data;
-        const dataLenght = data.length;
+        const projectsHomeText = document.querySelectorAll('.panel-text')
+        const projectsHomeImg = document.querySelectorAll('.panel')
+        let dataIndex = 0;
 
-        console.log(data.length)
+        console.log(data)
 
-        
+        projectsHomeImg.forEach(projectImg => {
+            let dataImg = data[dataIndex].images.hidpi
 
-        for (let i = 0; i < 4; i++) {
-            const element = data[i];
+            if (dataImg === null) {
+                dataImg = data[dataIndex].images.normal
+            }
 
-            console.log(element)
-            
-        }
+            projectImg.style.backgroundImage = `url('${dataImg}')`
+            dataIndex++;
+       
+        })
 
+        dataIndex = 0;
+
+        projectsHomeText.forEach(projectText => {
+            console.log(projectText)
+
+            projectText.innerHTML = `
+                <h2>${data[dataIndex].title}</h2>   
+                ${data[dataIndex].description}`
+
+
+            dataIndex++
+        })
+
+    
     })
 
 
