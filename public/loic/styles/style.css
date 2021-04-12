@@ -87,11 +87,12 @@ header {
   padding: 5vh 10vw 0 10vw;
   z-index: 999;
   background-color: #262626;
-  background-image: url("https://portfoliob1.herokuapp.com/loic/images/logo.svg");
 }
 
 header .logo {
-  background-color: red;
+  background-image: url("https://portfoliob1.herokuapp.com/loic/images/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 50px;
   width: 50px;
 }
@@ -276,21 +277,21 @@ footer #to-top:hover {
   background-size: 120vh 90vh;
 }
 
-.home-projects .p-wrap .panel.blue {
+.home-projects .p-wrap .panel.project-1-img {
   background-color: blue;
 }
 
-.home-projects .p-wrap .panel.red {
+.home-projects .p-wrap .panel.project-2-img {
   background-color: red;
   background-image: url("https://cdn.dribbble.com/users/7357311/screenshots/15417773/illustration_mockup.jpg");
 }
 
-.home-projects .p-wrap .panel.orange {
+.home-projects .p-wrap .panel.project-3-img {
   background-color: orange;
   background-image: url("https://cdn.dribbble.com/users/7357311/screenshots/15414604/papeteries_mockups__horizontal_.jpg");
 }
 
-.home-projects .p-wrap .panel.purple {
+.home-projects .p-wrap .panel.project-4-img {
   background-color: purple;
 }
 
