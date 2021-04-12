@@ -52,11 +52,6 @@ requestAPiDribbble(`?access_token=${process.env.API_KEY_CHLOE}`,'/getProjectChlo
 requestAPiDribbble(`?access_token=${process.env.API_KEY_JEANNE}`,'/getProjectJeanne','user/shots')
 
 
-
-requestAPiDribbble(`?access_token=${process.env.API_KEY_CHLOE}`,'/getProjectChloeId','/shots/15417773')
-
-
-
 requestAPiDribbble(`?access_token=${process.env.API_KEY_LOIC}`,'/getUserLoic','user')
 requestAPiDribbble(`?access_token=${process.env.API_KEY_JEANNE}`,'/getUserJeanne','user')
 requestAPiDribbble(`?access_token=${process.env.API_KEY_CHLOE}`,'/getUserChloe','user')

@@ -1,0 +1,24 @@
+#header-single-project, #footer-single-project {
+    position: relative;
+}
+
+#single-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    #texts {
+        width: 1200px;  
+        display: flex;
+        flex-direction: column;
+
+        h1 {font-size: 60px;}
+        p {font-size: 40px;}
+    }
+
+    img {
+        height: 1200px;
+        width: 1600px;
+    }
+}
