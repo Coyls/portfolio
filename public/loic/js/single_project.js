@@ -1,8 +1,8 @@
 import { headerFooterCreation } from './header_footer.js'
 import {requestProjects } from './request.js'
 
-// const url = document.location.href
-// console.log(url)
+let location = document.location.origin
+
 
 let params = (new URL(document.location)).searchParams;
 
@@ -20,13 +20,18 @@ requestProjects().then( response => {
     let previousProjectIndex = currentProjectIndex - 1
 
 
-    if (previousProjectIndex === -1) {
+    if (previousProjectIndex === - 1) {
         previousProjectIndex = data.length -1
     }
 
     if (nextProjectIndex === data.length) {
         nextProjectIndex = 0
     }
+
+
+    let nextProjectUrl = `${location}/loic/pages/single_project.html?projectId=${data[nextProjectIndex].id}`
+    let previousProjectUrl = `${location}/loic/pages/single_project.html?projectId=${data[previousProjectIndex].id}`
+
 
  
 
@@ -41,12 +46,11 @@ requestProjects().then( response => {
         </div>
         <img src="${projectOnPage.images.hidpi}" alt="project">
         <div id="row-tag">
-            <p class="link-project">${data[previousProjectIndex].title}</p>
-            <p class="link-project">${data[currentProjectIndex].title}</p>
-            <p class="link-project">${data[nextProjectIndex].title}</p>
+            <a href="${previousProjectUrl}" class="link-project">${data[previousProjectIndex].title}</a>
+            <a href="" class="link-project">${data[currentProjectIndex].title}</a>
+            <a href="${nextProjectUrl}" class="link-project">${data[nextProjectIndex].title}</a>
         </div>
-        <div class="row-skills"></div>
-    
-    `
+        <div class="row-skills"></div>`
+        
 })
 

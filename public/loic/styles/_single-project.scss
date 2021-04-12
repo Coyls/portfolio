@@ -3,12 +3,14 @@
 }
 
 #single-project {
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     
 
     #texts {
+        margin: 100px 0;
         width: 1200px;  
         display: flex;
         flex-direction: column;
@@ -20,5 +22,22 @@
     img {
         height: 1200px;
         width: 1600px;
+        object-fit: contain;
+        overflow: hidden;
     }
+
+    #row-tag {
+        width:100vw;
+        height: 300px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    a {
+        text-decoration: none;
+        color: $standardTextColor;
+    }
+
 }

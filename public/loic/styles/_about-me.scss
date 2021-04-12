@@ -1,0 +1,18 @@
+#header-about-me {
+    position: relative;
+}
+
+#about-me {
+    height:2200px;
+
+    #img-absolute {
+        position: absolute;
+        background-color: red;
+        height: 900px;
+        width: 900px;
+
+        right: -450px;
+        top: 500px;
+    }
+
+}

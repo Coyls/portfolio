@@ -87,6 +87,7 @@ header {
   padding: 5vh 10vw 0 10vw;
   z-index: 999;
   background-color: #262626;
+  background-image: url("https://portfoliob1.herokuapp.com/loic/images/logo.svg");
 }
 
 header .logo {
@@ -298,6 +299,10 @@ footer #to-top:hover {
   background-color: #262626;
 }
 
+#header-portfolio {
+  position: relative;
+}
+
 #portfolio-projects {
   width: 100vw;
   -webkit-box-pack: center;
@@ -317,6 +322,7 @@ footer #to-top:hover {
 }
 
 #single-project {
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,6 +336,7 @@ footer #to-top:hover {
 }
 
 #single-project #texts {
+  margin: 100px 0;
   width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,5 +358,48 @@ footer #to-top:hover {
 #single-project img {
   height: 1200px;
   width: 1600px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+}
+
+#single-project #row-tag {
+  width: 100vw;
+  height: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#single-project a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+#header-about-me {
+  position: relative;
+}
+
+#about-me {
+  height: 2200px;
+}
+
+#about-me #img-absolute {
+  position: absolute;
+  background-color: red;
+  height: 900px;
+  width: 900px;
+  right: -450px;
+  top: 500px;
 }
 /*# sourceMappingURL=style.css.map */
