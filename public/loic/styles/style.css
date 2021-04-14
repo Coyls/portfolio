@@ -23,7 +23,8 @@ body {
   line-height: 1.75;
   width: 100vw;
   overflow-x: hidden;
-  background-color: #262626;
+  background: -webkit-gradient(linear, left top, left bottom, from(#001D38), to(#002B53));
+  background: linear-gradient(180deg, #001D38 0%, #002B53 100%);
   color: #FFF;
 }
 
@@ -86,7 +87,7 @@ header {
           justify-content: space-between;
   padding: 5vh 10vw 0 10vw;
   z-index: 999;
-  background-color: #262626;
+  background-color: linear-gradient(180deg, #001D38 0%, #002B53 100%);
 }
 
 header .logo {
@@ -220,7 +221,7 @@ footer #to-top:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #262626;
+  background-color: linear-gradient(180deg, #001D38 0%, #002B53 100%);
 }
 
 .home-projects .text-wrap {
@@ -266,12 +267,39 @@ footer #to-top:hover {
 }
 
 .next-section {
-  height: 100vh;
-  background-color: #262626;
+  height: 600px;
+  background-color: red;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.wraper {
+  height: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
+.wraper .image-div {
+  height: auto;
+}
+
+.wraper p {
+  font-size: 75px;
+  padding: 50px;
 }
 
 #header-portfolio {
   position: relative;
+}
+
+.texts-portfolio {
+  width: 1200px;
+  margin: 200px 360px;
 }
 
 #portfolio-projects {

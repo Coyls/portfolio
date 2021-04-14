@@ -15,6 +15,8 @@ requestProjects().then(response => {
 
     let creationHeight = Math.ceil(data.length / 2)
 
+    console.log(creationHeight)
+
     const layoutGrid = (height, width) => {
         container.style.gridTemplateColumns = `repeat(${width}, 42vw)`
         container.style.gridTemplateRows = `repeat(${height}, 55vh)`
@@ -33,7 +35,7 @@ requestProjects().then(response => {
 
         </a>`
 
-        if (gridColumn > 2) {
+        if (gridColumn > 1) {
             gridColumn = 1
             gridRow++
         } else {
@@ -50,15 +52,12 @@ requestProjects().then(response => {
 
         const idProject = project.dataset.idProject
 
-        console.log(idProject)
-
         let location = document.location.origin
 
         let projectUrl = `${location}/loic/pages/single_project.html?projectId=${idProject}`
 
         project.href = projectUrl
 
-        console.log(project)
     })
 
 

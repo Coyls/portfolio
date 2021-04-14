@@ -3,9 +3,7 @@ import {requestProjects } from './request.js'
 
 let location = document.location.origin
 
-
 let params = (new URL(document.location)).searchParams;
-
 
 headerFooterCreation()
 
@@ -32,19 +30,20 @@ requestProjects().then( response => {
     let nextProjectUrl = `${location}/loic/pages/single_project.html?projectId=${data[nextProjectIndex].id}`
     let previousProjectUrl = `${location}/loic/pages/single_project.html?projectId=${data[previousProjectIndex].id}`
 
-
- 
-
-    console.log(projectOnPage)
-
     const singleProject = document.getElementById("single-project")
+
+    let singleProjectImg = projectOnPage.images.hidpi
+
+    if (singleProjectImg === null) {
+        singleProjectImg = projectOnPage.images.normal
+    }
 
     singleProject.innerHTML = `
         <div id="texts">
             <h1 id="title">${projectOnPage.title}</h1>
             <p id="description">${projectOnPage.description}</p>
         </div>
-        <img src="${projectOnPage.images.hidpi}" alt="project">
+        <img src="${singleProjectImg}" alt="project">
         <div id="row-tag">
             <a href="${previousProjectUrl}" class="link-project">${data[previousProjectIndex].title}</a>
             <a href="" class="link-project">${data[currentProjectIndex].title}</a>

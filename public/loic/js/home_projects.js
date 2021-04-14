@@ -1,4 +1,6 @@
-import { requestProjects } from './request.js'  
+import { requestProjects } from './request.js'
+
+const location = document.location.origin
 
 
 export const homeProjectsCreation = () => {
@@ -19,25 +21,30 @@ export const homeProjectsCreation = () => {
                 dataImg = data[dataIndex].images.normal
             }
 
+            projectImg.href = `${location}/loic/pages/single_project.html?projectId=${data[dataIndex].id}`
+
+
             projectImg.style.backgroundImage = `url('${dataImg}')`
             dataIndex++;
-       
+
         })
 
         dataIndex = 0;
 
         projectsHomeText.forEach(projectText => {
-            console.log(projectText)
 
             projectText.innerHTML = `
                 <h2>${data[dataIndex].title}</h2>   
-                ${data[dataIndex].description}`
+                ${data[dataIndex].description}
+            `
+
+            projectText.href = `${location}/loic/pages/single_project.html?projectId=${data[dataIndex].id}`
 
 
             dataIndex++
         })
 
-    
+
     })
 
 

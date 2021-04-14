@@ -60,9 +60,35 @@
 }
 
 .next-section {
-  height: 100vh;
-  background-color: $bgBodyColor;
+  height: 600px;
+  background-color:red;
+
+  overflow-x: hidden;
+  
+
 }
+
+// -------------------- carrousel ----------------------
+body {
+  overflow-x: hidden;
+}
+
+.wraper {
+  height: auto;
+  display: inline-flex;
+  position: relative;
+
+  .image-div {
+    height: auto;
+  }
+
+  p {
+    font-size: 75px;
+    padding : 50px;
+  }
+}
+
+
 
 
 
