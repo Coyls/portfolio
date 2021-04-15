@@ -32,6 +32,7 @@ requestProjects().then(response => {
                                 background-image: url('${project.images.normal}');
                                 background-size: cover;
                                 background-position: center;">
+                                <h2 class="title-portfolio">${project.title}</h2>
 
         </a>`
 

@@ -16,4 +16,31 @@
 
     column-gap: 30px;
     row-gap: 50px;
+
+    .project {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        color: blueviolet;
+
+        .title-portfolio {
+            transform: translateY(50px);
+            transition: opacity 0.25s ease-out;
+            margin: 0;
+            padding: 50px;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+        }
+
+
+        &:hover {
+            .title-portfolio {
+                opacity: 1;
+                backdrop-filter: blur(4px);
+                }
+        }
+    }
 }
