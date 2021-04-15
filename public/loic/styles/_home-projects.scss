@@ -60,32 +60,25 @@
 }
 
 .next-section {
-  height: 600px;
+  height: auto;
   background-color:red;
-
   overflow-x: hidden;
   
 
 }
 
 // -------------------- carrousel ----------------------
-body {
-  overflow-x: hidden;
-}
 
-.wraper {
+.wrapper {
   height: auto;
   display: inline-flex;
   position: relative;
-
-  .image-div {
-    height: auto;
-  }
-
-  p {
-    font-size: 75px;
-    padding : 50px;
-  }
+    
+    p {
+      font-size: 75px;
+      padding : 25px 50px;
+    }
+  
 }
 
 

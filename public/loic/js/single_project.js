@@ -1,5 +1,8 @@
 import { headerFooterCreation } from './header_footer.js'
 import {requestProjects } from './request.js'
+import { carousselAnimation } from './animation.js'
+
+
 
 let location = document.location.origin
 
@@ -52,4 +55,6 @@ requestProjects().then( response => {
         <div class="row-skills"></div>`
         
 })
+
+carousselAnimation('.single-project-skills','single-project-wrapper', 'p-single-project')
 

@@ -7,9 +7,9 @@ export const headerFooterCreation = () => {
     <a href="${location}/loic/index.html" class="logo"></a>
     <nav class="menu">
         <ul>
-            <li><a href="${location}/loic/pages/portfolio.html">Portfolio</a></li>
-            <li><a href="${location}/loic/pages/about_me.html">À propos</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="${location}/loic/pages/portfolio.html">Portfolio<div class="line"></div></a></li>
+            <li><a href="${location}/loic/pages/about_me.html">À propos<div class="line"></div></a></li>
+            <li><a href="mailto:loic.greco@sfr.fr">Contact<div class="line"></div></a></li>
         </ul>
     </nav>`
 

@@ -28,8 +28,22 @@ header {
 
       a {
         color: $standardTextColor;
+
+        .line {
+          transition: width 0.25s ease-out;
+          height: 1px;
+          width: 0;
+          background-color: #fff;
+        }
+
+        &:hover {
+          .line {   
+            height: 1px;
+            width: 100%;
+            background-color: #fff;
+          }
+        }
       }
     }
   }
-
 }

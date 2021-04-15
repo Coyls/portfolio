@@ -116,6 +116,20 @@ header ul li a {
   color: #FFF;
 }
 
+header ul li a .line {
+  -webkit-transition: width 0.25s ease-out;
+  transition: width 0.25s ease-out;
+  height: 1px;
+  width: 0;
+  background-color: #fff;
+}
+
+header ul li a:hover .line {
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+}
+
 footer {
   position: relative;
   display: -webkit-box;
@@ -267,16 +281,12 @@ footer #to-top:hover {
 }
 
 .next-section {
-  height: 600px;
+  height: auto;
   background-color: red;
   overflow-x: hidden;
 }
 
-body {
-  overflow-x: hidden;
-}
-
-.wraper {
+.wrapper {
   height: auto;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -284,13 +294,9 @@ body {
   position: relative;
 }
 
-.wraper .image-div {
-  height: auto;
-}
-
-.wraper p {
+.wrapper p {
   font-size: 75px;
-  padding: 50px;
+  padding: 25px 50px;
 }
 
 #header-portfolio {
@@ -383,6 +389,10 @@ body {
 #single-project a {
   text-decoration: none;
   color: #FFF;
+}
+
+.single-project-skills {
+  height: auto;
 }
 
 #header-about-me {

@@ -43,9 +43,6 @@ requestProjects().then(response => {
         }
     })
 
-    // let projects = Array.from(document.getElementById("portfolio-projects").children)
-
-
     let projects = document.querySelectorAll('.project')
 
     projects.forEach(project => {
