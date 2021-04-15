@@ -264,6 +264,25 @@ footer #to-top:hover {
   font-size: 30px;
 }
 
+.home-projects .text-wrap .panel-text .tags-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home-projects .text-wrap .panel-text .tags-row .tag {
+  background-color: green;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
 .home-projects .p-wrap {
   position: relative;
   overflow: hidden;

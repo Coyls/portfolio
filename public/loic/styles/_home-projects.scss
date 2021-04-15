@@ -35,6 +35,18 @@
 
       h2{font-size: 45px;}
       p{font-size: 30px;}
+
+      .tags-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        .tag {
+          background-color : green;
+          border-radius: 5px;
+          padding : 0 10px;
+        }
+      }
     }
 
   }

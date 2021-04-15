@@ -10,38 +10,54 @@ export const homeProjectsCreation = () => {
         const data = response.data;
         const projectsHomeText = document.querySelectorAll('.panel-text')
         const projectsHomeImg = document.querySelectorAll('.panel')
-        let dataIndex = 0;
 
-        console.log(data)
-
-        projectsHomeImg.forEach(projectImg => {
-            let dataImg = data[dataIndex].images.hidpi
+        projectsHomeImg.forEach((projectImg, id) => {
+            let dataImg = data[id].images.hidpi
 
             if (dataImg === null) {
-                dataImg = data[dataIndex].images.normal
+                dataImg = data[id].images.normal
             }
 
-            projectImg.href = `${location}/loic/pages/single_project.html?projectId=${data[dataIndex].id}`
+            projectImg.href = `${location}/loic/pages/single_project.html?projectId=${data[id].id}`
 
 
             projectImg.style.backgroundImage = `url('${dataImg}')`
-            dataIndex++;
+
 
         })
 
-        dataIndex = 0;
+        console.log(data)
 
-        projectsHomeText.forEach(projectText => {
+        projectsHomeText.forEach((projectText,id) => {
 
             projectText.innerHTML = `
-                <h2>${data[dataIndex].title}</h2>   
-                ${data[dataIndex].description}
+                <h2>${data[id].title}</h2>   
+                ${data[id].description}
+                <div class="tags-row"></div>
             `
 
-            projectText.href = `${location}/loic/pages/single_project.html?projectId=${data[dataIndex].id}`
+            projectText.href = `${location}/loic/pages/single_project.html?projectId=${data[id].id}`
+
+            const tagsRow = projectText.querySelector('.tags-row')
+            
+            const tags = data[id].tags
+            console.log(tags)
+
+            tags.forEach((tag,id) => {
+                if (id === 3) { exit }
+                tagsRow.innerHTML += `
+                    <p class="tag">${tag}</p>
+                `
+
+                
+
+            })
+
+            
 
 
-            dataIndex++
+
+
         })
 
 
