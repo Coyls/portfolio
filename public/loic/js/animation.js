@@ -1,21 +1,9 @@
-import { skillsLoic } from './skills.js'
 
-export const carousselAnimation = (containerVar, wrapperID, classP) => {
-
-
-    const container = document.querySelector(`${containerVar}`);
-
-    container.innerHTML += `
-    <div id="${wrapperID}" class="wrapper"></div>`
-
-    const wrapper = document.getElementById(wrapperID)
-
-    skillsLoic.forEach((skill, id) => {
-
-        wrapper.innerHTML += `<p class='${classP}' data-index="${id}">${skill}</p>`
-    })
+export const carousselAnimation = (wrapperID, classP) => {
 
     let imgArrConst = gsap.utils.toArray(`.${classP}`)
+
+    console.log(imgArrConst)
 
     gsap.set(imgArrConst, { left: 0 })
 
@@ -42,37 +30,38 @@ export const carousselAnimation = (containerVar, wrapperID, classP) => {
     let additionalX = { val: 0 };
     let additionalXAnim;
 
-    let tl = new TimelineMax();
+        gsap.to(`.${classP}`, {
+            x: `-=${totalW}`,
+            duration: 60,
+            repeat: -1,
+            ease: 'none',
+            modifiers: {
+                x: (x, arr) => {
+                    //finding the imgIndex in order to 
+                    //find what is it's initial leftPosition
+                    const imgIndex = arr.getAttribute('data-index')
 
-    tl.to(imgArrConst, {
-        x: `-=${totalW}`,
-        duration: 60,
-        repeat: -1,
-        ease: 'none',
-        modifiers: {
-            x: (x, arr) => {
-                //finding the imgIndex in order to 
-                //find what is it's initial leftPosition
-                const imgIndex = arr.getAttribute('data-index')
+                    //figuring out what is it's maxleftposition so i can wrap it
+                    let maxLeftTravel = - pWidths[imgIndex]
 
-                //figuring out what is it's maxleftposition so i can wrap it
-                let maxLeftTravel = - pWidths[imgIndex]
+                    //figuring out what is it's maxrightposition so i can wrap it         
+                    let rightPositioning = totalW + maxLeftTravel
 
-                //figuring out what is it's maxrightposition so i can wrap it         
-                let rightPositioning = totalW + maxLeftTravel
+                    //wrapping 
+                    let mod = gsap.utils.wrap(maxLeftTravel, rightPositioning)
 
-                //wrapping 
-                let mod = gsap.utils.wrap(maxLeftTravel, rightPositioning)
-
-                return `${mod(parseFloat(x))}px`
+                    return `${mod(parseFloat(x))}px`
+                }
             }
-        }
 
 
-    });
+        });
+
+
+
 
     // Velocity of skills
-    ScrollTrigger.create({
+    /* ScrollTrigger.create({
         trigger: `#${wrapperID}`,
         start: "top 100%",
         scroller: ".scroller",
@@ -87,7 +76,7 @@ export const carousselAnimation = (containerVar, wrapperID, classP) => {
                 additionalXAnim = gsap.to(additionalX, { val: 0 });
             }
         }
-    })
+    }) */
 
 
 
