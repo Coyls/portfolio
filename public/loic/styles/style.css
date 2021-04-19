@@ -242,7 +242,7 @@ footer #to-top:hover {
   position: relative;
   overflow: hidden;
   width: 450px;
-  height: 60vh;
+  height: 75vh;
   margin-bottom: 40vh;
 }
 
@@ -301,7 +301,6 @@ footer #to-top:hover {
 
 .next-section {
   height: auto;
-  background-color: red;
   overflow-x: hidden;
 }
 

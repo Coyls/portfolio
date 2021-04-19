@@ -1,7 +1,9 @@
-import { skillsLoic } from './skills.js'
+import { randomiseSkills } from './skills.js'
 
 export const creationAnimation = (containerVar, wrapperID, classP) => {
-
+    
+    let skillsLoic = randomiseSkills()
+    
     const container = document.querySelector(`${containerVar}`);
 
     container.innerHTML += `
