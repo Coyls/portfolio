@@ -1,8 +1,8 @@
-export const requestProjects = async () => {
+export const requestServer = async (path) => {
     const locationApi = "https://portfoliob1.herokuapp.com/"
     // const locationApi = "http://localhost:3000/"
 
-    const response = await axios.get(`${locationApi}getProjectLoic`)
+    const response = await axios.get(`${locationApi}${path}`)
 
     try {
         return response
@@ -10,5 +10,7 @@ export const requestProjects = async () => {
         console.log("error request.js"+ err)
     }
 }
+
+
 
 

@@ -1,5 +1,5 @@
 import { headerFooterCreation } from './header_footer.js'
-import {requestProjects } from './request.js'
+import {requestServer } from './request.js'
 import { carousselAnimation } from './animation.js'
 import { creationAnimation } from './animationCreation.js'
 
@@ -9,7 +9,7 @@ let params = (new URL(document.location)).searchParams;
 
 headerFooterCreation()
 
-requestProjects().then( response => {
+requestServer('getProjectLoic').then( response => {
 
     const data = response.data
     let projectId = parseInt(params.get('projectId'))

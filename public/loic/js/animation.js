@@ -3,8 +3,6 @@ export const carousselAnimation = (wrapperID, classP) => {
 
     let imgArrConst = gsap.utils.toArray(`.${classP}`)
 
-    console.log(imgArrConst)
-
     gsap.set(imgArrConst, { left: 0 })
 
     let pPosition = 0

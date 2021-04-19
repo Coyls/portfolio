@@ -3,7 +3,16 @@
 }
 
 #about-me {
-    height:2200px;
+    height: auto;
+    margin: 200px 0 0 18vw;
+
+    h1 {font-size: 60px;}
+    h2 {font-size: 50px;}
+
+    p {
+        width: 50vw;
+        font-size: 30px;
+    }
 
     #img-absolute {
         position: absolute;

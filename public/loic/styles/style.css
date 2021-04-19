@@ -94,11 +94,24 @@ header .logo {
   background-image: url("https://portfoliob1.herokuapp.com/loic/images/logo.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 50px;
-  width: 50px;
+  height: 150px;
+  width: 200px;
 }
 
-header ul {
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,26 +121,28 @@ header ul {
           flex-direction: row;
 }
 
-header ul li {
+header nav ul li {
   margin: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-header ul li a {
+header nav ul li a {
   color: #FFF;
+  font-size: 25px;
 }
 
-header ul li a .line {
+header nav ul li a .line {
   -webkit-transition: width 0.25s ease-out;
   transition: width 0.25s ease-out;
-  height: 1px;
+  height: 2px;
   width: 0;
   background-color: #fff;
 }
 
-header ul li a:hover .line {
-  height: 1px;
+header nav ul li a:hover .line {
   width: 100%;
-  background-color: #fff;
 }
 
 footer {
@@ -146,12 +161,12 @@ footer {
 }
 
 footer h2 {
-  font-size: 36;
+  font-size: 50px;
   font-weight: 700;
 }
 
 footer h3 {
-  font-size: 25;
+  font-size: 25px;
   margin: 10px 0;
   padding: 0;
 }
@@ -211,9 +226,8 @@ footer #to-top:hover {
   font-weight: 400;
 }
 
-#home .circle {
+#home .scroll-indicator {
   position: absolute;
-  border-radius: 50%;
   right: 10vw;
   bottom: 10vh;
   width: 110px;
@@ -278,7 +292,7 @@ footer #to-top:hover {
 }
 
 .home-projects .text-wrap .panel-text .tags-row .tag {
-  background-color: green;
+  background-color: #74C9DE;
   border-radius: 5px;
   padding: 0 10px;
 }
@@ -324,6 +338,14 @@ footer #to-top:hover {
 .texts-portfolio {
   width: 1200px;
   margin: 200px 360px;
+}
+
+.texts-portfolio h1 {
+  font-size: 60px;
+}
+
+.texts-portfolio p {
+  font-size: 30px;
 }
 
 #portfolio-projects {
@@ -451,7 +473,21 @@ footer #to-top:hover {
 }
 
 #about-me {
-  height: 2200px;
+  height: auto;
+  margin: 200px 0 0 18vw;
+}
+
+#about-me h1 {
+  font-size: 60px;
+}
+
+#about-me h2 {
+  font-size: 50px;
+}
+
+#about-me p {
+  width: 50vw;
+  font-size: 30px;
 }
 
 #about-me #img-absolute {

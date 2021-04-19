@@ -1,9 +1,9 @@
 import { headerFooterCreation } from './header_footer.js'
-import { requestProjects } from './request.js'
+import { requestServer } from './request.js'
 
 headerFooterCreation()
 
-requestProjects().then(response => {
+requestServer('getProjectLoic').then(response => {
     console.log(response.data)
 
     let data = response.data

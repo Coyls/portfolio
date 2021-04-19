@@ -1,11 +1,11 @@
-import { requestProjects } from './request.js'
+import { requestServer } from './request.js'
 
 const location = document.location.origin
 
 
 export const homeProjectsCreation = () => {
 
-    requestProjects().then(response => {
+    requestServer("getProjectLoic").then(response => {
 
         const data = response.data;
         const projectsHomeText = document.querySelectorAll('.panel-text')
@@ -26,8 +26,6 @@ export const homeProjectsCreation = () => {
 
         })
 
-        console.log(data)
-
         projectsHomeText.forEach((projectText,id) => {
 
             projectText.innerHTML = `
@@ -41,7 +39,6 @@ export const homeProjectsCreation = () => {
             const tagsRow = projectText.querySelector('.tags-row')
             
             const tags = data[id].tags
-            console.log(tags)
 
             tags.forEach((tag,id) => {
                 if (id === 3) { exit }

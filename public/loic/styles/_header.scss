@@ -15,32 +15,38 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
 
-    height: 50px;
-    width: 50px;
+    height: 150px;
+    width: 200px;
   }
 
-  ul {
+  nav {
     display: flex;
     flex-direction: row;
+    align-items: center;
 
-    li {
-      margin: 0 15px;
+    ul {
+      display: flex;
+      flex-direction: row;
 
-      a {
-        color: $standardTextColor;
+      li {
+        margin: 0 15px;
+        display: flex;
 
-        .line {
-          transition: width 0.25s ease-out;
-          height: 1px;
-          width: 0;
-          background-color: #fff;
-        }
+        a {
+          color: $standardTextColor;
+          font-size: 25px;
 
-        &:hover {
-          .line {   
-            height: 1px;
-            width: 100%;
+          .line {
+            transition: width 0.25s ease-out;
+            height: 2px;
+            width: 0;
             background-color: #fff;
+          }
+
+          &:hover {
+            .line {
+              width: 100%;
+            }
           }
         }
       }
