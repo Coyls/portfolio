@@ -51,10 +51,10 @@ requestAPiDribbble(`?access_token=${process.env.API_KEY_LOIC}`,'/getProjectLoic'
 requestAPiDribbble(`?access_token=${process.env.API_KEY_CHLOE}`,'/getProjectChloe','user/shots')
 requestAPiDribbble(`?access_token=${process.env.API_KEY_JEANNE}`,'/getProjectJeanne','user/shots')
 
-
 requestAPiDribbble(`?access_token=${process.env.API_KEY_LOIC}`,'/getUserLoic','user')
 requestAPiDribbble(`?access_token=${process.env.API_KEY_JEANNE}`,'/getUserJeanne','user')
 requestAPiDribbble(`?access_token=${process.env.API_KEY_CHLOE}`,'/getUserChloe','user')
+
 
 
 
