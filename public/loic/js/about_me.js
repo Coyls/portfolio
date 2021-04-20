@@ -1,6 +1,6 @@
 import { headerFooterCreation } from './header_footer.js'
-import { requestServer} from './request.js'
-import { splitElements} from './split_texts.js'
+import { requestServer} from '../../globals_assets/js/request.js'
+import { splitElements} from '../../globals_assets/js/split_texts.js'
 
 headerFooterCreation()
 

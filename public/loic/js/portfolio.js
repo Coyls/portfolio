@@ -1,5 +1,5 @@
 import { headerFooterCreation } from './header_footer.js'
-import { requestServer } from './request.js'
+import { requestServer } from '../../globals_assets/js/request.js'
 
 headerFooterCreation()
 

@@ -1,8 +1,8 @@
-import { randomiseSkills } from './skills.js'
+import { randomiseSkills } from './randomise_skills.js'
 
-export const creationAnimation = (containerVar, wrapperID, classP) => {
+export const creationAnimation = (containerVar, wrapperID, classP, skills) => {
     
-    let skillsLoic = randomiseSkills()
+    let skillsToUse = randomiseSkills(skills)
     
     const container = document.querySelector(`${containerVar}`);
 
@@ -12,7 +12,7 @@ export const creationAnimation = (containerVar, wrapperID, classP) => {
     const wrapper = document.getElementById(wrapperID)
 
 
-    skillsLoic.forEach((skill, id) => {
+    skillsToUse.forEach((skill, id) => {
 
         wrapper.innerHTML += `<p class='${classP}' data-index="${id}">${skill}</p>`
     })

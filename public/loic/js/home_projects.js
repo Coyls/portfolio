@@ -1,4 +1,4 @@
-import { requestServer } from './request.js'
+import { requestServer } from '../../globals_assets/js/request.js'
 
 const location = document.location.origin
 

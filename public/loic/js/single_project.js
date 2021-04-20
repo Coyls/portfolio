@@ -1,7 +1,8 @@
 import { headerFooterCreation } from './header_footer.js'
-import {requestServer } from './request.js'
-import { carousselAnimation } from './animation.js'
-import { creationAnimation } from './animationCreation.js'
+import { requestServer } from '../../globals_assets/js/request.js'
+import { carousselAnimation } from '../../globals_assets/js/animation.js'
+import { creationAnimation } from '../../globals_assets/js/animation_creation.js'
+import { skills } from './skills.js'
 
 let location = document.location.origin
 
@@ -55,7 +56,7 @@ requestServer('getProjectLoic').then( response => {
         
 })
 
-creationAnimation('.single-project-skills','single-project-wrapper', 'p-single-project')
-carousselAnimation('single-project-wrapper', 'p-single-project')
+creationAnimation('.single-project-skills','single-project-wrapper', 'p-single-project', skills)
+carousselAnimation('p-single-project')
 
 
