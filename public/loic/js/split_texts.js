@@ -1,10 +1,9 @@
-export const splitElements = (arrayToSplit, character) => {
-    let arraySplit = arrayToSplit.split('')
+export const splitElements = (arrayToSplit, character, isList = false) => {
 
+    let arraySplit = arrayToSplit.split('')
     let mark = false
     let idStart = 0
     let idEnd = 0
-
     let result = arraySplit
     let arrayToReturn = []
     let i = 0
@@ -17,7 +16,7 @@ export const splitElements = (arrayToSplit, character) => {
             idEnd = id
             mark = false
 
-            if (character === '*') {
+            if (isList) {
                 let t = result.slice(idStart, idEnd)
                 arrayToReturn[i] = t.join('')
                 i++
@@ -25,13 +24,11 @@ export const splitElements = (arrayToSplit, character) => {
         }
     })
 
-    if (character === '*') {
+    if (isList) {
         return arrayToReturn
     } else {
         result = result.slice(idStart, idEnd)
         result = result.join('')
         return result
     }
-
-
 }

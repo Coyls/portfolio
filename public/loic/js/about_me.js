@@ -10,26 +10,23 @@ requestServer('getUserLoic').then(response => {
 
     let bio = response.data.bio
 
+    // Split texts
+    const aboutMe = splitElements(bio,'$')
+    const formation = splitElements(bio,'§')
+    const experiencesContainer = splitElements(bio,'µ')
+    const experiences = splitElements(experiencesContainer,'*',true)
 
-    
-
-    
-    const aboutMe = splitElements(bio, '$')
-    const formation = splitElements(bio, '§')
-    const experiencesContainer = splitElements(bio, 'µ')
-    const experiences = splitElements(experiencesContainer, '*')
-
+    // Create html
     const bioParagraph = document.getElementById('bio-paragraph')
     const formationParagraph = document.getElementById('formation-paragraph')
     const experiencesParagraph = document.getElementById('experience-paragraph')
 
     bioParagraph.innerHTML = aboutMe
     formationParagraph.innerHTML = formation
-
     experiences.forEach(exp => {
         experiencesParagraph.innerHTML += `<p>${exp}</p>`
     })
-
+    // ----------------------------
 
 
     console.log(aboutMe)
