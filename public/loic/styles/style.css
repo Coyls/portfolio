@@ -376,6 +376,25 @@ footer #to-top:hover {
   font-size: 30px;
 }
 
+#frame-left-portfolio {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  left: -200px;
+  top: 150vh;
+  z-index: 0;
+}
+
+#frame-right-portfolio {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  right: -100px;
+  -webkit-transform: translateY(-75px);
+          transform: translateY(-75px);
+  z-index: 0;
+}
+
 #portfolio-projects {
   width: 100vw;
   -webkit-box-pack: center;
@@ -391,6 +410,7 @@ footer #to-top:hover {
 }
 
 #portfolio-projects .project {
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,6 +442,10 @@ footer #to-top:hover {
           backdrop-filter: blur(4px);
 }
 
+.portfolio-skills {
+  height: auto;
+}
+
 #header-single-project, #footer-single-project {
   position: relative;
 }
@@ -438,6 +462,23 @@ footer #to-top:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#single-project #frame-left-single-project {
+  position: absolute;
+  height: 230px;
+  width: 230px;
+  left: -115px;
+  top: 60vh;
+}
+
+#single-project #frame-right-single-project {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: 120vh;
+  right: 50px;
+  z-index: 0;
 }
 
 #single-project #texts {
@@ -461,6 +502,7 @@ footer #to-top:hover {
 }
 
 #single-project img {
+  z-index: 5;
   height: 1200px;
   width: 1600px;
   -o-object-fit: contain;
@@ -502,7 +544,15 @@ footer #to-top:hover {
 
 #about-me {
   height: auto;
-  margin: 200px 0 20vh 15vw;
+  margin: 150px 0 200px 15vw;
+}
+
+#about-me #frame-left-about-me {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  left: -125px;
+  top: 75vh;
 }
 
 #about-me h1 {

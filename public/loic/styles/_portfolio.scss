@@ -11,17 +11,37 @@
 
 }
 
+#frame-left-portfolio {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    left: -200px;
+    top: 150vh;
+    z-index: 0;
+}
+
+#frame-right-portfolio {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    right: -100px;
+    transform: translateY(-75px);
+    z-index: 0;
+}
+
 #portfolio-projects {
     width: 100vw;
     justify-content: center;
     height: auto;
     display: grid; 
     margin-bottom: 50px;
+   
 
     column-gap: 30px;
     row-gap: 50px;
 
     .project {
+        z-index: 10;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -47,4 +67,8 @@
                 }
         }
     }
+}
+
+.portfolio-skills {
+    height: auto;
 }

@@ -1,5 +1,8 @@
 import { headerFooterCreation } from './header_footer.js'
 import { requestServer } from '../../globals_assets/js/request.js'
+import { carousselAnimation } from '../../globals_assets/js/animation.js'
+import { creationAnimation } from '../../globals_assets/js/animation_creation.js'
+import { skills } from './skills.js'
 
 headerFooterCreation()
 
@@ -64,6 +67,9 @@ requestServer('getProjectLoic').then(response => {
 
 
 })
+
+creationAnimation('.portfolio-skills','portfolio-wrapper', 'p-portfolio', skills)
+carousselAnimation('p-portfolio')
 
 
 

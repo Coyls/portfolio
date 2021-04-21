@@ -41,7 +41,7 @@ requestServer('getProjectLoic').then( response => {
         singleProjectImg = projectOnPage.images.normal
     }
 
-    singleProject.innerHTML = `
+    singleProject.innerHTML += `
         <div id="texts">
             <h1 id="title">${projectOnPage.title}</h1>
             <p id="description">${projectOnPage.description}</p>

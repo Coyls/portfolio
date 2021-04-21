@@ -4,7 +4,15 @@
 
 #about-me {
     height: auto;
-    margin: 200px 0 20vh 15vw;
+    margin: 150px 0 200px 15vw;
+
+    #frame-left-about-me {
+        position: absolute;
+        height: 250px;
+        width: 250px;
+        left: -125px;
+        top: 75vh;
+    }
 
     h1 {font-size: 60px;}
     h2 {font-size: 50px;}
