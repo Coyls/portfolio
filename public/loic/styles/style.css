@@ -156,7 +156,7 @@ footer {
           flex-direction: column;
   background-color: #FFF;
   background-image: url("https://portfoliob1.herokuapp.com/loic/images/footer_bg.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #FFF;
   height: 400px;
@@ -364,8 +364,8 @@ footer #to-top:hover {
 }
 
 .texts-portfolio {
-  width: 1200px;
-  margin: 200px 360px;
+  width: 75vw;
+  margin: 200px 15vw;
 }
 
 .texts-portfolio h1 {
@@ -502,7 +502,7 @@ footer #to-top:hover {
 
 #about-me {
   height: auto;
-  margin: 200px 0 20vh 18vw;
+  margin: 200px 0 20vh 15vw;
 }
 
 #about-me h1 {
