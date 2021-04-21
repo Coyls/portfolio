@@ -247,17 +247,26 @@ footer #to-top:hover {
   display: flex;
   height: 100vh;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   background-color: linear-gradient(180deg, #001D38 0%, #002B53 100%);
 }
 
+.home-projects .frame {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  top: 100px;
+  left: -200px;
+}
+
 .home-projects .text-wrap {
   position: relative;
   overflow: hidden;
-  width: 450px;
+  width: 800px;
   height: 75vh;
   margin-bottom: 40vh;
 }
@@ -288,15 +297,13 @@ footer #to-top:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .home-projects .text-wrap .panel-text .tags-row .tag {
-  background-color: #74C9DE;
+  background-color: #74c9de;
   border-radius: 5px;
   padding: 0 10px;
+  margin: 0 60px 0 0;
 }
 
 .home-projects .p-wrap {
@@ -331,6 +338,12 @@ footer #to-top:hover {
 .wrapper p {
   font-size: 75px;
   padding: 25px 50px;
+}
+
+.wrapper p:nth-child(2n+1) {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
 }
 
 #header-portfolio {

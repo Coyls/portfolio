@@ -10,6 +10,7 @@ export const headerFooterCreation = () => {
             <li><a href="${location}/loic/pages/portfolio.html">Portfolio<div class="line"></div></a></li>
             <li><a href="${location}/loic/pages/about_me.html">À propos<div class="line"></div></a></li>
             <li><a href="mailto:loic.greco@sfr.fr">Contact<div class="line"></div></a></li>
+            <li><img src="${location}/loic/images/nav_hexagone.svg" alt=""></li>
         </ul>
     </nav>`
 
