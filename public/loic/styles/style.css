@@ -156,7 +156,7 @@ footer {
           flex-direction: column;
   background-color: #FFF;
   background-image: url("https://portfoliob1.herokuapp.com/loic/images/footer_bg.svg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   color: #FFF;
   height: 400px;
