@@ -3,7 +3,10 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: $footerColor;
-    color: $reverseTextColor;
+    background-image: url($footerBgImage);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $standardTextColor;
     height: 400px;
     padding-left: 10vw;
 
@@ -26,6 +29,7 @@ footer {
         i {
             margin-right: 40px;
             font-size: 55px;
+            color: $standardTextColor;
         }
     }
 

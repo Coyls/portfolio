@@ -155,7 +155,10 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #FFF;
-  color: #000;
+  background-image: url("https://portfoliob1.herokuapp.com/loic/images/footer_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFF;
   height: 400px;
   padding-left: 10vw;
 }
@@ -185,6 +188,7 @@ footer .social-media {
 footer .social-media i {
   margin-right: 40px;
   font-size: 55px;
+  color: #FFF;
 }
 
 footer #to-top {
@@ -255,12 +259,20 @@ footer #to-top:hover {
   background-color: linear-gradient(180deg, #001D38 0%, #002B53 100%);
 }
 
-.home-projects .frame {
+.home-projects #frame-left {
   position: absolute;
   height: 400px;
   width: 400px;
   top: 100px;
   left: -200px;
+}
+
+.home-projects #frame-right {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  right: 100px;
+  bottom: 100px;
 }
 
 .home-projects .text-wrap {
@@ -311,6 +323,7 @@ footer #to-top:hover {
   overflow: hidden;
   width: 25vw;
   height: 90vh;
+  border-radius: 20px;
 }
 
 .home-projects .p-wrap .panel {
@@ -489,7 +502,7 @@ footer #to-top:hover {
 
 #about-me {
   height: auto;
-  margin: 200px 0 0 18vw;
+  margin: 200px 0 20vh 18vw;
 }
 
 #about-me h1 {
