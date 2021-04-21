@@ -6,10 +6,43 @@
     height: auto;
 }
 
+#games-presentation {
+    width: 75vw;
+    margin: 200px 15vw;
+
+    h1 {font-size: 60px;}
+    p {font-size: 30px;}
+    a {color:rgb(0, 255, 255);}
+}
+
 
 #games {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+
+    .line-game {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 200px;
+
+        .game {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+
+            .game-texts {
+                width: 20vw;
+                a {
+                    text-decoration: none;
+                    color: #FFF;
+
+                    &:hover {
+                        color: cyan;
+                    }
+                }
+            }
+        }
+    }
 }
 

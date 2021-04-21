@@ -585,7 +585,34 @@ footer #to-top:hover {
   height: auto;
 }
 
+#games-presentation {
+  width: 75vw;
+  margin: 200px 15vw;
+}
+
+#games-presentation h1 {
+  font-size: 60px;
+}
+
+#games-presentation p {
+  font-size: 30px;
+}
+
+#games-presentation a {
+  color: cyan;
+}
+
 #games {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#games .line-game {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -596,5 +623,30 @@ footer #to-top:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin-bottom: 200px;
+}
+
+#games .line-game .game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+}
+
+#games .line-game .game .game-texts {
+  width: 20vw;
+}
+
+#games .line-game .game .game-texts a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+#games .line-game .game .game-texts a:hover {
+  color: cyan;
 }
 /*# sourceMappingURL=style.css.map */
