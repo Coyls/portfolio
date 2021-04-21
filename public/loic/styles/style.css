@@ -576,4 +576,25 @@ footer #to-top:hover {
   right: -450px;
   top: 500px;
 }
+
+#header-games {
+  position: relative;
+}
+
+#games, #games-presentation {
+  height: auto;
+}
+
+#games {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
 /*# sourceMappingURL=style.css.map */

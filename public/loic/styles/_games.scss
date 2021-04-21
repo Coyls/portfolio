@@ -1,0 +1,15 @@
+#header-games {
+    position: relative;
+}
+
+#games, #games-presentation {
+    height: auto;
+}
+
+
+#games {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
