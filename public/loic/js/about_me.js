@@ -21,8 +21,8 @@ requestServer('getUserLoic').then(response => {
     const formationParagraph = document.getElementById('formation-paragraph')
     const experiencesParagraph = document.getElementById('experience-paragraph')
 
-    bioParagraph.innerHTML = aboutMe
-    formationParagraph.innerHTML = formation
+    bioParagraph.innerText = aboutMe
+    formationParagraph.innerText = formation
     experiences.forEach(exp => {
         experiencesParagraph.innerHTML += `<p>${exp}</p>`
     })

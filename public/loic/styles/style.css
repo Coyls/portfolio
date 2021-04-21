@@ -91,11 +91,11 @@ header {
 }
 
 header .logo {
-  background-image: url("https://portfoliob1.herokuapp.com/loic/images/logo.svg");
+  background-image: url("https://portfoliob1.herokuapp.com/loic/images/logo_loic.svg");
   background-size: contain;
   background-repeat: no-repeat;
   height: 150px;
-  width: 200px;
+  width: 150px;
 }
 
 header nav {
@@ -232,7 +232,9 @@ footer #to-top:hover {
   bottom: 10vh;
   width: 110px;
   height: 110px;
-  background-color: #124F7B;
+  background-image: url("https://portfoliob1.herokuapp.com/loic/images/hexagone_scroll.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .scroller {

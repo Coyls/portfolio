@@ -10,13 +10,12 @@ header {
   background-color: $bgBodyColor;
 
   .logo {
-    // background-color: red;
-    background-image: url("https://portfoliob1.herokuapp.com/loic/images/logo.svg");
+    background-image: url($headerLogo);
     background-size: contain;
     background-repeat: no-repeat;
 
     height: 150px;
-    width: 200px;
+    width: 150px;
   }
 
   nav {
