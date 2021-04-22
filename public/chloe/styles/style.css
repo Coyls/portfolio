@@ -245,7 +245,8 @@ footer #to-top:hover {
   display: flex;
   height: 100vh;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -259,15 +260,15 @@ footer #to-top:hover {
 .home-projects .text-wrap {
   position: relative;
   overflow: hidden;
-  width: 700px;
+  width: 800px;
   height: 110vh;
   margin-bottom: 60vh;
-  padding-left: 10vw;
+  margin-left: 20vw;
 }
 
 .home-projects .text-wrap .panel-text {
   position: absolute;
-  width: 1000px;
+  width: 800px;
   height: 100%;
   color: #333333;
   -webkit-transform: translateY(100%);
@@ -306,6 +307,7 @@ footer #to-top:hover {
   width: 25vw;
   height: 90vh;
   border-radius: 20px;
+  margin-right: 10vw;
 }
 
 .home-projects .p-wrap .panel {
@@ -320,6 +322,8 @@ footer #to-top:hover {
 .next-section {
   height: auto;
   overflow-x: hidden;
+  margin-bottom: 5vh;
+  padding-top: 10vh;
   background-image: url("https://portfoliob1.herokuapp.com/chloe/images/caroussel_bg.svg");
   background-size: 100vw auto;
   background-position: top;
@@ -336,7 +340,7 @@ footer #to-top:hover {
 
 .wrapper p {
   font-size: 75px;
-  padding: 40px 50px;
+  padding: 50px 50px;
   color: #A38360;
 }
 
