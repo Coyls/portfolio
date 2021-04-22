@@ -330,6 +330,7 @@ footer #to-top:hover {
 .next-section {
   height: auto;
   overflow-x: hidden;
+  margin: 5vh 0 10vh 0;
 }
 
 .wrapper {
@@ -342,7 +343,7 @@ footer #to-top:hover {
 
 .wrapper p {
   font-size: 75px;
-  padding: 25px 50px;
+  padding: 40px 50px;
   color: #EC7363;
 }
 
