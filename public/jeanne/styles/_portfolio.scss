@@ -6,9 +6,12 @@
     width: 75vw;
     margin: 200px 15vw;
 
-    h1 {font-size: 60px;}
-    p {font-size: 40px;}
-
+    h1 {
+        font-size: 60px;
+    }
+    p {
+        font-size: 40px;
+    }
 }
 
 #frame-left-portfolio {
@@ -33,9 +36,8 @@
     width: 100vw;
     justify-content: center;
     height: auto;
-    display: grid; 
+    display: grid;
     margin-bottom: 50px;
-   
 
     column-gap: 30px;
     row-gap: 50px;
@@ -46,27 +48,39 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        color: #eb7263;
 
-        color: #EB7263;
-
-        .title-portfolio {
-            transform: translateY(50px);
+        .hover-project {
             transition: opacity 0.25s ease-out;
-            margin: 0;
-            padding: 50px;
+            background-color : rgba(66,154,191,0);
             height: 100%;
             width: 100%;
-            opacity: 0;
-            font-size: 100px;
-        }
+            z-index: 50;
 
-
-        &:hover {
             .title-portfolio {
-                opacity: 1;
-                backdrop-filter: blur(10px);
+                transition: opacity 0.25s ease-out;
+                margin: 50px;
+                opacity: 0;
+                font-size: 100px;
+            }
+
+            &:hover {
+                background-color : rgba(66,154,191,1);
+
+                .title-portfolio {
+                    opacity: 1;
+                    // backdrop-filter: blur(10px);
                 }
+                
+            }
         }
+
+
+        
+
+        
     }
 }
 

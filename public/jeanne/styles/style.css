@@ -145,7 +145,7 @@ header nav ul li a .line {
   transition: width 0.25s ease-out;
   height: 2px;
   width: 0;
-  background-color: #fff;
+  background-color: #000;
 }
 
 header nav ul li a:hover .line {
@@ -225,6 +225,7 @@ footer #to-top:hover {
   position: relative;
   width: 1200px;
   margin-left: 15vw;
+  margin-top: 180px;
 }
 
 #home .about h1 {
@@ -267,9 +268,9 @@ footer #to-top:hover {
 
 .home-projects #frame-circle {
   position: absolute;
-  left: -450px;
-  height: 900px;
-  width: 900px;
+  left: -300px;
+  height: 600px;
+  width: 600px;
 }
 
 .home-projects .text-wrap {
@@ -419,26 +420,34 @@ footer #to-top:hover {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
-  color: #EB7263;
+  background-size: cover;
+  background-position: center;
+  color: #eb7263;
 }
 
-#portfolio-projects .project .title-portfolio {
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
+#portfolio-projects .project .hover-project {
   -webkit-transition: opacity 0.25s ease-out;
   transition: opacity 0.25s ease-out;
-  margin: 0;
-  padding: 50px;
+  background-color: rgba(66, 154, 191, 0);
   height: 100%;
   width: 100%;
+  z-index: 50;
+}
+
+#portfolio-projects .project .hover-project .title-portfolio {
+  -webkit-transition: opacity 0.25s ease-out;
+  transition: opacity 0.25s ease-out;
+  margin: 50px;
   opacity: 0;
   font-size: 100px;
 }
 
-#portfolio-projects .project:hover .title-portfolio {
+#portfolio-projects .project .hover-project:hover {
+  background-color: #429abf;
+}
+
+#portfolio-projects .project .hover-project:hover .title-portfolio {
   opacity: 1;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
 }
 
 .portfolio-skills {

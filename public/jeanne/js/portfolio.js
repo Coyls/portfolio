@@ -29,14 +29,10 @@ requestServer('getProjectLoic').then(response => {
 
     data.forEach(project => {
         container.innerHTML += `
-        <a href="" class="project" data-id-project="${project.id}" style="
-                                grid-column: ${gridColumn}; 
-                                grid-row: ${gridRow}; 
-                                background-image: url('${project.images.normal}');
-                                background-size: cover;
-                                background-position: center;">
-                                <h2 class="title-portfolio">${project.title}</h2>
-
+        <a href="" class="project" data-id-project="${project.id}" style="grid-column: ${gridColumn}; grid-row: ${gridRow}; background-image: url('${project.images.normal}');">
+            <div class="hover-project">
+                <h2 class="title-portfolio">${project.title}</h2>
+            </div> 
         </a>`
 
         if (gridColumn > 1) {

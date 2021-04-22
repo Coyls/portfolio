@@ -1,1 +1,1 @@
-export const skills = ["Photoshop","Illustrator","Blender","Ableton","Figma","AdobeXD","Blender","C4D","InDesign","AfterEffect"]
+export const skills = ["Photoshop","Illustrator","Ableton","Figma","AdobeXD","Blender","C4D","InDesign","AfterEffect"]
