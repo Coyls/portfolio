@@ -8,25 +8,30 @@
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  -webkit-justify-content: space-evenly;
+  -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
-  justify-content: space-evenly;
+  justify-content: space-around;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   background-color: $bgBodyColor;
+  background-image: url("https://portfoliob1.herokuapp.com/chloe/images/top_home_bg.svg"), url("https://portfoliob1.herokuapp.com/chloe/images/bot_home_bg.svg");
+  background-size: 100vw auto, 100vw auto;
+  background-position: top, bottom;
+  background-repeat: no-repeat, no-repeat;
 
   .text-wrap {
     position: relative;
     overflow: hidden;
-    width: 800px;
-    height: 75vh;
-    margin-bottom: 40vh;
+    width: 700px;
+    height: 110vh;
+    margin-bottom: 60vh;
+    padding-left: 10vw;
 
     .panel-text {
       position: absolute;
-      width: 100%;
+      width: 1000px;
       height: 100%;
       color: $standardTextColor;
 
@@ -75,6 +80,11 @@
 .next-section {
   height: auto;
   overflow-x: hidden;
+
+  background-image: url("https://portfoliob1.herokuapp.com/chloe/images/caroussel_bg.svg");
+  background-size: 100vw auto;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 // -------------------- carrousel ----------------------
@@ -86,12 +96,13 @@
 
   p {
     font-size: 75px;
-    padding: 25px 50px;
+    padding: 40px 50px;
+    color : #A38360;
   }
 
   p:nth-child(2n+1) {
     color : transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: #A38360;
   }
 }

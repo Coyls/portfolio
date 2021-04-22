@@ -426,9 +426,9 @@ footer #to-top:hover {
 }
 
 #portfolio-projects .project .hover-project {
-  -webkit-transition: opacity 0.25s ease-out;
-  transition: opacity 0.25s ease-out;
-  background-color: rgba(66, 154, 191, 0);
+  -webkit-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+  background-color: rgba(177, 221, 235, 0);
   height: 100%;
   width: 100%;
   z-index: 50;
@@ -443,7 +443,7 @@ footer #to-top:hover {
 }
 
 #portfolio-projects .project .hover-project:hover {
-  background-color: #429abf;
+  background-color: #b1ddeb;
 }
 
 #portfolio-projects .project .hover-project:hover .title-portfolio {

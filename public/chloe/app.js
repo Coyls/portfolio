@@ -12,7 +12,7 @@ creationAnimation('.next-section','animation_2','p-two',skills)
 creationAnimation('.next-section','animation_3','p-three',skills)
 
 carousselAnimation('p-one')
-carousselAnimation('p-two')
+carousselAnimation('p-two', '+=')
 carousselAnimation('p-three')
 
 headerFooterCreation()

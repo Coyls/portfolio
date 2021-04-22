@@ -53,8 +53,8 @@
         color: #eb7263;
 
         .hover-project {
-            transition: opacity 0.25s ease-out;
-            background-color : rgba(66,154,191,0);
+            transition: background-color 0.25s ease-out;
+            background-color : rgba(177,221,235,0);
             height: 100%;
             width: 100%;
             z-index: 50;
@@ -67,7 +67,7 @@
             }
 
             &:hover {
-                background-color : rgba(66,154,191,1);
+                background-color : rgba(177,221,235,1);
 
                 .title-portfolio {
                     opacity: 1;
