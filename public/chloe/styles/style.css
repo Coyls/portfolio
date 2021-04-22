@@ -193,16 +193,10 @@ footer .social-media i {
 }
 
 footer #to-top {
-  -webkit-transition: all ease-out 0.25s;
-  transition: all ease-out 0.25s;
+  width: 7vw;
+  height: 10vh;
   position: absolute;
-  right: 10vw;
-  top: 300px;
-  font-size: 50px;
-}
-
-footer #to-top:hover {
-  top: 290px;
+  right: 15vw;
 }
 
 #home {
@@ -277,11 +271,11 @@ footer #to-top:hover {
 }
 
 .home-projects .text-wrap .panel-text h2 {
-  font-size: 45px;
+  font-size: 40px;
 }
 
 .home-projects .text-wrap .panel-text p {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .home-projects .text-wrap .panel-text .tags-row {
@@ -295,7 +289,7 @@ footer #to-top:hover {
 }
 
 .home-projects .text-wrap .panel-text .tags-row .tag {
-  background-color: #74c9de;
+  background-color: #E02421;
   border-radius: 5px;
   padding: 0 10px;
   margin: 0 60px 0 0;

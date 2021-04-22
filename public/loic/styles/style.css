@@ -138,7 +138,7 @@ header nav ul li a .line {
   transition: width 0.25s ease-out;
   height: 2px;
   width: 0;
-  background-color: #fff;
+  background-color: #000;
 }
 
 header nav ul li a:hover .line {

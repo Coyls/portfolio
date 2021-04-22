@@ -18,7 +18,7 @@ export const homeProjectsCreation = () => {
                 dataImg = data[id].images.normal
             }
 
-            projectImg.href = `${location}/jeanne/pages/single_project.html?projectId=${data[id].id}`
+            // projectImg.href = `${location}/jeanne/pages/single_project.html?projectId=${data[id].id}`
 
 
             projectImg.style.backgroundImage = `url('${dataImg}')`

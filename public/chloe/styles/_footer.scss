@@ -36,14 +36,10 @@ footer {
     }
 
     #to-top {
-        transition: all ease-out 0.25s;
+        width: 7vw;
+        height: 10vh;
         position: absolute;
-        right: 10vw;
-        top: 300px;
-        font-size: 50px;
+        right: 15vw;
 
-        &:hover {
-            top: 290px;
-        }
     }
 }
