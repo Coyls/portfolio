@@ -15,6 +15,10 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/jeanne/index.html');
 });
 
+app.get('/loic', (req, res) => {
+    res.sendFile(__dirname + '/public/loic/index.html');
+});
+
 http.listen(port, () => {
     console.log(`http://localhost:${port}/`);
 });
