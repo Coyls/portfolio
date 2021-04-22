@@ -2,6 +2,9 @@
   padding-right: $bodyLayoutX;
   display: flex;
   align-items: center;
+  background-image: url($scrollBgImg);
+  background-size: 1920px auto;
+  background-repeat: no-repeat;
 
   .about {
     position: relative;
@@ -19,7 +22,7 @@
     }
   }
 
-  .scroll-indicator {
+  /* .scroll-indicator {
     position: absolute;
     right: 10vw;
     bottom: 10vh;
@@ -28,6 +31,5 @@
     background-image: url($scrollBgImg);
     background-size: contain;
     background-repeat: no-repeat;
-  }
-
+  } */
 }
