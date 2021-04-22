@@ -1,0 +1,113 @@
+.scroller {
+  height: 100vh;
+}
+
+.home-projects {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: $bgBodyColor;
+
+  #frame-left {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    top: 100px;
+    left: -200px;
+  }
+
+  #frame-right {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    right: 100px;
+    bottom: 100px;
+  }
+
+  .text-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    height: 75vh;
+    margin-bottom: 40vh;
+
+    .panel-text {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: $standardTextColor;
+
+      transform: translateY(100%);
+      opacity: 0;
+
+      h2 {
+        font-size: 45px;
+      }
+      p {
+        font-size: 30px;
+      }
+
+      .tags-row {
+        display: flex;
+        flex-direction: row;
+
+        .tag {
+          background-color: #74c9de;
+          border-radius: 5px;
+          padding: 0 10px;
+          margin: 0 60px 0 0;
+        }
+      }
+    }
+  }
+
+  .p-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 25vw;
+    height: 90vh;
+    border-radius: 20px;
+
+    .panel {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 120vh 90vh;
+    }
+  }
+}
+
+.next-section {
+  height: auto;
+  overflow-x: hidden;
+}
+
+// -------------------- carrousel ----------------------
+
+.wrapper {
+  height: auto;
+  display: inline-flex;
+  position: relative;
+
+  p {
+    font-size: 75px;
+    padding: 25px 50px;
+  }
+
+  p:nth-child(2n+1) {
+    color : transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+  }
+}

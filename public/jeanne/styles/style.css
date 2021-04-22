@@ -1,0 +1,579 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  width: 100vw;
+  overflow-x: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(#001D38), to(#002B53));
+  background: linear-gradient(180deg, #001D38 0%, #002B53 100%);
+  color: #FFF;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+section {
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  background-color: #0c5f65;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #35aca4;
+}
+
+header {
+  position: fixed;
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5vh 10vw 0 10vw;
+  z-index: 999;
+  background-color: linear-gradient(180deg, #001D38 0%, #002B53 100%);
+}
+
+header .logo {
+  background-image: url("https://portfoliob1.herokuapp.com/loic/images/logo_loic.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header nav ul li {
+  margin: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li a {
+  color: #FFF;
+  font-size: 25px;
+}
+
+header nav ul li a .line {
+  -webkit-transition: width 0.25s ease-out;
+  transition: width 0.25s ease-out;
+  height: 2px;
+  width: 0;
+  background-color: #fff;
+}
+
+header nav ul li a:hover .line {
+  width: 100%;
+}
+
+footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #FFF;
+  background-image: url("https://portfoliob1.herokuapp.com/loic/images/footer_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  height: 400px;
+  padding-left: 10vw;
+}
+
+footer h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+footer h3 {
+  font-size: 25px;
+  margin: 10px 0;
+  padding: 0;
+}
+
+footer .social-media {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .social-media i {
+  margin-right: 40px;
+  font-size: 55px;
+  color: #FFF;
+}
+
+footer #to-top {
+  -webkit-transition: all ease-out 0.25s;
+  transition: all ease-out 0.25s;
+  position: absolute;
+  right: 10vw;
+  top: 150px;
+  font-size: 50px;
+}
+
+footer #to-top:hover {
+  top: 140px;
+}
+
+#home {
+  padding-right: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .about {
+  position: relative;
+  width: 1200px;
+  margin-left: 15vw;
+}
+
+#home .about h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+#home .about p {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#home .scroll-indicator {
+  position: absolute;
+  right: 10vw;
+  bottom: 10vh;
+  width: 110px;
+  height: 110px;
+  background-image: url("https://portfoliob1.herokuapp.com/loic/images/hexagone_scroll.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.scroller {
+  height: 100vh;
+}
+
+.home-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -ms-flex-pack: distribute;
+  -webkit-box-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: linear-gradient(180deg, #001D38 0%, #002B53 100%);
+}
+
+.home-projects #frame-left {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  top: 100px;
+  left: -200px;
+}
+
+.home-projects #frame-right {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  right: 100px;
+  bottom: 100px;
+}
+
+.home-projects .text-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 800px;
+  height: 75vh;
+  margin-bottom: 40vh;
+}
+
+.home-projects .text-wrap .panel-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+}
+
+.home-projects .text-wrap .panel-text h2 {
+  font-size: 45px;
+}
+
+.home-projects .text-wrap .panel-text p {
+  font-size: 30px;
+}
+
+.home-projects .text-wrap .panel-text .tags-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.home-projects .text-wrap .panel-text .tags-row .tag {
+  background-color: #74c9de;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin: 0 60px 0 0;
+}
+
+.home-projects .p-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 25vw;
+  height: 90vh;
+  border-radius: 20px;
+}
+
+.home-projects .p-wrap .panel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120vh 90vh;
+}
+
+.next-section {
+  height: auto;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  height: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
+.wrapper p {
+  font-size: 75px;
+  padding: 25px 50px;
+}
+
+.wrapper p:nth-child(2n+1) {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+
+#header-portfolio {
+  position: relative;
+}
+
+.texts-portfolio {
+  width: 75vw;
+  margin: 200px 15vw;
+}
+
+.texts-portfolio h1 {
+  font-size: 60px;
+}
+
+.texts-portfolio p {
+  font-size: 30px;
+}
+
+#frame-left-portfolio {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  left: -200px;
+  top: 150vh;
+  z-index: 0;
+}
+
+#frame-right-portfolio {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  right: -100px;
+  -webkit-transform: translateY(-75px);
+          transform: translateY(-75px);
+  z-index: 0;
+}
+
+#portfolio-projects {
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 50px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 50px;
+}
+
+#portfolio-projects .project {
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  color: blueviolet;
+}
+
+#portfolio-projects .project .title-portfolio {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: opacity 0.25s ease-out;
+  transition: opacity 0.25s ease-out;
+  margin: 0;
+  padding: 50px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+#portfolio-projects .project:hover .title-portfolio {
+  opacity: 1;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+.portfolio-skills {
+  height: auto;
+}
+
+#header-single-project, #footer-single-project {
+  position: relative;
+}
+
+#single-project {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#single-project #frame-left-single-project {
+  position: absolute;
+  height: 230px;
+  width: 230px;
+  left: -115px;
+  top: 60vh;
+}
+
+#single-project #frame-right-single-project {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: 120vh;
+  right: 50px;
+  z-index: 0;
+}
+
+#single-project #texts {
+  margin: 100px 0;
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#single-project #texts h1 {
+  font-size: 60px;
+}
+
+#single-project #texts p {
+  font-size: 40px;
+}
+
+#single-project img {
+  z-index: 5;
+  height: 1200px;
+  width: 1600px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+}
+
+#single-project #row-tag {
+  width: 100vw;
+  height: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 40px;
+}
+
+#single-project a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.single-project-skills {
+  height: auto;
+}
+
+#header-about-me {
+  position: relative;
+}
+
+#about-me {
+  height: auto;
+  margin: 150px 0 200px 15vw;
+}
+
+#about-me #frame-left-about-me {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  left: -125px;
+  top: 75vh;
+}
+
+#about-me h1 {
+  font-size: 60px;
+}
+
+#about-me h2 {
+  font-size: 50px;
+}
+
+#about-me p {
+  width: 50vw;
+  font-size: 30px;
+}
+
+#about-me #img-absolute {
+  position: absolute;
+  background-color: red;
+  height: 900px;
+  width: 900px;
+  right: -450px;
+  top: 500px;
+}
+/*# sourceMappingURL=style.css.map */

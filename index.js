@@ -12,7 +12,7 @@ app.use(express.static(__dirname + '/public'));
 
 // -- ExpressJS -- //
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/loic/index.html');
+    res.sendFile(__dirname + '/public/jeanne/index.html');
 });
 
 http.listen(port, () => {

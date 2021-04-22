@@ -1,0 +1,54 @@
+header {
+  position: fixed;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5vh 10vw 0 10vw;
+
+  z-index: 999;
+  background-color: $bgBodyColor;
+
+  .logo {
+    background-image: url($headerLogo);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height: 150px;
+    width: 150px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        margin: 0 15px;
+        display: flex;
+
+        a {
+          color: $standardTextColor;
+          font-size: 25px;
+
+          .line {
+            transition: width 0.25s ease-out;
+            height: 2px;
+            width: 0;
+            background-color: #fff;
+          }
+
+          &:hover {
+            .line {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
