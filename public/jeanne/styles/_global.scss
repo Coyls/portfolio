@@ -52,3 +52,11 @@ section {
 ::-webkit-scrollbar-thumb {
   background-color: $scrollbarThumbColor;
 }
+
+.bg-txt {
+  position: absolute;
+  height: 237px;
+  width: 709px;
+
+  z-index: -1;
+}

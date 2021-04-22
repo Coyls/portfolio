@@ -14,8 +14,8 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
 
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 450px;
   }
 
   nav {
@@ -30,6 +30,7 @@ header {
       li {
         margin: 0 15px;
         display: flex;
+        align-items: center;
 
         a {
           color: $standardTextColor;

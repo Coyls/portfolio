@@ -15,7 +15,7 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: $bgBodyColor;
+  background-color: #E5E5E5;
 
   #frame-left {
     position: absolute;
@@ -61,7 +61,8 @@
         flex-direction: row;
 
         .tag {
-          background-color: #74c9de;
+          background-color: #E3F1F5;
+          color: #EC7363;
           border-radius: 5px;
           padding: 0 10px;
           margin: 0 60px 0 0;
@@ -103,11 +104,12 @@
   p {
     font-size: 75px;
     padding: 25px 50px;
+    color : #EC7363;
   }
 
   p:nth-child(2n+1) {
     color : transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: #EC7363;
   }
 }

@@ -23,9 +23,8 @@ body {
   line-height: 1.75;
   width: 100vw;
   overflow-x: hidden;
-  background: -webkit-gradient(linear, left top, left bottom, from(#001D38), to(#002B53));
-  background: linear-gradient(180deg, #001D38 0%, #002B53 100%);
-  color: #FFF;
+  background: #fff;
+  color: #000;
 }
 
 p {
@@ -72,6 +71,13 @@ section {
   background-color: #35aca4;
 }
 
+.bg-txt {
+  position: absolute;
+  height: 237px;
+  width: 709px;
+  z-index: -1;
+}
+
 header {
   position: fixed;
   width: 80vw;
@@ -87,15 +93,15 @@ header {
           justify-content: space-between;
   padding: 5vh 10vw 0 10vw;
   z-index: 999;
-  background-color: linear-gradient(180deg, #001D38 0%, #002B53 100%);
+  background-color: #fff;
 }
 
 header .logo {
-  background-image: url("https://portfoliob1.herokuapp.com/loic/images/logo_loic.svg");
+  background-image: url("https://portfoliob1.herokuapp.com/jeanne/images/logo_jeanne_txt.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 450px;
 }
 
 header nav {
@@ -126,10 +132,13 @@ header nav ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header nav ul li a {
-  color: #FFF;
+  color: #000;
   font-size: 25px;
 }
 
@@ -155,10 +164,10 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #FFF;
-  background-image: url("https://portfoliob1.herokuapp.com/loic/images/footer_bg.svg");
+  background-image: url("https://portfoliob1.herokuapp.com/jeanne/images/footer_bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  color: #FFF;
+  color: #000;
   height: 400px;
   padding-left: 10vw;
 }
@@ -188,7 +197,7 @@ footer .social-media {
 footer .social-media i {
   margin-right: 40px;
   font-size: 55px;
-  color: #FFF;
+  color: #000;
 }
 
 footer #to-top {
@@ -236,7 +245,7 @@ footer #to-top:hover {
   bottom: 10vh;
   width: 110px;
   height: 110px;
-  background-image: url("https://portfoliob1.herokuapp.com/loic/images/hexagone_scroll.svg");
+  background-image: url("https://portfoliob1.herokuapp.com/jeanne/images/scroll.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -256,7 +265,7 @@ footer #to-top:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: linear-gradient(180deg, #001D38 0%, #002B53 100%);
+  background-color: #E5E5E5;
 }
 
 .home-projects #frame-left {
@@ -287,7 +296,7 @@ footer #to-top:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  color: #FFF;
+  color: #000;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   opacity: 0;
@@ -312,7 +321,8 @@ footer #to-top:hover {
 }
 
 .home-projects .text-wrap .panel-text .tags-row .tag {
-  background-color: #74c9de;
+  background-color: #E3F1F5;
+  color: #EC7363;
   border-radius: 5px;
   padding: 0 10px;
   margin: 0 60px 0 0;
@@ -351,12 +361,13 @@ footer #to-top:hover {
 .wrapper p {
   font-size: 75px;
   padding: 25px 50px;
+  color: #EC7363;
 }
 
 .wrapper p:nth-child(2n+1) {
   color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-color: #EC7363;
 }
 
 #header-portfolio {
@@ -531,7 +542,7 @@ footer #to-top:hover {
 
 #single-project a {
   text-decoration: none;
-  color: #FFF;
+  color: #000;
 }
 
 .single-project-skills {
@@ -570,10 +581,9 @@ footer #to-top:hover {
 
 #about-me #img-absolute {
   position: absolute;
-  background-color: red;
   height: 900px;
   width: 900px;
-  right: -450px;
+  right: -300px;
   top: 500px;
 }
 /*# sourceMappingURL=style.css.map */
