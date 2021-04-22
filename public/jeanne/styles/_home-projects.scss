@@ -15,7 +15,14 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #E5E5E5;
+  // background-color: #E5E5E5;
+
+  #frame-circle {
+    position: absolute;
+    left: -450px;
+    height: 900px;
+    width: 900px;
+  }
 
   .text-wrap {
     position: relative;

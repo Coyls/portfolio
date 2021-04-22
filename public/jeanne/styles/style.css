@@ -1,5 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -15,11 +15,10 @@ ul {
 
 html {
   font-size: 100%;
+  font-family: 'DM Sans', sans-serif;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
   line-height: 1.75;
   width: 100vw;
   overflow-x: hidden;
@@ -33,8 +32,7 @@ p {
 
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.3;
 }
 
@@ -265,7 +263,13 @@ footer #to-top:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #E5E5E5;
+}
+
+.home-projects #frame-circle {
+  position: absolute;
+  left: -450px;
+  height: 900px;
+  width: 900px;
 }
 
 .home-projects .text-wrap {
@@ -367,7 +371,7 @@ footer #to-top:hover {
 }
 
 .texts-portfolio p {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 #frame-left-portfolio {
@@ -415,7 +419,7 @@ footer #to-top:hover {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
-  color: blueviolet;
+  color: #EB7263;
 }
 
 #portfolio-projects .project .title-portfolio {
@@ -428,12 +432,13 @@ footer #to-top:hover {
   height: 100%;
   width: 100%;
   opacity: 0;
+  font-size: 100px;
 }
 
 #portfolio-projects .project:hover .title-portfolio {
   opacity: 1;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 .portfolio-skills {
@@ -542,7 +547,7 @@ footer #to-top:hover {
 
 #about-me p {
   width: 50vw;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 #about-me #img-absolute {

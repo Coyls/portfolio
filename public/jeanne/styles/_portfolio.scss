@@ -7,7 +7,7 @@
     margin: 200px 15vw;
 
     h1 {font-size: 60px;}
-    p {font-size: 30px;}
+    p {font-size: 40px;}
 
 }
 
@@ -47,7 +47,7 @@
         justify-content: center;
         overflow: hidden;
 
-        color: blueviolet;
+        color: #EB7263;
 
         .title-portfolio {
             transform: translateY(50px);
@@ -57,13 +57,14 @@
             height: 100%;
             width: 100%;
             opacity: 0;
+            font-size: 100px;
         }
 
 
         &:hover {
             .title-portfolio {
                 opacity: 1;
-                backdrop-filter: blur(4px);
+                backdrop-filter: blur(10px);
                 }
         }
     }
