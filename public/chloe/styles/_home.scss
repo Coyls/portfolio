@@ -3,7 +3,8 @@
   display: flex;
   align-items: center;
   background-image: url($scrollBgImg);
-  background-size: 1920px auto;
+  background-size: 100vw auto;
+  background-position: bottom;
   background-repeat: no-repeat;
 
   .about {

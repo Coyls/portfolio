@@ -86,7 +86,7 @@ header {
           justify-content: space-between;
   padding: 5vh 10vw 0 10vw;
   z-index: 999;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 header .logo {
@@ -212,7 +212,8 @@ footer #to-top:hover {
       -ms-flex-align: center;
           align-items: center;
   background-image: url("https://portfoliob1.herokuapp.com/chloe/images/scroll.svg");
-  background-size: 1920px auto;
+  background-size: 100vw auto;
+  background-position: bottom;
   background-repeat: no-repeat;
   /* .scroll-indicator {
     position: absolute;
