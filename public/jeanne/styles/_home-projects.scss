@@ -17,22 +17,6 @@
   align-items: center;
   background-color: #E5E5E5;
 
-  #frame-left {
-    position: absolute;
-    height: 400px;
-    width: 400px;
-    top: 100px;
-    left: -200px;
-  }
-
-  #frame-right {
-    position: absolute;
-    height: 300px;
-    width: 300px;
-    right: 100px;
-    bottom: 100px;
-  }
-
   .text-wrap {
     position: relative;
     overflow: hidden;
@@ -63,7 +47,6 @@
         .tag {
           background-color: #E3F1F5;
           color: #EC7363;
-          border-radius: 5px;
           padding: 0 10px;
           margin: 0 60px 0 0;
         }
@@ -76,7 +59,6 @@
     overflow: hidden;
     width: 25vw;
     height: 90vh;
-    border-radius: 20px;
 
     .panel {
       position: absolute;

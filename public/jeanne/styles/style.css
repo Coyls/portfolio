@@ -165,7 +165,7 @@ footer {
           flex-direction: column;
   background-color: #FFF;
   background-image: url("https://portfoliob1.herokuapp.com/jeanne/images/footer_bg.svg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   color: #000;
   height: 400px;
@@ -268,22 +268,6 @@ footer #to-top:hover {
   background-color: #E5E5E5;
 }
 
-.home-projects #frame-left {
-  position: absolute;
-  height: 400px;
-  width: 400px;
-  top: 100px;
-  left: -200px;
-}
-
-.home-projects #frame-right {
-  position: absolute;
-  height: 300px;
-  width: 300px;
-  right: 100px;
-  bottom: 100px;
-}
-
 .home-projects .text-wrap {
   position: relative;
   overflow: hidden;
@@ -323,7 +307,6 @@ footer #to-top:hover {
 .home-projects .text-wrap .panel-text .tags-row .tag {
   background-color: #E3F1F5;
   color: #EC7363;
-  border-radius: 5px;
   padding: 0 10px;
   margin: 0 60px 0 0;
 }
@@ -333,7 +316,6 @@ footer #to-top:hover {
   overflow: hidden;
   width: 25vw;
   height: 90vh;
-  border-radius: 20px;
 }
 
 .home-projects .p-wrap .panel {
@@ -475,23 +457,6 @@ footer #to-top:hover {
           align-items: center;
 }
 
-#single-project #frame-left-single-project {
-  position: absolute;
-  height: 230px;
-  width: 230px;
-  left: -115px;
-  top: 60vh;
-}
-
-#single-project #frame-right-single-project {
-  position: absolute;
-  height: 150px;
-  width: 150px;
-  top: 120vh;
-  right: 50px;
-  z-index: 0;
-}
-
 #single-project #texts {
   margin: 100px 0;
   width: 1200px;
@@ -512,7 +477,7 @@ footer #to-top:hover {
   font-size: 40px;
 }
 
-#single-project img {
+#single-project .img-project {
   z-index: 5;
   height: 1200px;
   width: 1600px;

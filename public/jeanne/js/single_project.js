@@ -43,10 +43,11 @@ requestServer('getProjectLoic').then( response => {
 
     singleProject.innerHTML += `
         <div id="texts">
+            <img class="bg-txt" src="https://portfoliob1.herokuapp.com/jeanne/images/portfolio_single_bg_txt.svg" alt="">
             <h1 id="title">${projectOnPage.title}</h1>
             <p id="description">${projectOnPage.description}</p>
         </div>
-        <img src="${singleProjectImg}" alt="project">
+        <img class="img-project" src="${singleProjectImg}" alt="project">
         <div id="row-tag">
             <a href="${previousProjectUrl}" class="link-project">${data[previousProjectIndex].title}</a>
             <a href="" class="link-project">${data[currentProjectIndex].title}</a>
