@@ -34,6 +34,7 @@ header {
         a {
           color: $standardTextColor;
           font-size: 25px;
+          font-weight: 600;
 
           .line {
             transition: width 0.25s ease-out;

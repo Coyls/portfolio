@@ -2,12 +2,37 @@
     position: relative;
 }
 
+#portfolio-body {
+    background-image: url($portfolioBg);
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: top;
+}
+
 .texts-portfolio {
     width: 75vw;
-    margin: 200px 15vw;
+    margin: 200px 20vw;
 
-    h1 {font-size: 60px;}
-    p {font-size: 30px;}
+    h1 {
+        font-size: 60px;
+        font-weight: 700;
+    }
+    p {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    #p-1 {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    #p-2 {margin-left: 200px;}
+
+    #p-3 {
+        margin-left: 400px;
+        font-weight: 600;
+    }
 
 }
 

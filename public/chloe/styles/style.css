@@ -131,6 +131,7 @@ header nav ul li {
 header nav ul li a {
   color: #333333;
   font-size: 25px;
+  font-weight: 600;
 }
 
 header nav ul li a .line {
@@ -298,7 +299,6 @@ footer #msg {
 }
 
 .home-projects .text-wrap .panel-text h2 {
-  font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: bold;
 }
@@ -378,17 +378,40 @@ footer #msg {
   position: relative;
 }
 
+#portfolio-body {
+  background-image: url("https://portfoliob1.herokuapp.com/chloe/images/bg-portfolio.svg");
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
+  background-position: top;
+}
+
 .texts-portfolio {
   width: 75vw;
-  margin: 200px 15vw;
+  margin: 200px 20vw;
 }
 
 .texts-portfolio h1 {
   font-size: 60px;
+  font-weight: 700;
 }
 
 .texts-portfolio p {
   font-size: 30px;
+  font-weight: 500;
+}
+
+.texts-portfolio #p-1 {
+  margin-left: 0;
+  margin-top: 50px;
+}
+
+.texts-portfolio #p-2 {
+  margin-left: 200px;
+}
+
+.texts-portfolio #p-3 {
+  margin-left: 400px;
+  font-weight: 600;
 }
 
 #portfolio-projects {
@@ -558,10 +581,9 @@ footer #msg {
 
 #about-me #img-absolute {
   position: absolute;
-  background-color: red;
   height: 900px;
   width: 900px;
-  right: -450px;
+  right: -400px;
   top: 500px;
 }
 /*# sourceMappingURL=style.css.map */
