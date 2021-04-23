@@ -62,10 +62,6 @@ requestServer('getProjectChloe').then(response => {
     })
 
 
-
-
-
-
 })
 
 creationAnimation('.portfolio-skills','portfolio-wrapper', 'p-portfolio', skills)

@@ -45,6 +45,7 @@ requestServer('getProjectChloe').then( response => {
         <div id="texts">
             <h1 id="title">${projectOnPage.title}</h1>
             <p id="description">${projectOnPage.description}</p>
+            <div class="tags-row"></div>
         </div>
         <img src="${singleProjectImg}" alt="project">
         <div id="row-tag">
@@ -53,6 +54,17 @@ requestServer('getProjectChloe').then( response => {
             <a href="${nextProjectUrl}" class="link-project">${data[nextProjectIndex].title}</a>
         </div>
         <div class="row-skills"></div>`
+
+        const tagsRow = document.querySelector('.tags-row')
+            
+            const tags = data.tags
+
+            tags.forEach((tag,id) => {
+                if (id === 3) { exit }
+                tagsRow.innerHTML += `
+                    <p class="tag">${tag}</p>
+                `
+            })
         
 })
 
