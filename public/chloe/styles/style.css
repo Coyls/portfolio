@@ -283,7 +283,7 @@ footer #msg {
 .home-projects .text-wrap {
   position: relative;
   overflow: hidden;
-  width: 800px;
+  width: 38vw;
   height: 110vh;
   margin-bottom: 60vh;
   margin-left: 20vw;
@@ -291,7 +291,7 @@ footer #msg {
 
 .home-projects .text-wrap .panel-text {
   position: absolute;
-  width: 800px;
+  width: 38vw;
   height: 100%;
   color: #333333;
   -webkit-transform: translateY(100%);
