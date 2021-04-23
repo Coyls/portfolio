@@ -17,17 +17,19 @@ export const headerFooterCreation = () => {
     const footer = document.querySelector("footer")
 
     footer.innerHTML = `
-    <h2>Conversons !</h2>
-    <div id="footer-row">
-        <div class="footer-items">
-            <h3>chloe.aitsiahmed@gmail.com</h3>
-            <h3>(+33) 07 81 52 49 30</h3>
-        </div>
-        <div class="footer-items">
-            <h3>Retrouvez-moi sur les réseaux sociaux !</h3>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/lo%C3%AFc-gr%C3%A9co-a66175205/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Coyls"><i class="fab fa-github"></i></a>
+    <div id="footer-container">
+        <h2>Conversons !</h2>
+        <div id="footer-row">
+            <div class="footer-items">
+                <h3>chloe.aitsiahmed@gmail.com</h3>
+                <h3>(+33) 07 81 52 49 30</h3>
+            </div>
+            <div class="footer-items">
+                <h3>Retrouvez-moi sur les réseaux sociaux !</h3>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/lo%C3%AFc-gr%C3%A9co-a66175205/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Coyls"><i class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
     </div>

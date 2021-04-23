@@ -28,11 +28,17 @@ requestServer('getProjectLoic').then(response => {
     layoutGrid(creationHeight, 2)
 
     data.forEach(project => {
+        let imgProject = project.images.hidpi
+
+        if (imgProject === null) { 
+            imgProject = project.images.normal
+        }
+
         container.innerHTML += `
         <a href="" class="project" data-id-project="${project.id}" style="
                                 grid-column: ${gridColumn}; 
                                 grid-row: ${gridRow}; 
-                                background-image: url('${project.images.normal}');
+                                background-image: url('${imgProject}');
                                 background-size: cover;
                                 background-position: center;">
                                 <h2 class="title-portfolio">${project.title}</h2>
