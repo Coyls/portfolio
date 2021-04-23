@@ -14,21 +14,13 @@
     }
 }
 
-#frame-left-portfolio {
-    position: absolute;
-    height: 400px;
-    width: 400px;
-    left: -200px;
-    top: 150vh;
-    z-index: 0;
-}
 
 #frame-right-portfolio {
     position: absolute;
-    height: 200px;
-    width: 200px;
-    right: -100px;
-    transform: translateY(-75px);
+    height: 1000px;
+    width: 1000px;
+    right: -500px;
+    top: 125vh;
     z-index: 0;
 }
 
@@ -86,4 +78,5 @@
 
 .portfolio-skills {
     height: auto;
+    font-weight: 500;
 }

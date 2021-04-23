@@ -234,7 +234,7 @@ footer #msg {
   right: 10vw;
   top: 200px;
   background-image: url("https://portfoliob1.herokuapp.com/jeanne/images/msg.svg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -363,6 +363,7 @@ footer #msg {
   height: auto;
   overflow-x: hidden;
   margin: 5vh 0 10vh 0;
+  font-weight: 500;
 }
 
 .wrapper {
@@ -402,22 +403,12 @@ footer #msg {
   font-size: 40px;
 }
 
-#frame-left-portfolio {
-  position: absolute;
-  height: 400px;
-  width: 400px;
-  left: -200px;
-  top: 150vh;
-  z-index: 0;
-}
-
 #frame-right-portfolio {
   position: absolute;
-  height: 200px;
-  width: 200px;
-  right: -100px;
-  -webkit-transform: translateY(-75px);
-          transform: translateY(-75px);
+  height: 1000px;
+  width: 1000px;
+  right: -500px;
+  top: 125vh;
   z-index: 0;
 }
 
@@ -479,6 +470,7 @@ footer #msg {
 
 .portfolio-skills {
   height: auto;
+  font-weight: 500;
 }
 
 #header-single-project, #footer-single-project {
@@ -545,6 +537,7 @@ footer #msg {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   font-size: 40px;
+  font-weight: 500;
 }
 
 #single-project a {
@@ -554,6 +547,7 @@ footer #msg {
 
 .single-project-skills {
   height: auto;
+  font-weight: 500;
 }
 
 #header-about-me {
@@ -565,14 +559,6 @@ footer #msg {
   margin: 150px 0 200px 15vw;
 }
 
-#about-me #frame-left-about-me {
-  position: absolute;
-  height: 250px;
-  width: 250px;
-  left: -125px;
-  top: 75vh;
-}
-
 #about-me h1 {
   font-size: 60px;
 }
@@ -582,7 +568,7 @@ footer #msg {
 }
 
 #about-me p {
-  width: 50vw;
+  width: 46vw;
   font-size: 40px;
 }
 

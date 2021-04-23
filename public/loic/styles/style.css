@@ -226,7 +226,7 @@ footer #msg {
   right: 10vw;
   top: 200px;
   background-image: url("https://portfoliob1.herokuapp.com/loic/images/msg.svg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 

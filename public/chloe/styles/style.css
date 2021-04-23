@@ -218,11 +218,10 @@ footer #footer-container #footer-row .footer-items .social-media i {
 
 footer #to-top {
   width: 7vw;
-  height: 10vh;
+  height: 12vh;
   position: absolute;
   right: 15vw;
-  background-color: red;
-  margin-bottom: 39vh;
+  margin-bottom: 38vh;
 }
 
 footer #msg {
@@ -232,7 +231,7 @@ footer #msg {
   right: 10vw;
   top: 200px;
   background-image: url("https://portfoliob1.herokuapp.com/chloe/images/msg.svg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -449,7 +448,7 @@ footer #msg {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
-  color: blueviolet;
+  color: #333333;
 }
 
 #portfolio-projects .project .title-portfolio {
@@ -462,12 +461,14 @@ footer #msg {
   height: 100%;
   width: 100%;
   opacity: 0;
+  font-weight: 700;
+  font-size: 55px;
 }
 
 #portfolio-projects .project:hover .title-portfolio {
   opacity: 1;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 .portfolio-skills {
@@ -476,6 +477,13 @@ footer #msg {
 
 #header-single-project, #footer-single-project {
   position: relative;
+}
+
+#single-project-body {
+  background-image: url("https://portfoliob1.herokuapp.com/chloe/images/bg-about.svg");
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
+  background-position: top;
 }
 
 #single-project {
@@ -509,7 +517,7 @@ footer #msg {
 }
 
 #single-project #texts p {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #single-project img {
@@ -537,12 +545,14 @@ footer #msg {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #single-project a {
+  font-weight: 500;
+  font-size: 40px;
   text-decoration: none;
-  color: #333333;
+  color: #E02421;
 }
 
 .single-project-skills {
@@ -591,7 +601,7 @@ footer #msg {
 }
 
 #about-me p {
-  width: 50vw;
+  width: 46vw;
   font-size: 30px;
 }
 

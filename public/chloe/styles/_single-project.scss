@@ -2,6 +2,13 @@
     position: relative;
 }
 
+#single-project-body {
+    background-image: url($aboutBg);
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: top;
+}
+
 #single-project {
     height: auto;
     display: flex;
@@ -15,7 +22,7 @@
         flex-direction: column;
 
         h1 {font-size: 60px;}
-        p {font-size: 40px;}
+        p {font-size: 30px;}
     }
 
     img {
@@ -33,12 +40,14 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;      
-        font-size: 40px;
+        font-size: 30px;
     }
 
     a {
+        font-weight: 500;
+        font-size: 40px;
         text-decoration: none;
-        color: $standardTextColor;
+        color: #E02421;
     }
 
 }

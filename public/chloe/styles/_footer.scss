@@ -52,11 +52,10 @@ footer {
 
     #to-top {
         width: 7vw;
-        height: 10vh;
+        height: 12vh;
         position: absolute;
         right: 15vw;
-        background-color: red;
-        margin-bottom: 39vh;
+        margin-bottom: 38vh;
     }
 
     #msg {
@@ -66,7 +65,7 @@ footer {
         right: 10vw;
         top: 200px;
         background-image: url($msgBg);
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
     }
 }
