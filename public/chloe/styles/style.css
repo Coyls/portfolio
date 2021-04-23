@@ -483,7 +483,8 @@ footer #msg {
   height: auto;
 }
 
-#header-single-project, #footer-single-project {
+#header-single-project,
+#footer-single-project {
   position: relative;
 }
 
@@ -560,7 +561,7 @@ footer #msg {
   font-weight: 500;
   font-size: 40px;
   text-decoration: none;
-  color: #E02421;
+  color: #e02421;
 }
 
 .single-project-skills {
@@ -578,7 +579,7 @@ footer #msg {
 }
 
 .tags-row .tag {
-  background-color: #E02421;
+  background-color: #e02421;
   border-radius: 5px;
   padding: 0 10px;
   margin: 0 60px 0 0;

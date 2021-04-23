@@ -26,8 +26,8 @@ export const headerFooterCreation = () => {
         <div class="footer-items">
             <h3>Retrouvez-moi sur les réseaux sociaux !</h3>
             <div class="social-media">
-                <a href="https://www.linkedin.com/in/lo%C3%AFc-gr%C3%A9co-a66175205/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Coyls"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jeanne-vandepoortaele-9b45b319b/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/jeanne.vandepoortaele?igshid=yvkz0xszyc1u"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </div>

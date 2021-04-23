@@ -47,7 +47,7 @@
         justify-content: center;
         overflow: hidden;
 
-        color: blueviolet;
+        color: #61C4FC;
 
         .title-portfolio {
             transform: translateY(50px);
@@ -64,7 +64,7 @@
         &:hover {
             .title-portfolio {
                 opacity: 1;
-                backdrop-filter: blur(10px);
+                backdrop-filter: blur(20px);
                 }
         }
     }

@@ -1,4 +1,5 @@
-#header-single-project, #footer-single-project {
+#header-single-project,
+#footer-single-project {
     position: relative;
 }
 
@@ -13,7 +14,7 @@
         height: 230px;
         width: 230px;
         left: -115px;
-        top: 60vh;        
+        top: 60vh;
     }
 
     #frame-right-single-project {
@@ -25,16 +26,19 @@
 
         z-index: 0;
     }
-    
 
     #texts {
         margin: 100px 0;
-        width: 1200px;  
+        width: 1200px;
         display: flex;
         flex-direction: column;
 
-        h1 {font-size: 60px;}
-        p {font-size: 40px;}
+        h1 {
+            font-size: 60px;
+        }
+        p {
+            font-size: 40px;
+        }
     }
 
     img {
@@ -46,12 +50,12 @@
     }
 
     #row-tag {
-        width:100vw;
+        width: 100vw;
         height: 300px;
         align-items: center;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;      
+        justify-content: space-evenly;
         font-size: 40px;
     }
 
@@ -59,9 +63,20 @@
         text-decoration: none;
         color: $standardTextColor;
     }
-
 }
 
 .single-project-skills {
     height: auto;
+}
+
+.tags-row {
+    display: flex;
+    flex-direction: row;
+
+    .tag {
+        background-color: #74c9de;
+        border-radius: 5px;
+        padding: 0 10px;
+        margin: 0 60px 0 0;
+    }
 }
