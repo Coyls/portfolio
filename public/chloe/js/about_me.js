@@ -23,6 +23,9 @@ requestServer('getUserChloe').then(response => {
 
     bioParagraph.innerText = aboutMe
     formationParagraph.innerText = formation
+
+    // console.log(bio)
+
     experiences.forEach((exp,id) => {
         experiencesParagraph.innerHTML += `<p id="line-${id}"></p>`
 
@@ -31,7 +34,11 @@ requestServer('getUserChloe').then(response => {
         exp = exp.split("°")
 
         exp.forEach(block => {
+            // console.log(block)
+
             block = block.split("")
+
+            
 
             if (block[0] === "£") {
                 block = block.splice(0,1)
