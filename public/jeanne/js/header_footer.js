@@ -18,11 +18,18 @@ export const headerFooterCreation = () => {
 
     footer.innerHTML = `
     <h2>Blablater avec moi !</h2>
-    <h3>jeanne.vdp@outlook.fr</h3>
-    <h3>(+33) 07 85 49 96 23</h3>
-    <div class="social-media">
-        <a href="https://www.linkedin.com/in/lo%C3%AFc-gr%C3%A9co-a66175205/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Coyls"><i class="fab fa-github"></i></a>
+    <div id="footer-row">
+        <div class="footer-items">
+            <h3>jeanne.vdp@outlook.fr</h3>
+            <h3>(+33) 07 85 49 96 23</h3>
+        </div>
+        <div class="footer-items">
+            <h3>Retrouvez-moi sur les réseaux sociaux !</h3>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/lo%C3%AFc-gr%C3%A9co-a66175205/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Coyls"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
     </div>
     <a id="to-top" href=""><i class="fas fa-arrow-up"></i></a>
     <a id="msg" href="mailto:jeanne.vdp@outlook.fr"></a>`

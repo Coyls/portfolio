@@ -168,14 +168,29 @@ footer h2 {
   font-weight: 700;
 }
 
-footer h3 {
+footer #footer-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 50px;
+}
+
+footer #footer-row .footer-items {
+  margin-right: 200px;
+}
+
+footer #footer-row .footer-items h3 {
   font-size: 25px;
-  margin: 10px 0;
+  margin: 0 0 50px 0;
   padding: 0;
 }
 
-footer .social-media {
-  margin-top: 10px;
+footer #footer-row .footer-items .social-media {
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,7 +200,7 @@ footer .social-media {
           flex-direction: row;
 }
 
-footer .social-media i {
+footer #footer-row .footer-items .social-media i {
   margin-right: 40px;
   font-size: 55px;
   color: #FFF;
@@ -583,10 +598,9 @@ footer #msg {
 
 #about-me #img-absolute {
   position: absolute;
-  background-color: red;
   height: 900px;
   width: 900px;
-  right: -450px;
+  right: -390px;
   top: 500px;
 }
 

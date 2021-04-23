@@ -15,23 +15,38 @@ footer {
         font-weight: 700;
     }
 
-    h3 {
-        font-size: 25px;
-        margin: 10px 0;
-        padding: 0;
-    }
-
-    .social-media {
-        margin-top: 10px;
+    #footer-row {
         display: flex;
         flex-direction: row;
+        margin-top: 50px;
 
-        i {
-            margin-right: 40px;
-            font-size: 55px;
-            color: $standardTextColor;
+        .footer-items {
+            margin-right: 200px;
+
+
+            h3 {
+                font-size: 25px;
+                margin: 0 0 50px 0;
+                padding: 0;
+            }
+        
+            .social-media {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: row;
+        
+                i {
+                    margin-right: 40px;
+                    font-size: 55px;
+                    color: $standardTextColor;
+                }
+            }
         }
     }
+
+    
+
+    
 
     #to-top {
         transition: all ease-out 0.25s;

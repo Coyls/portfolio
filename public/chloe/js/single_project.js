@@ -83,4 +83,4 @@ requestServer('getProjectChloe').then(response => {
 })
 
 creationAnimation('.single-project-skills', 'single-project-wrapper', 'p-single-project', skills)
-carousselAnimation('p-single-project')
+carousselAnimation('p-single-project','-=',120)

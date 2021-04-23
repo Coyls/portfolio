@@ -65,7 +65,7 @@ requestServer('getProjectLoic').then(response => {
 })
 
 creationAnimation('.portfolio-skills','portfolio-wrapper', 'p-portfolio', skills)
-carousselAnimation('p-portfolio')
+carousselAnimation('p-portfolio','-=',120)
 
 
 

@@ -1,4 +1,4 @@
-export const carousselAnimation = (classP, reverse = "-=") => {
+export const carousselAnimation = (classP, reverse = "-=", time = 60) => {
 
     let imgArrConst = gsap.utils.toArray(`.${classP}`)
 
@@ -32,7 +32,7 @@ export const carousselAnimation = (classP, reverse = "-=") => {
 
     gsap.to(`.${classP}`, {
         x: `${reverse}${totalW}`,
-        duration: 60,
+        duration: time,
         repeat: -1,
         ease: 'none',
         modifiers: {
