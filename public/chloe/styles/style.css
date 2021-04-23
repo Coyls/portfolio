@@ -200,6 +200,17 @@ footer #to-top {
   right: 15vw;
 }
 
+footer #msg {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  right: 10vw;
+  top: 200px;
+  background-image: url("https://portfoliob1.herokuapp.com/chloe/images/msg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #home {
   padding-right: 10vw;
   display: -webkit-box;
@@ -489,6 +500,23 @@ footer #to-top {
 
 .single-project-skills {
   height: auto;
+}
+
+.tags-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.tags-row .tag {
+  background-color: #E02421;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin: 0 60px 0 0;
 }
 
 #header-about-me {

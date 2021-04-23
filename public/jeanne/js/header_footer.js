@@ -24,7 +24,8 @@ export const headerFooterCreation = () => {
         <a href="https://www.linkedin.com/in/lo%C3%AFc-gr%C3%A9co-a66175205/"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/Coyls"><i class="fab fa-github"></i></a>
     </div>
-    <a id="to-top" href=""><i class="fas fa-arrow-up"></i></a>`
+    <a id="to-top" href=""><i class="fas fa-arrow-up"></i></a>
+    <a id="msg" href="mailto:jeanne.vdp@outlook.fr"></a>`
 }
 
 

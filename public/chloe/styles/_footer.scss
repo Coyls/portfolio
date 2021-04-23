@@ -40,6 +40,16 @@ footer {
         height: 10vh;
         position: absolute;
         right: 15vw;
+    }
 
+    #msg {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        right: 10vw;
+        top: 200px;
+        background-image: url($msgBg);
+        background-size:cover;
+        background-repeat: no-repeat;
     }
 }

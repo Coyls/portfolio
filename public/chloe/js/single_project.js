@@ -1,8 +1,18 @@
-import { headerFooterCreation } from './header_footer.js'
-import { requestServer } from '../../globals_assets/js/request.js'
-import { carousselAnimation } from '../../globals_assets/js/animation.js'
-import { creationAnimation } from '../../globals_assets/js/animation_creation.js'
-import { skills } from './skills.js'
+import {
+    headerFooterCreation
+} from './header_footer.js'
+import {
+    requestServer
+} from '../../globals_assets/js/request.js'
+import {
+    carousselAnimation
+} from '../../globals_assets/js/animation.js'
+import {
+    creationAnimation
+} from '../../globals_assets/js/animation_creation.js'
+import {
+    skills
+} from './skills.js'
 
 let location = document.location.origin
 
@@ -10,7 +20,7 @@ let params = (new URL(document.location)).searchParams;
 
 headerFooterCreation()
 
-requestServer('getProjectChloe').then( response => {
+requestServer('getProjectChloe').then(response => {
 
     const data = response.data
     let projectId = parseInt(params.get('projectId'))
@@ -21,8 +31,8 @@ requestServer('getProjectChloe').then( response => {
     let previousProjectIndex = currentProjectIndex - 1
 
 
-    if (previousProjectIndex === - 1) {
-        previousProjectIndex = data.length -1
+    if (previousProjectIndex === -1) {
+        previousProjectIndex = data.length - 1
     }
 
     if (nextProjectIndex === data.length) {
@@ -55,20 +65,22 @@ requestServer('getProjectChloe').then( response => {
         </div>
         <div class="row-skills"></div>`
 
-        const tagsRow = document.querySelector('.tags-row')
-            
-            const tags = data.tags
+    const tagsRow = document.querySelector('.tags-row')
 
-            tags.forEach((tag,id) => {
-                if (id === 3) { exit }
-                tagsRow.innerHTML += `
+    const tags = projectOnPage.tags
+
+    console.log(tags)
+
+    tags.forEach((tag, id) => {
+        if (id === 3) {
+            exit
+        }
+        tagsRow.innerHTML += `
                     <p class="tag">${tag}</p>
                 `
-            })
-        
+    })
+
 })
 
-creationAnimation('.single-project-skills','single-project-wrapper', 'p-single-project', skills)
+creationAnimation('.single-project-skills', 'single-project-wrapper', 'p-single-project', skills)
 carousselAnimation('p-single-project')
-
-

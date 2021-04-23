@@ -46,3 +46,15 @@
 .single-project-skills {
     height: auto;
 }
+
+.tags-row {
+    display: flex;
+    flex-direction: row;
+
+    .tag {
+      background-color: #E02421;
+      border-radius: 5px;
+      padding: 0 10px;
+      margin: 0 60px 0 0;
+    }
+  }

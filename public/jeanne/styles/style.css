@@ -202,13 +202,25 @@ footer #to-top {
   -webkit-transition: all ease-out 0.25s;
   transition: all ease-out 0.25s;
   position: absolute;
-  right: 10vw;
-  top: 150px;
+  right: 12vw;
+  top: 100px;
   font-size: 50px;
+  color: #EC7363;
 }
 
 footer #to-top:hover {
-  top: 140px;
+  top: 90px;
+}
+
+footer #msg {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  right: 10vw;
+  top: 200px;
+  background-image: url("https://portfoliob1.herokuapp.com/jeanne/images/msg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #home {
