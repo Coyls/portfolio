@@ -274,6 +274,32 @@ footer #msg {
   background-image: url("https://portfoliob1.herokuapp.com/jeanne/images/scroll.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: 4s linear 0s infinite normal scroll-indicator-roll;
+          animation: 4s linear 0s infinite normal scroll-indicator-roll;
+}
+
+@-webkit-keyframes scroll-indicator-roll {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes scroll-indicator-roll {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .scroller {
@@ -461,7 +487,7 @@ footer #msg {
 }
 
 #portfolio-projects .project .hover-project:hover {
-  background-color: #b1ddeb;
+  background-color: rgba(177, 221, 235, 0.9);
 }
 
 #portfolio-projects .project .hover-project:hover .title-portfolio {

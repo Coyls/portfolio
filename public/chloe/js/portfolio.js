@@ -35,14 +35,10 @@ requestServer('getProjectChloe').then(response => {
         }
 
         container.innerHTML += `
-        <a href="" class="project" data-id-project="${project.id}" style="
-                                grid-column: ${gridColumn}; 
-                                grid-row: ${gridRow}; 
-                                background-image: url('${imgProject}');
-                                background-size: cover;
-                                background-position: center;">
-                                <h2 class="title-portfolio">${project.title}</h2>
-
+        <a href="" class="project" data-id-project="${project.id}" style="grid-column: ${gridColumn}; grid-row: ${gridRow}; background-image: url('${imgProject}');">
+            <div class="hover-project">
+                <h2 class="title-portfolio">${project.title}</h2>
+            </div> 
         </a>`
 
         if (gridColumn > 1) {

@@ -1,4 +1,4 @@
-export const splitElements = (arrayToSplit, character, isList = false) => {
+export const splitElements = (arrayToSplit, character, isList = false, isStrong = false) => {
 
     let arraySplit = arrayToSplit.split('')
     let mark = false

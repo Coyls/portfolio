@@ -6,7 +6,7 @@ headerFooterCreation()
 
 requestServer('getUserChloe').then(response => {
 
-    console.log(response.data)
+    // console.log(response.data)
 
     let bio = response.data.bio
 
@@ -24,14 +24,20 @@ requestServer('getUserChloe').then(response => {
     bioParagraph.innerText = aboutMe
     formationParagraph.innerText = formation
     experiences.forEach(exp => {
+        const expStrong = splitElements(exp,'°',false,true)
+
+        console.log(expStrong)
+
+        console.log(exp)
+        
         experiencesParagraph.innerHTML += `<p>${exp}</p>`
     })
     // ----------------------------
 
 
-    console.log(aboutMe)
+    /* console.log(aboutMe)
     console.log(formation)
-    console.log(experiences)
+    console.log(experiences) */
 
 
 
