@@ -221,6 +221,8 @@ footer #to-top {
   height: 10vh;
   position: absolute;
   right: 15vw;
+  background-color: red;
+  margin-bottom: 39vh;
 }
 
 footer #msg {
