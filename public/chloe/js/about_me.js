@@ -23,14 +23,30 @@ requestServer('getUserChloe').then(response => {
 
     bioParagraph.innerText = aboutMe
     formationParagraph.innerText = formation
-    experiences.forEach(exp => {
-        const expStrong = splitElements(exp,'°',false,true)
+    experiences.forEach((exp,id) => {
+        experiencesParagraph.innerHTML += `<p id="line-${id}"></p>`
 
-        console.log(expStrong)
+        const lineId = experiencesParagraph.querySelector(`#line-${id}`)
 
-        console.log(exp)
+        exp = exp.split("°")
+
+        exp.forEach(block => {
+            block = block.split("")
+
+            if (block[0] === "£") {
+                block = block.splice(0,1)
+
+                block = block.join("")
+
+                lineId.innerHTML += `<strong>${block}</strong>`
+            } else {
+                block = block.join("")
+
+                lineId.innerHTML += `${block}`
+
+            }
+        })
         
-        experiencesParagraph.innerHTML += `<p>${exp}</p>`
     })
     // ----------------------------
 
