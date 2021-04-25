@@ -7,10 +7,6 @@ const port = process.env.PORT || 3000;
 
 app.use(cors())
 
-app.listen(80, function () {
-    console.log('CORS-enabled web server listening on port 80')
-  })
-
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }
