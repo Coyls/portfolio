@@ -580,6 +580,10 @@ footer #msg {
   color: #FFF;
 }
 
+#single-project a:hover {
+  color: #74c9de;
+}
+
 .single-project-skills {
   height: auto;
 }
