@@ -72,6 +72,27 @@ section {
   background-color: #35aca4;
 }
 
+#animation-load {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  overflow: hidden;
+}
+
+#skip-animation {
+  text-decoration: none;
+  position: absolute;
+  font-size: 20px;
+  right: 0;
+  bottom: 0;
+  margin: 50px;
+}
+
+#skip-animation i {
+  margin-left: 10px;
+}
+
 header {
   position: fixed;
   width: 80vw;
@@ -86,7 +107,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 5vh 10vw 0 10vw;
-  z-index: 999;
+  z-index: 777;
   background-color: transparent;
 }
 
