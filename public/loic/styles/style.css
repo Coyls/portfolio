@@ -280,6 +280,31 @@ footer #msg {
   background-image: url("https://portfoliob1.herokuapp.com/loic/images/hexagone_scroll.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
+  -webkit-animation: 4s linear 0s infinite normal scroll-indicator-roll;
+          animation: 4s linear 0s infinite normal scroll-indicator-roll;
+}
+
+@-webkit-keyframes scroll-indicator-roll {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes scroll-indicator-roll {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .scroller {
@@ -340,7 +365,7 @@ footer #msg {
 
 .home-projects .text-wrap .panel-text p {
   font-size: 30px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 500;
 }
 
@@ -366,7 +391,30 @@ footer #msg {
   overflow: hidden;
   width: 25vw;
   height: 90vh;
-  border-radius: 20px;
+  border-radius: 10px;
+  /* &::after {
+      content: "";
+      position: absolute;
+      margin: -50px;
+      right: 0;
+      width: 100px;
+      height: 100px; 
+      transform: rotate(45deg);
+      background-color: #00284E;
+      z-index: 999;
+    }
+
+    &::before {
+      content: "";
+      bottom: 0;
+      position: absolute;
+      margin: -50px;
+      width: 100px;
+      height: 100px;
+      transform: rotate(45deg);
+      background-color: #00203F;
+      z-index: 999;
+    } */
 }
 
 .home-projects .p-wrap .panel {
@@ -397,7 +445,7 @@ footer #msg {
   padding: 40px 50px;
 }
 
-.wrapper p:nth-child(2n+1) {
+.wrapper p:nth-child(2n + 1) {
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
@@ -465,26 +513,34 @@ footer #msg {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
-  color: #61C4FC;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 }
 
-#portfolio-projects .project .title-portfolio {
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-  -webkit-transition: opacity 0.25s ease-out;
-  transition: opacity 0.25s ease-out;
-  margin: 0;
-  padding: 50px;
+#portfolio-projects .project .hover-project {
+  -webkit-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+  background-color: rgba(18, 79, 123, 0);
   height: 100%;
   width: 100%;
+  z-index: 50;
+}
+
+#portfolio-projects .project .hover-project .title-portfolio {
+  -webkit-transition: opacity 0.25s ease-out;
+  transition: opacity 0.25s ease-out;
+  margin: 50px;
   opacity: 0;
   font-size: 100px;
 }
 
-#portfolio-projects .project:hover .title-portfolio {
+#portfolio-projects .project .hover-project:hover {
+  background-color: rgba(18, 79, 123, 0.9);
+}
+
+#portfolio-projects .project .hover-project:hover .title-portfolio {
   opacity: 1;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
 }
 
 .portfolio-skills {

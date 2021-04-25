@@ -46,26 +46,34 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
+        background-size: cover;
+        background-position: center;
 
-        color: #61C4FC;
+        color: #fff;
 
-        .title-portfolio {
-            transform: translateY(50px);
-            transition: opacity 0.25s ease-out;
-            margin: 0;
-            padding: 50px;
+        .hover-project {
+            transition: background-color 0.25s ease-out;
+            background-color : rgba(18,79,123,0);
             height: 100%;
             width: 100%;
-            opacity: 0;
-            font-size: 100px;
-        }
+            z-index: 50;
 
-
-        &:hover {
             .title-portfolio {
-                opacity: 1;
-                backdrop-filter: blur(20px);
+                transition: opacity 0.25s ease-out;
+                margin: 50px;
+                opacity: 0;
+                font-size: 100px;
+            }
+
+            &:hover {
+                background-color : rgba(18,79,123,0.9);
+
+                .title-portfolio {
+                    opacity: 1;
+                    // backdrop-filter: blur(10px);
                 }
+                
+            }
         }
     }
 }

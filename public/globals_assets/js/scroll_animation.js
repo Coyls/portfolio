@@ -38,7 +38,11 @@ export const scrollAnimation = () => {
 
         })
 
-        tl.to(image, { height: 0 })
+        tl.to(image, { 
+            y: -1080,
+         })
+
+        // height: 0
 
     });
 

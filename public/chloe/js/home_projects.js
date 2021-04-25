@@ -33,9 +33,7 @@ export const homeProjectsCreation = () => {
                 ${data[id].description}
                 <div class="tags-row"></div>
             `
-
-            // projectText.href = `${location}/chloe/pages/single_project.html?projectId=${data[id].id}`
-
+            
             const tagsRow = projectText.querySelector('.tags-row')
             
             const tags = data[id].tags

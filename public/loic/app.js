@@ -12,9 +12,9 @@ creationAnimation('.next-section','animation_1','p-one',skills)
 creationAnimation('.next-section','animation_2','p-two',skills)
 creationAnimation('.next-section','animation_3','p-three',skills)
 
-carousselAnimation('p-one')
-carousselAnimation('p-two','+=')
-carousselAnimation('p-three')
+carousselAnimation('p-one','-=',100)
+carousselAnimation('p-two', '+=',100)
+carousselAnimation('p-three','-=',100)
 
 headerFooterCreation()
 homeProjectsCreation()

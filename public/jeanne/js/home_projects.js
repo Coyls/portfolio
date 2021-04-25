@@ -18,7 +18,7 @@ export const homeProjectsCreation = () => {
                 dataImg = data[id].images.normal
             }
 
-            // projectImg.href = `${location}/jeanne/pages/single_project.html?projectId=${data[id].id}`
+            projectImg.href = `${location}/jeanne/pages/single_project.html?projectId=${data[id].id}`
 
 
             projectImg.style.backgroundImage = `url('${dataImg}')`
@@ -33,8 +33,6 @@ export const homeProjectsCreation = () => {
                 ${data[id].description}
                 <div class="tags-row"></div>
             `
-
-            projectText.href = `${location}/jeanne/pages/single_project.html?projectId=${data[id].id}`
 
             const tagsRow = projectText.querySelector('.tags-row')
             
