@@ -1,6 +1,7 @@
 import { headerFooterCreation } from './header_footer.js'
 import { requestServer} from '../../globals_assets/js/request.js'
 import { splitElements} from '../../globals_assets/js/split_texts.js'
+import { textToStrong} from '../../globals_assets/js/to_Strong.js'
 
 headerFooterCreation()
 
@@ -24,32 +25,10 @@ requestServer('getUserChloe').then(response => {
     bioParagraph.innerText = aboutMe
     formationParagraph.innerText = formation
 
-    experiences.forEach((exp,id) => {
-        experiencesParagraph.innerHTML += `<p id="line-${id}"></p>`
+    textToStrong(experiences, experiencesParagraph)
 
-        const lineId = experiencesParagraph.querySelector(`#line-${id}`)
 
-        exp = exp.split("°")
-
-        exp.forEach(block => {
-
-            block = block.split("")
-
-            if (block[0] === "£") {
-                block.splice(0,1)
-
-                block = block.join("")
-
-                lineId.innerHTML += `<strong>${block}</strong>`
-            } else {
-                block = block.join("")
-
-                lineId.innerHTML += `${block}`
-
-            }
-        })
-        
-    })
+    
     // ----------------------------
 
 
