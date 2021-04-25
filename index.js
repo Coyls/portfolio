@@ -11,11 +11,12 @@ if (process.env.NODE_ENV !== 'production') {
 
 app.use(express.static(__dirname + '/public'));
 
-// -- ExpressJS -- //
+// -- Root -- //
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/jeanne/index.html');
 });
 
+// -- link -- //
 app.get('/loic', (req, res) => {
     res.sendFile(__dirname + '/public/loic/index.html');
 });
@@ -26,6 +27,11 @@ app.get('/jeanne', (req, res) => {
 
 app.get('/chloe', (req, res) => {
     res.sendFile(__dirname + '/public/chloe/index.html');
+});
+
+// -- animation -- //
+app.get('/chloe-load', (req, res) => {
+    res.sendFile(__dirname + '/public/chloe/pages/animation_load.html');
 });
 
 http.listen(port, () => {
