@@ -53,6 +53,11 @@
         font-size: 40px;
         text-decoration: none;
         color: #e02421;
+        transition : color 0.15s ease-out;
+
+        &:hover {
+            color: $standardTextColor;
+        }
     }
 }
 
@@ -70,4 +75,6 @@
         padding: 0 10px;
         margin: 0 60px 0 0;
     }
+
+
 }

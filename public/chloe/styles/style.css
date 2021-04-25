@@ -583,6 +583,12 @@ footer #msg {
   font-size: 40px;
   text-decoration: none;
   color: #e02421;
+  -webkit-transition: color 0.15s ease-out;
+  transition: color 0.15s ease-out;
+}
+
+#single-project a:hover {
+  color: #333333;
 }
 
 .single-project-skills {

@@ -19,3 +19,5 @@ export const creationAnimation = (containerVar, wrapperID, classP, skills) => {
 
 }
 
+
+

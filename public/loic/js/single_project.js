@@ -11,14 +11,20 @@ import {
     creationAnimation
 } from '../../globals_assets/js/animation_creation.js'
 import {
+    headerAnimationLogo
+} from '../../globals_assets/js/header_animation_logo.js'
+import {
     skills
 } from './skills.js'
+
+
 
 let location = document.location.origin
 
 let params = (new URL(document.location)).searchParams;
 
 headerFooterCreation()
+headerAnimationLogo('.logo','https://portfoliob1.herokuapp.com/loic/animations/animation_logo_loic.json')
 
 requestServer('getProjectLoic').then(response => {
 

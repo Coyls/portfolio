@@ -1,8 +1,12 @@
 import { headerFooterCreation } from './header_footer.js'
 import { requestServer} from '../../globals_assets/js/request.js'
 import { splitElements} from '../../globals_assets/js/split_texts.js'
+import { headerAnimationLogo } from '../../globals_assets/js/header_animation_logo.js'
+
 
 headerFooterCreation()
+headerAnimationLogo('.logo','https://portfoliob1.herokuapp.com/loic/animations/animation_logo_loic.json')
+
 
 requestServer('getUserLoic').then(response => {
 

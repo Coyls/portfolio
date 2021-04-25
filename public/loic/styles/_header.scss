@@ -12,10 +12,24 @@ header {
   .logo {
     background-image: url($headerLogo);
     background-size: contain;
+
+    background-size: 120px 120px;
+    background-position: center;
     background-repeat: no-repeat;
 
     height: 150px;
     width: 150px;
+
+    svg {
+      display: none;
+    }
+
+    &:hover {
+      background-image: none;
+      svg {
+        display: block;
+      }
+    }
   }
 
   nav {
