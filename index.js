@@ -46,6 +46,8 @@ app.use(function (req, res, next) {
 
     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
 
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+
     // res.setheader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 
     // Set to true if you need the website to include cookies in the requests sent
@@ -56,36 +58,23 @@ app.use(function (req, res, next) {
 });
 // -------------------------------------------------------------------------------------------------- //
 
-const requestAPiDribbble = async (key,link,path) => {
+const requestAPiDribbble = async (key, link, path) => {
 
     const response = await axios.get(`https://api.dribbble.com/v2/${path}${key}`)
     try {
-        app.get(link, (req,res) => {
+        app.get(link, (req, res) => {
             res.send(response.data)
         })
     } catch (err) {
         console.log(err)
     }
-        
+
 }
 
-requestAPiDribbble(`?access_token=${process.env.API_KEY_LOIC}`,'/getProjectLoic','user/shots')
-requestAPiDribbble(`?access_token=${process.env.API_KEY_CHLOE}`,'/getProjectChloe','user/shots')
-requestAPiDribbble(`?access_token=${process.env.API_KEY_JEANNE}`,'/getProjectJeanne','user/shots')
+requestAPiDribbble(`?access_token=${process.env.API_KEY_LOIC}`, '/getProjectLoic', 'user/shots')
+requestAPiDribbble(`?access_token=${process.env.API_KEY_CHLOE}`, '/getProjectChloe', 'user/shots')
+requestAPiDribbble(`?access_token=${process.env.API_KEY_JEANNE}`, '/getProjectJeanne', 'user/shots')
 
-requestAPiDribbble(`?access_token=${process.env.API_KEY_LOIC}`,'/getUserLoic','user')
-requestAPiDribbble(`?access_token=${process.env.API_KEY_JEANNE}`,'/getUserJeanne','user')
-requestAPiDribbble(`?access_token=${process.env.API_KEY_CHLOE}`,'/getUserChloe','user')
-
-
-
-
-
-    
-
-
-
-
-
-
-
+requestAPiDribbble(`?access_token=${process.env.API_KEY_LOIC}`, '/getUserLoic', 'user')
+requestAPiDribbble(`?access_token=${process.env.API_KEY_JEANNE}`, '/getUserJeanne', 'user')
+requestAPiDribbble(`?access_token=${process.env.API_KEY_CHLOE}`, '/getUserChloe', 'user')
