@@ -2,7 +2,14 @@ const express = require('express');
 const axios = require('axios');
 const app = express();
 const http = require('http').Server(app);
+const cors = require('cors')
 const port = process.env.PORT || 3000;
+
+app.use(cors())
+
+app.listen(80, function () {
+    console.log('CORS-enabled web server listening on port 80')
+  })
 
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
@@ -37,7 +44,7 @@ http.listen(port, () => {
     console.log(`http://localhost:${port}/`);
 });
 
-app.use(function (req, res, next) {
+/* app.use(function (req, res, next) {
     // Website you wish to allow to connect
     res.setHeader('Access-Control-Allow-Origin', '*');
     // Request methods you wish to allow
@@ -53,7 +60,7 @@ app.use(function (req, res, next) {
     res.setHeader('Access-Control-Allow-Credentials', true);
     // Pass to next layer of middleware
     next();
-});
+}); */
 // -------------------------------------------------------------------------------------------------- //
 
 const requestAPiDribbble = async (key, link, path) => {
