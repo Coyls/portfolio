@@ -5,7 +5,7 @@ const location = document.location.origin
 
 export const homeProjectsCreation = () => {
 
-    requestServer("getProjectLoic").then(response => {
+    requestServer("getProjectJeanne").then(response => {
 
         const data = response.data;
         const projectsHomeText = document.querySelectorAll('.panel-text')
