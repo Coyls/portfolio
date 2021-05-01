@@ -11,23 +11,24 @@ export const homeProjectsCreation = () => {
     requestServer("getProjectLoic").then(response => {
 
         let data = response.data;
+        
+
         const projectsHomeText = document.querySelectorAll('.panel-text')
         const projectsHomeImg = document.querySelectorAll('.panel')
 
         data.forEach((frag, id) => {
+
+            console.log(frag)
+            console.log(id)
             const tags = frag.tags
 
-            tags.forEach(tag => {
-                console.log(tag)
-                if (tag === "nothomepage") {
-                    data.splice(id, 1)
-                }
-            })
+            console.log(tags)
+
+            if (tags.includes("nothomepage")) {
+                data.splice(id, 1)
+            }
 
         })
-
-        console.log(data)
-
 
         projectsHomeImg.forEach((projectImg, id) => {
             let dataImg = data[id].images.hidpi
@@ -56,7 +57,9 @@ export const homeProjectsCreation = () => {
 
             const tags = data[id].tags
 
-            tags.splice(tags.indexOf("nothomepage"), 1)
+            if (tags.indexOf("nothomepage") !== -1) {
+                tags.splice(tags.indexOf("nothomepage"), 1)
+            }
 
             tags.forEach((tag, id) => {
                 if (id < 3) {
