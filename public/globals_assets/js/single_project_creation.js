@@ -8,6 +8,8 @@ export const singleProjectCreation = (getProject, link, allowTag = true) => {
     requestServer(getProject).then(response => {
 
         const data = response.data
+
+        console.log(data)
         let projectId = parseInt(params.get('projectId'))
         const projectOnPage = data.find(project => project.id === projectId)
         const currentProjectIndex = data.findIndex(project => project.id === projectId)
