@@ -1,4 +1,6 @@
-import { requestServer } from '../../globals_assets/js/request.js'
+import {
+    requestServer
+} from '../../globals_assets/js/request.js'
 
 
 const location = document.location.origin
@@ -8,9 +10,24 @@ export const homeProjectsCreation = () => {
 
     requestServer("getProjectLoic").then(response => {
 
-        const data = response.data;
+        let data = response.data;
         const projectsHomeText = document.querySelectorAll('.panel-text')
         const projectsHomeImg = document.querySelectorAll('.panel')
+
+        data.forEach((frag, id) => {
+            const tags = frag.tags
+
+            tags.forEach(tag => {
+                console.log(tag)
+                if (tag === "nothomepage") {
+                    data.splice(id, 1)
+                }
+            })
+
+        })
+
+        console.log(data)
+
 
         projectsHomeImg.forEach((projectImg, id) => {
             let dataImg = data[id].images.hidpi
@@ -27,7 +44,7 @@ export const homeProjectsCreation = () => {
 
         })
 
-        projectsHomeText.forEach((projectText,id) => {
+        projectsHomeText.forEach((projectText, id) => {
 
             projectText.innerHTML = `
                 <h2>${data[id].title}</h2>   
@@ -36,20 +53,20 @@ export const homeProjectsCreation = () => {
             `
 
             const tagsRow = projectText.querySelector('.tags-row')
-            
+
             const tags = data[id].tags
 
-            tags.forEach((tag,id) => {
-                if (id === 3) { exit }
-                tagsRow.innerHTML += `
+            tags.splice(tags.indexOf("nothomepage"), 1)
+
+            tags.forEach((tag, id) => {
+                if (id < 3) {
+                    tagsRow.innerHTML += `
                     <p class="tag">${tag}</p>
                 `
-
-                
-
+                }
             })
 
-            
+
 
 
 
