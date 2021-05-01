@@ -20,7 +20,7 @@ let params = (new URL(document.location)).searchParams;
 
 headerFooterCreation()
 
-requestServer('getProjectLoic').then(response => {
+requestServer('getProjectJeanne').then(response => {
 
     const data = response.data
     let projectId = parseInt(params.get('projectId'))

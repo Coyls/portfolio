@@ -6,7 +6,7 @@ import { skills } from './skills.js'
 
 headerFooterCreation()
 
-requestServer('getProjectLoic').then(response => {
+requestServer('getProjectJeanne').then(response => {
     console.log(response.data)
 
     let data = response.data
