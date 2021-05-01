@@ -1,7 +1,7 @@
 import { scrollAnimation } from '../globals_assets/js/scroll_animation.js'
 import { carousselAnimation } from '../globals_assets/js/animation.js'
 import { headerFooterCreation } from './js/header_footer.js'
-import { homeProjectsCreation } from './js/home_projects.js'
+import { homeProjectsCreation } from '../globals_assets/js/home_projects_creation.js'
 import { creationAnimation } from '../globals_assets/js/animation_creation.js'
 import { skills } from './js/skills.js'
 import { headerAnimationLogo } from '../globals_assets/js/header_animation_logo.js'
@@ -17,7 +17,7 @@ carousselAnimation('p-two', '+=',100)
 carousselAnimation('p-three','-=',100)
 
 headerFooterCreation()
-homeProjectsCreation()
+homeProjectsCreation("getProjectLoic","loic")
 
 headerAnimationLogo('.logo','https://portfoliob1.herokuapp.com/loic/animations/animation_logo_loic.json')
 

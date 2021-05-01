@@ -1,19 +1,14 @@
 import {
     requestServer
-} from '../../globals_assets/js/request.js'
-
+} from './request.js'
 
 const location = document.location.origin
 
+export const homeProjectsCreation = (getProject, link, allowTag = true) => {
 
-export const homeProjectsCreation = () => {
-
-    requestServer("getProjectLoic").then(response => {
+    requestServer(getProject).then(response => {
 
         let data = response.data;
-
-        let tagHomePage = false
-
 
         const projectsHomeText = document.querySelectorAll('.panel-text')
         const projectsHomeImg = document.querySelectorAll('.panel')
@@ -39,7 +34,7 @@ export const homeProjectsCreation = () => {
                 dataImg = data[id].images.normal
             }
 
-            projectImg.href = `${location}/loic/pages/single_project.html?projectId=${data[id].id}`
+            projectImg.href = `${location}/${link}/pages/single_project.html?projectId=${data[id].id}`
 
 
             projectImg.style.backgroundImage = `url('${dataImg}')`
@@ -54,7 +49,7 @@ export const homeProjectsCreation = () => {
                 ${data[id].description}
             `
 
-            if (tagHomePage) {
+            if (allowTag) {
 
                 projectText.innerHTML += `<div class="tags-row"></div>`
                 const tagsRow = projectText.querySelector('.tags-row')
@@ -71,11 +66,6 @@ export const homeProjectsCreation = () => {
                     }
                 })
             }
-
-
-
-
-
 
         })
 
