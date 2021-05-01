@@ -11,7 +11,9 @@ export const homeProjectsCreation = () => {
     requestServer("getProjectLoic").then(response => {
 
         let data = response.data;
-        
+
+        let tagHomePage = false
+
 
         const projectsHomeText = document.querySelectorAll('.panel-text')
         const projectsHomeImg = document.querySelectorAll('.panel')
@@ -50,24 +52,25 @@ export const homeProjectsCreation = () => {
             projectText.innerHTML = `
                 <h2>${data[id].title}</h2>   
                 ${data[id].description}
-                <div class="tags-row"></div>
             `
 
-            const tagsRow = projectText.querySelector('.tags-row')
+            if (tagHomePage) {
 
-            const tags = data[id].tags
+                projectText.innerHTML += `<div class="tags-row"></div>`
+                const tagsRow = projectText.querySelector('.tags-row')
+                const tags = data[id].tags
 
-            if (tags.indexOf("nothomepage") !== -1) {
-                tags.splice(tags.indexOf("nothomepage"), 1)
-            }
-
-            tags.forEach((tag, id) => {
-                if (id < 3) {
-                    tagsRow.innerHTML += `
-                    <p class="tag">${tag}</p>
-                `
+                if (tags.indexOf("nothomepage") !== -1) {
+                    const indexTag = tags.indexOf("nothomepage")
+                    tags.splice(indexTag, 1)
                 }
-            })
+
+                tags.forEach((tag, id) => {
+                    if (id < 3) {
+                        tagsRow.innerHTML += `<p class="tag">${tag}</p>`
+                    }
+                })
+            }
 
 
 
