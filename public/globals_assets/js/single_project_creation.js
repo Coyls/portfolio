@@ -9,18 +9,10 @@ export const singleProjectCreation = (getProject, link, allowTag = true) => {
 
         const data = response.data
 
-        
-
         let projectId = parseInt(params.get('projectId'))
         const projectOnPage = data.find(project => project.id === projectId)
         const currentProjectIndex = data.findIndex(project => project.id === projectId)
 
-        const test = projectOnPage.description
-
-        let matches = test.match(/(https?|ftp|ssh|mailto):\/\/[a-z0-9\/:%_+.,#?!@&=-]+/gi);
-        console.log(matches)
-
-        console.log(test.split("/n"))
 
         let nextProjectIndex = currentProjectIndex + 1
         let previousProjectIndex = currentProjectIndex - 1
@@ -51,7 +43,7 @@ export const singleProjectCreation = (getProject, link, allowTag = true) => {
         singleProject.innerHTML += `
             <div id="texts">
                 <h1 id="title">${projectOnPage.title}</h1>
-                <p id="description">${description}</p>
+                <div id="description">${description}</div>
             </div>
             <img class="img-project" src="${singleProjectImg}" alt="project">
             <div id="row-tag">
