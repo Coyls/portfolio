@@ -1,6 +1,4 @@
-import {
-    requestServer
-} from './request.js'
+import { requestServer } from './request.js'
 
 const location = document.location.origin
 
@@ -45,12 +43,18 @@ export const homeProjectsCreation = (getProject, link, allowTag = true) => {
         })
 
         projectsHomeText.forEach((projectText, id) => {
+            let description = data[id].description
+
+
+            if (description === null) {
+                description = ""
+            }
+
 
             projectText.innerHTML = `
                 <h2>${data[id].title}</h2>   
-                ${data[id].description}
+                ${description}
             `
-
             if (allowTag) {
 
                 projectText.innerHTML += `<div class="tags-row"></div>`
