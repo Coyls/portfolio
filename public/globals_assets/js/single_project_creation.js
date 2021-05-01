@@ -9,10 +9,18 @@ export const singleProjectCreation = (getProject, link, allowTag = true) => {
 
         const data = response.data
 
-        console.log(data)
+        
+
         let projectId = parseInt(params.get('projectId'))
         const projectOnPage = data.find(project => project.id === projectId)
         const currentProjectIndex = data.findIndex(project => project.id === projectId)
+
+        const test = projectOnPage.description
+
+        let matches = test.match(/(https?|ftp|ssh|mailto):\/\/[a-z0-9\/:%_+.,#?!@&=-]+/gi);
+        console.log(matches)
+
+        console.log(test.split("/n"))
 
         let nextProjectIndex = currentProjectIndex + 1
         let previousProjectIndex = currentProjectIndex - 1

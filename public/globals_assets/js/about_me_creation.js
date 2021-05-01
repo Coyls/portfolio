@@ -1,12 +1,6 @@
-import {
-    requestServer
-} from './request.js'
-import {
-    splitElements
-} from './split_texts.js'
-import {
-    textToStrong
-} from './to_Strong.js'
+import { requestServer } from './request.js'
+import { splitElements } from './split_texts.js'
+import { textToStrong } from './to_Strong.js'
 
 export const aboutMeCreation = (getUser) => {
 
