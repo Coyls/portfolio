@@ -1,4 +1,4 @@
-export const splitElements = (arrayToSplit, character, isList = false, isStrong = false) => {
+export const splitElements = (arrayToSplit, character, isList = false) => {
 
     let arraySplit = arrayToSplit.split('')
     let mark = false
@@ -12,6 +12,7 @@ export const splitElements = (arrayToSplit, character, isList = false, isStrong 
         if (char === character && !mark) {
             idStart = id + 1
             mark = true
+            
         } else if (char === character && mark) {
             idEnd = id
             mark = false
