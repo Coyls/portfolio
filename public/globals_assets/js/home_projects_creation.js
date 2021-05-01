@@ -8,24 +8,26 @@ export const homeProjectsCreation = (getProject, link, allowTag = true) => {
 
     requestServer(getProject).then(response => {
 
-        let data = response.data;
+        let tmpData = response.data;
 
         const projectsHomeText = document.querySelectorAll('.panel-text')
         const projectsHomeImg = document.querySelectorAll('.panel')
 
-        data.forEach((frag, id) => {
+        let data = []
 
-            console.log(frag)
-            console.log(id)
+        tmpData.forEach((frag, id) => {
+
             const tags = frag.tags
 
-            console.log(tags)
-
-            if (tags.includes("nothomepage")) {
-                data.splice(id, 1)
+            if (!tags.includes("nothomepage")) {
+                console.log("OK ON PAGE", frag.title)
+                data.push(frag)
+            } else {
+                console.log("! PAS SUR LA PAGE", frag.title)
             }
 
         })
+
 
         projectsHomeImg.forEach((projectImg, id) => {
             let dataImg = data[id].images.hidpi
