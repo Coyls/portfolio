@@ -1,9 +1,9 @@
 <svg width="709" height="237" viewBox="0 0 709 237" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect opacity="0.6" x="474" y="2" width="235" height="235" rx="117.5" fill="#B1DDEB"/>
 <g opacity="0.6">
+<rect x="474" y="2" width="235" height="235" rx="117.5" fill="#B1DDEB"/>
 <rect width="236.978" height="236.978" rx="118.489" fill="#B1DDEB"/>
 <rect width="118.489" height="236.978" fill="#B1DDEB"/>
-</g>
 <rect x="236.978" width="236.978" height="236.978" rx="118.489" fill="#B1DDEB"/>
 <rect x="236.978" width="118.489" height="236.978" fill="#B1DDEB"/>
+</g>
 </svg>

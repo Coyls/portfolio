@@ -1,1 +1,1 @@
-export const skills = ["PHP", "HTML", "SCSS", "ExpressJS", "NodeJS", "Javascript","Illustrator","InDesign","MySQL"]
+export const skills = ["PHP", "HTML", "SCSS", "ExpressJS", "NodeJS", "Javascript","Illustrator","InDesign","MySQL","Websocket"]
