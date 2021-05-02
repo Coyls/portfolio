@@ -13,6 +13,7 @@ export const homeProjectsCreation = (getProject, link, allowTag = true) => {
 
         let data = []
 
+        // Take project authorize on home page
         tmpData.forEach((frag, id) => {
 
             const tags = frag.tags
@@ -26,7 +27,7 @@ export const homeProjectsCreation = (getProject, link, allowTag = true) => {
 
         })
 
-
+        // Fill images
         projectsHomeImg.forEach((projectImg, id) => {
             let dataImg = data[id].images.hidpi
 
@@ -41,9 +42,12 @@ export const homeProjectsCreation = (getProject, link, allowTag = true) => {
 
 
         })
-
+        
+        // Fill texts
         projectsHomeText.forEach((projectText, id) => {
             let description = data[id].description
+            
+            console.log('description:', description)
 
 
             if (description === null) {

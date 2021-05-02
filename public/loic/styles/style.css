@@ -370,6 +370,10 @@ footer #msg {
   font-weight: 500;
 }
 
+.home-projects .text-wrap .panel-text p a {
+  color: #68919C;
+}
+
 .home-projects .text-wrap .panel-text .tags-row {
   display: -webkit-box;
   display: -ms-flexbox;

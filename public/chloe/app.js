@@ -18,5 +18,8 @@ carousselAnimation('p-three','-=',120)
 headerFooterCreation()
 homeProjectsCreation("getProjectChloe", "chloe")
 
+headerAnimationLogo('.logo','https://portfoliob1.herokuapp.com/chloe/animations/animation_logo_chloe.json')
+
+
 
 

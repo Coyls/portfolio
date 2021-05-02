@@ -68,7 +68,8 @@ export const scrollAnimation = () => {
 
         tl
             .to(text, { duration: 0.33, opacity: 1, y: "50%" })
-            .to(text, { duration: 0.33, opacity: 0, y: "0%" }, 0.66)
+            .to(text, { duration: 0.33, opacity: 0, y: "0%" , height: 0}, 0.66)
+            
 
             ;
 

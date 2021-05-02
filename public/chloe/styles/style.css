@@ -114,9 +114,22 @@ header {
 header .logo {
   background-image: url("https://portfoliob1.herokuapp.com/chloe/images/logo_chloe.svg");
   background-size: contain;
-  background-repeat: no-repeat;
   height: 150px;
   width: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header .logo svg {
+  display: none;
+}
+
+header .logo:hover {
+  background-image: none;
+}
+
+header .logo:hover svg {
+  display: block;
 }
 
 header nav {
