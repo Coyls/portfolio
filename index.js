@@ -11,7 +11,7 @@ app.use(express.static(__dirname + '/public'));
 
 // -- Root -- //
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/jeanne/index.html');
+    res.sendFile(__dirname + '/public/loic/index.html');
 });
 
 // -- link -- //
