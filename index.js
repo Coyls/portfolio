@@ -7,10 +7,6 @@ const port = process.env.PORT || 3000;
 
 app.use(cors())
 
-if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config();
-}
-
 app.use(express.static(__dirname + '/public'));
 
 // -- Root -- //
@@ -55,6 +51,7 @@ const requestAPiDribbble = async (key, link, path) => {
 
 }
 
+
 requestAPiDribbble(`?access_token=${process.env.API_KEY_LOIC}`, '/getProjectLoic', 'user/shots')
 requestAPiDribbble(`?access_token=${process.env.API_KEY_CHLOE}`, '/getProjectChloe', 'user/shots')
 requestAPiDribbble(`?access_token=${process.env.API_KEY_JEANNE}`, '/getProjectJeanne', 'user/shots')
@@ -62,3 +59,8 @@ requestAPiDribbble(`?access_token=${process.env.API_KEY_JEANNE}`, '/getProjectJe
 requestAPiDribbble(`?access_token=${process.env.API_KEY_LOIC}`, '/getUserLoic', 'user')
 requestAPiDribbble(`?access_token=${process.env.API_KEY_JEANNE}`, '/getUserJeanne', 'user')
 requestAPiDribbble(`?access_token=${process.env.API_KEY_CHLOE}`, '/getUserChloe', 'user')
+
+console.log("Env =", process.env.NODE_ENV)
+console.log("Loic =", process.env.API_KEY_LOIC)
+console.log("Chloe =", process.env.API_KEY_CHLOE)
+console.log("Jeanne =", process.env.API_KEY_JEANNE)

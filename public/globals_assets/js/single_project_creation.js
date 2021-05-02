@@ -77,8 +77,6 @@ export const singleProjectCreation = (getProject, link, allowTag = true) => {
 
         }
 
-
-
         if (link === "jeanne") {
             document.getElementById("texts").innerHTML += `<img class="bg-txt" src="https://portfoliob1.herokuapp.com/jeanne/images/portfolio_single_bg_txt.svg" alt="">`
         }
