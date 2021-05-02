@@ -39,6 +39,6 @@ export const headerFooterCreation = () => {
 
   headerAnimationLogo(
     ".logo",
-    "https://portfoliob1.herokuapp.com/loic/animations/animation_logo_loic.json"
+    `${location}/loic/animations/animation_logo_loic.json`
   );
 };

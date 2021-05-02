@@ -40,6 +40,6 @@ export const headerFooterCreation = () => {
 
   headerAnimationLogo(
     ".logo",
-    "https://portfoliob1.herokuapp.com/chloe/animations/animation_logo_chloe.json"
+    `${location}/chloe/animations/animation_logo_chloe.json`
   );
 };
