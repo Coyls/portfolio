@@ -484,7 +484,7 @@ footer #msg {
   transition: opacity 0.25s ease-out;
   margin: 50px;
   opacity: 0;
-  font-size: 100px;
+  font-size: 55px;
 }
 
 #portfolio-projects .project .hover-project:hover {

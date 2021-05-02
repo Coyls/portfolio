@@ -62,7 +62,7 @@
                 transition: opacity 0.25s ease-out;
                 margin: 50px;
                 opacity: 0;
-                font-size: 100px;
+                font-size: 60px;
             }
 
             &:hover {
@@ -70,7 +70,6 @@
 
                 .title-portfolio {
                     opacity: 1;
-                    // backdrop-filter: blur(10px);
                 }
                 
             }
