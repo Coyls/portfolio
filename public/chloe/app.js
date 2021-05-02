@@ -1,25 +1,19 @@
-import { scrollAnimation } from '../globals_assets/js/scroll_animation.js'
-import { carousselAnimation } from '../globals_assets/js/animation.js'
-import { headerFooterCreation } from './js/header_footer.js'
-import { homeProjectsCreation } from '../globals_assets/js/home_projects_creation.js'
-import { creationAnimation } from '../globals_assets/js/animation_creation.js'
-import { skills } from './js/skills.js'
+import { scrollAnimation } from "../globals_assets/js/scroll_animation.js";
+import { carousselAnimation } from "../globals_assets/js/animation.js";
+import { headerFooterCreation } from "./js/header_footer.js";
+import { homeProjectsCreation } from "../globals_assets/js/home_projects_creation.js";
+import { creationAnimation } from "../globals_assets/js/animation_creation.js";
+import { skills } from "./js/skills.js";
 
-scrollAnimation()
+scrollAnimation();
 
-creationAnimation('.next-section','animation_1','p-one',skills)
-creationAnimation('.next-section','animation_2','p-two',skills)
-creationAnimation('.next-section','animation_3','p-three',skills)
+creationAnimation(".next-section", "animation_1", "p-one", skills);
+creationAnimation(".next-section", "animation_2", "p-two", skills);
+creationAnimation(".next-section", "animation_3", "p-three", skills);
 
-carousselAnimation('p-one','-=',120)
-carousselAnimation('p-two', '+=',120)
-carousselAnimation('p-three','-=',120)
+carousselAnimation("p-one", "-=", 120);
+carousselAnimation("p-two", "+=", 120);
+carousselAnimation("p-three", "-=", 120);
 
-headerFooterCreation()
-homeProjectsCreation("getProjectChloe", "chloe")
-
-headerAnimationLogo('.logo','https://portfoliob1.herokuapp.com/chloe/animations/animation_logo_chloe.json')
-
-
-
-
+headerFooterCreation();
+homeProjectsCreation("getProjectChloe", "chloe");

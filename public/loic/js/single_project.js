@@ -1,12 +1,10 @@
 import { headerFooterCreation } from './header_footer.js'
 import { carousselAnimation } from '../../globals_assets/js/animation.js'
 import { creationAnimation } from '../../globals_assets/js/animation_creation.js'
-import { headerAnimationLogo } from '../../globals_assets/js/header_animation_logo.js'
 import { skills } from './skills.js'
 import { singleProjectCreation } from '../../globals_assets/js/single_project_creation.js'
 
 headerFooterCreation()
-headerAnimationLogo('.logo', 'https://portfoliob1.herokuapp.com/loic/animations/animation_logo_loic.json')
 
 singleProjectCreation("getProjectLoic", "loic")
 

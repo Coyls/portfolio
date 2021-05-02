@@ -1,9 +1,11 @@
+import { headerAnimationLogo } from "../../globals_assets/js/header_animation_logo.js";
+
 export const headerFooterCreation = () => {
-    const location = document.location.origin
+  const location = document.location.origin;
 
-    const header = document.querySelector("header")
+  const header = document.querySelector("header");
 
-    header.innerHTML = `
+  header.innerHTML = `
     <a href="${location}/chloe/index.html" class="logo"></a>
     <nav class="menu">
         <ul>
@@ -12,11 +14,11 @@ export const headerFooterCreation = () => {
             <li><a href="mailto:chloe.aitsiahmed@gmail.com">Contact<div class="line"></div></a></li>
             <li><img src="${location}/chloe/images/leaf_nav.svg" alt=""></li>
         </ul>
-    </nav>`
+    </nav>`;
 
-    const footer = document.querySelector("footer")
+  const footer = document.querySelector("footer");
 
-    footer.innerHTML = `
+  footer.innerHTML = `
     <div id="footer-container">
         <h2>Conversons !</h2>
         <div id="footer-row">
@@ -34,8 +36,10 @@ export const headerFooterCreation = () => {
         </div>
     </div>
     <a id="to-top" href=""></a>
-    <a id="msg" href="mailto:chloe.aitsiahmed@gmail.com"></a>`
-}
+    <a id="msg" href="mailto:chloe.aitsiahmed@gmail.com"></a>`;
 
-
-
+  headerAnimationLogo(
+    ".logo",
+    "https://portfoliob1.herokuapp.com/chloe/animations/animation_logo_chloe.json"
+  );
+};

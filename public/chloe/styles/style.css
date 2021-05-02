@@ -112,6 +112,9 @@ header {
 }
 
 header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-image: url("https://portfoliob1.herokuapp.com/chloe/images/logo_chloe.svg");
   background-size: contain;
   height: 150px;
@@ -130,6 +133,8 @@ header .logo:hover {
 
 header .logo:hover svg {
   display: block;
+  width: 300px;
+  height: 300px;
 }
 
 header nav {

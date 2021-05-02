@@ -1,9 +1,11 @@
+import { headerAnimationLogo } from "../../globals_assets/js/header_animation_logo.js";
+
 export const headerFooterCreation = () => {
-    const location = document.location.origin
+  const location = document.location.origin;
 
-    const header = document.querySelector("header")
+  const header = document.querySelector("header");
 
-    header.innerHTML = `
+  header.innerHTML = `
     <a href="${location}/loic/index.html" class="logo"></a>
     <nav class="menu">
         <ul>
@@ -13,11 +15,11 @@ export const headerFooterCreation = () => {
             <li><a href="mailto:loic.greco@sfr.fr">Contact<div class="line"></div></a></li>
             <li><img src="${location}/loic/images/nav_hexagone.svg" alt=""></li>
         </ul>
-    </nav>`
+    </nav>`;
 
-    const footer = document.querySelector("footer")
+  const footer = document.querySelector("footer");
 
-    footer.innerHTML = `
+  footer.innerHTML = `
     <h2>Come chat with me !</h2>
     <div id="footer-row">
         <div class="footer-items">
@@ -33,8 +35,10 @@ export const headerFooterCreation = () => {
         </div>
     </div>
     <a id="to-top" href=""><i class="fas fa-arrow-up"></i></a>
-    <a id="msg" href="mailto:loic.greco@sfr.fr"></a>`
-}
+    <a id="msg" href="mailto:loic.greco@sfr.fr"></a>`;
 
-
-
+  headerAnimationLogo(
+    ".logo",
+    "https://portfoliob1.herokuapp.com/loic/animations/animation_logo_loic.json"
+  );
+};

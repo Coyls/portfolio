@@ -4,7 +4,6 @@ import { headerFooterCreation } from './js/header_footer.js'
 import { homeProjectsCreation } from '../globals_assets/js/home_projects_creation.js'
 import { creationAnimation } from '../globals_assets/js/animation_creation.js'
 import { skills } from './js/skills.js'
-import { headerAnimationLogo } from '../globals_assets/js/header_animation_logo.js'
 
 scrollAnimation()
 
@@ -19,7 +18,6 @@ carousselAnimation('p-three','-=',100)
 headerFooterCreation()
 homeProjectsCreation("getProjectLoic","loic")
 
-headerAnimationLogo('.logo','https://portfoliob1.herokuapp.com/loic/animations/animation_logo_loic.json')
 
 
 
