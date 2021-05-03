@@ -225,6 +225,7 @@ footer #to-top {
 
 footer #to-top:hover {
   top: 90px;
+  cursor: pointer;
 }
 
 footer #msg {
@@ -624,5 +625,9 @@ footer #msg {
   width: 900px;
   right: -300px;
   top: 500px;
+}
+
+#about-me .reveal {
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -228,10 +228,12 @@ footer #to-top {
   right: 12vw;
   top: 100px;
   font-size: 50px;
+  color: #124F7B;
 }
 
 footer #to-top:hover {
   top: 90px;
+  cursor: pointer;
 }
 
 footer #msg {
@@ -702,6 +704,10 @@ footer #msg {
   width: 900px;
   right: -390px;
   top: 500px;
+}
+
+#about-me .reveal {
+  opacity: 0;
 }
 
 #header-games {

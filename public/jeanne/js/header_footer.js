@@ -1,9 +1,11 @@
+import { scrollTop } from "../../globals_assets/js/scroll_top.js";
+
 export const headerFooterCreation = () => {
-    const location = document.location.origin
+  const location = document.location.origin;
 
-    const header = document.querySelector("header")
+  const header = document.querySelector("header");
 
-    header.innerHTML = `
+  header.innerHTML = `
     <a href="${location}/jeanne/index.html" class="logo"></a>
     <nav class="menu">
         <ul>
@@ -12,11 +14,11 @@ export const headerFooterCreation = () => {
             <li><a href="mailto:jeanne.vdp@outlook.fr">Contact<div class="line"></div></a></li>
             <li><img src="${location}/jeanne/images/nav_circle.svg" alt=""></li>
         </ul>
-    </nav>`
+    </nav>`;
 
-    const footer = document.querySelector("footer")
+  const footer = document.querySelector("footer");
 
-    footer.innerHTML = `
+  footer.innerHTML = `
     <h2>Blablatez avec moi !</h2>
     <div id="footer-row">
         <div class="footer-items">
@@ -31,9 +33,7 @@ export const headerFooterCreation = () => {
             </div>
         </div>
     </div>
-    <a id="to-top" href=""><i class="fas fa-arrow-up"></i></a>
-    <a id="msg" href="mailto:jeanne.vdp@outlook.fr"></a>`
-}
+    <a id="msg" href="mailto:jeanne.vdp@outlook.fr"></a>`;
 
-
-
+  scrollTop();
+};

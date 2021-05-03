@@ -12,7 +12,7 @@ export const textToStrong = (toStrong, containerStrong) => {
             block = block.split("")
 
             if (block[0] === "£") {
-                block.splice(0,1)
+                block.splice(0,1) 
 
                 block = block.join("")
 

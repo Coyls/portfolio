@@ -256,6 +256,11 @@ footer #to-top {
   position: absolute;
   right: 15vw;
   margin-bottom: 38vh;
+  cursor: pointer;
+}
+
+footer #to-top i {
+  display: none;
 }
 
 footer #msg {
@@ -660,5 +665,9 @@ footer #msg {
   width: 900px;
   right: -350px;
   top: 500px;
+}
+
+#about-me .reveal {
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
 import { headerAnimationLogo } from "../../globals_assets/js/header_animation_logo.js";
+import { scrollTop } from "../../globals_assets/js/scroll_top.js";
 
 export const headerFooterCreation = () => {
   const location = document.location.origin;
@@ -34,8 +35,9 @@ export const headerFooterCreation = () => {
             </div>
         </div>
     </div>
-    <a id="to-top" href=""><i class="fas fa-arrow-up"></i></a>
     <a id="msg" href="mailto:loic.greco@sfr.fr"></a>`;
+
+  scrollTop()
 
   headerAnimationLogo(
     ".logo",
