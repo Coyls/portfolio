@@ -31,6 +31,12 @@ app.get('/chloe', (req, res) => {
 app.get('/chloe-load', (req, res) => {
     res.sendFile(__dirname + '/public/chloe/pages/animation_load.html');
 });
+app.get('/jeanne-load', (req, res) => {
+    res.sendFile(__dirname + '/public/jeanne/pages/animation_load.html');
+});
+app.get('/loic-load', (req, res) => {
+    res.sendFile(__dirname + '/public/loic/pages/animation_load.html');
+});
 
 http.listen(port, () => {
     console.log(`http://localhost:${port}/`);

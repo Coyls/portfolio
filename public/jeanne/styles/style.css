@@ -239,6 +239,27 @@ footer #msg {
   background-repeat: no-repeat;
 }
 
+#animation-load {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#skip-animation {
+  text-decoration: none;
+  position: absolute;
+  font-size: 20px;
+  right: 0;
+  bottom: 0;
+  margin: 50px;
+}
+
+#skip-animation i {
+  margin-left: 10px;
+}
+
 #home {
   padding-right: 10vw;
   display: -webkit-box;
