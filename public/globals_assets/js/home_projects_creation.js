@@ -8,23 +8,21 @@ export const homeProjectsCreation = (getProject, link, allowTag = true) => {
 
         let tmpData = response.data;
 
+        console.log(tmpData)
+
         const projectsHomeText = document.querySelectorAll('.panel-text')
         const projectsHomeImg = document.querySelectorAll('.panel')
 
         let data = []
 
         // Take projects authorize on home page
-        tmpData.forEach((frag, id) => {
+        tmpData.forEach(frag => {
 
             const tags = frag.tags
 
             if (!tags.includes("nothomepage")) {
-                console.log("OK ON PAGE", frag.title)
                 data.push(frag)
-            } else {
-                console.log("! PAS SUR LA PAGE", frag.title)
-            }
-
+            } 
         })
 
         // Fill images
@@ -47,13 +45,9 @@ export const homeProjectsCreation = (getProject, link, allowTag = true) => {
         projectsHomeText.forEach((projectText, id) => {
             let description = data[id].description
             
-            console.log('description:', description)
-
-
             if (description === null) {
                 description = ""
             }
-
 
             projectText.innerHTML = `
                 <h2>${data[id].title}</h2>   

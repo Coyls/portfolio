@@ -11,11 +11,8 @@ export const portfolioCreation = (getProject, link) => {
         let gridColumn = 1
         let gridRow = 1
     
-    
         let creationHeight = Math.ceil(data.length / 2)
-    
-        console.log(creationHeight)
-    
+        
         const layoutGrid = (height, width) => {
             container.style.gridTemplateColumns = `repeat(${width}, 42vw)`
             container.style.gridTemplateRows = `repeat(${height}, 55vh)`
