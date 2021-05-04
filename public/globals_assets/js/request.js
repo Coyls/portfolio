@@ -1,8 +1,11 @@
 export const requestServer = async (path) => {
-    const locationApi = "https://portfoliob1.herokuapp.com/"
-    // const locationApi = "http://localhost:3000/"
+    const locationApi = document.location.origin
 
-    const response = await axios.get(`${locationApi}${path}`)
+    console.log(`${locationApi}${path}`);
+
+
+    const response = await axios.get(`${locationApi}/${path}`)
+
 
     try {
         return response
