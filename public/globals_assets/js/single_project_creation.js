@@ -48,7 +48,7 @@ export const singleProjectCreation = (getProject, link, allowTag = true) => {
             <img class="img-project" src="${singleProjectImg}" alt="project">
             <div id="row-tag">
                 <a href="${previousProjectUrl}" class="link-project">${data[previousProjectIndex].title}</a>
-                <a href="" class="link-project">${data[currentProjectIndex].title}</a>
+                <a href="${location}/${link}/pages/portfolio.html" class="link-project">Portfolio</a>
                 <a href="${nextProjectUrl}" class="link-project">${data[nextProjectIndex].title}</a>
             </div>                
                 <div class="row-skills"></div>
@@ -78,7 +78,7 @@ export const singleProjectCreation = (getProject, link, allowTag = true) => {
         }
 
         if (link === "jeanne") {
-            document.getElementById("texts").innerHTML += `<img class="bg-txt" src="https://portfoliob1.herokuapp.com/jeanne/images/portfolio_single_bg_txt.svg" alt="">`
+            document.getElementById("texts").innerHTML += `<img class="bg-txt" src="${location}/${link}/images/portfolio_single_bg_txt.svg" alt="">`;
         }
     })
 }
