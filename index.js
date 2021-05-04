@@ -1,78 +1,70 @@
-const express = require('express');
-const axios = require('axios');
+const express = require("express");
+const axios = require("axios");
 const app = express();
-const http = require('http').Server(app);
-const cors = require('cors')
+const http = require("http").Server(app);
+const cors = require("cors");
 const port = process.env.PORT || 3000;
 
-app.use(cors())
+app.use(cors());
+app.use(express.static(__dirname + "/public"));
 
-app.use(express.static(__dirname + '/public'));
+// -- Create Links -- //
 
-// -- Root -- //
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/loic/index.html');
-});
+const createLink = (path, link = "") => {
+  app.get(`/${link}`, (req, res) => {
+    res.sendFile(__dirname + `/public/${path}`);
+  });
+};
 
-// -- link -- //
-app.get('/loic', (req, res) => {
-    res.sendFile(__dirname + '/public/loic/index.html');
-});
+// Root
+createLink("loic/index.html");
 
-app.get('/jeanne', (req, res) => {
-    res.sendFile(__dirname + '/public/jeanne/index.html');
-});
+// Index
+createLink("loic/index.html", "loic");
+createLink("jeanne/index.html", "jeanne");
+createLink("chloe/index.html", "chloe");
 
-app.get('/chloe', (req, res) => {
-    res.sendFile(__dirname + '/public/chloe/index.html');
-});
+// Animations
+createLink("loic/pages/animation_load.html", "loic-load");
+createLink("jeanne/pages/animation_load.html", "jeanne-load");
+createLink("chloe/pages/animation_load.html", "chloe-load");
 
-// -- animation -- //
-app.get('/chloe-load', (req, res) => {
-    res.sendFile(__dirname + '/public/chloe/pages/animation_load.html');
-});
-app.get('/jeanne-load', (req, res) => {
-    res.sendFile(__dirname + '/public/jeanne/pages/animation_load.html');
-});
-app.get('/loic-load', (req, res) => {
-    res.sendFile(__dirname + '/public/loic/pages/animation_load.html');
-});
-
-http.listen(port, () => {
-    console.log(`http://localhost:${port}/`);
-});
-
-// -------------------------------------------------------------------------------------------------- //
+// -- Request Api Dribbble -- //
 
 const requestAPiDribbble = async (key, link, path) => {
+  const response = await axios.get(
+    `https://api.dribbble.com/v2/${path}?access_token=${key}`
+  );
 
-    const response = await axios.get(`https://api.dribbble.com/v2/${path}${key}`)
-    try {
-        app.get(link, (req, res) => {
-            res.send(response.data)
-        })
-    } catch (err) {
-        console.log(err)
-    }
+  try {
+    app.get(link, (req, res) => {
+      res.send(response.data);
+    });
+  } catch (err) {
+    console.log(err);
+  }
+};
 
-}
+// Shots
+requestAPiDribbble(process.env.API_KEY_LOIC, "/getProjectLoic", "user/shots");
+requestAPiDribbble(process.env.API_KEY_CHLOE, "/getProjectChloe", "user/shots");
+requestAPiDribbble(process.env.API_KEY_JEANNE, "/getProjectJeanne", "user/shots");
 
-requestAPiDribbble(`?access_token=${process.env.API_KEY_LOIC}`, '/getProjectLoic', 'user/shots')
+// Users
+requestAPiDribbble(process.env.API_KEY_LOIC, "/getUserLoic", "user");
+requestAPiDribbble(process.env.API_KEY_JEANNE, "/getUserJeanne", "user");
+requestAPiDribbble(process.env.API_KEY_CHLOE, "/getUserChloe", "user");
 
+// -- Logs -- //
 
+console.log("Env =", process.env.NODE_ENV);
+console.log("Loic =", process.env.API_KEY_LOIC);
+console.log("Chloe =", process.env.API_KEY_CHLOE);
+console.log("Jeanne =", process.env.API_KEY_JEANNE);
+console.log("Port =", process.env.PORT);
 
+// -- port -- //
 
-
-
-
-requestAPiDribbble(`?access_token=${process.env.API_KEY_CHLOE}`, '/getProjectChloe', 'user/shots')
-requestAPiDribbble(`?access_token=${process.env.API_KEY_JEANNE}`, '/getProjectJeanne', 'user/shots')
-
-requestAPiDribbble(`?access_token=${process.env.API_KEY_LOIC}`, '/getUserLoic', 'user')
-requestAPiDribbble(`?access_token=${process.env.API_KEY_JEANNE}`, '/getUserJeanne', 'user')
-requestAPiDribbble(`?access_token=${process.env.API_KEY_CHLOE}`, '/getUserChloe', 'user')
-
-console.log("Env =", process.env.NODE_ENV)
-console.log("Loic =", process.env.API_KEY_LOIC)
-console.log("Chloe =", process.env.API_KEY_CHLOE)
-console.log("Jeanne =", process.env.API_KEY_JEANNE)
+http.listen(port, () => {
+  console.log(`http://localhost:${port}/`);
+});
