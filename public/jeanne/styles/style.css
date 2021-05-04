@@ -207,7 +207,7 @@ footer #footer-row .footer-items .social-media {
           flex-direction: row;
 }
 
-footer #footer-row .footer-items .social-media i {
+footer #footer-row .footer-items .social-media i, footer #footer-row .footer-items .social-media img {
   margin-right: 40px;
   font-size: 55px;
   color: #000;

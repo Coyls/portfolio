@@ -30,7 +30,7 @@ export const headerFooterCreation = () => {
         <div class="footer-items">
             <h3>Find me on social networks !</h3>
             <div class="social-media">
-                <a href="https://www.linkedin.com/in/lo%C3%AFc-gr%C3%A9co-a66175205/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/lo%C3%AFc-gr%C3%A9co-a66175205/"><img src="../../globals_assets/images/link_logo.svg"></a>
                 <a href="https://github.com/Coyls"><i class="fab fa-github"></i></a>
             </div>
         </div>
