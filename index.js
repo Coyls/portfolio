@@ -57,8 +57,14 @@ const requestAPiDribbble = async (key, link, path) => {
 
 }
 
-
 requestAPiDribbble(`?access_token=${process.env.API_KEY_LOIC}`, '/getProjectLoic', 'user/shots')
+
+
+
+
+
+
+
 requestAPiDribbble(`?access_token=${process.env.API_KEY_CHLOE}`, '/getProjectChloe', 'user/shots')
 requestAPiDribbble(`?access_token=${process.env.API_KEY_JEANNE}`, '/getProjectJeanne', 'user/shots')
 

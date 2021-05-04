@@ -13,7 +13,7 @@ export const homeProjectsCreation = (getProject, link, allowTag = true) => {
 
         let data = []
 
-        // Take project authorize on home page
+        // Take projects authorize on home page
         tmpData.forEach((frag, id) => {
 
             const tags = frag.tags
