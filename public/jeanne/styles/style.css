@@ -679,10 +679,10 @@ footer #msg {
 
 #about-me #img-absolute {
   position: absolute;
-  height: 900px;
-  width: 900px;
-  right: -300px;
-  top: 500px;
+  height: 800px;
+  width: 800px;
+  right: -350px;
+  top: 450px;
 }
 
 #about-me .reveal {
