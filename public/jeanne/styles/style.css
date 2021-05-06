@@ -253,20 +253,22 @@ footer #footer-row .footer-items .social-media {
           flex-direction: row;
 }
 
-footer #footer-row .footer-items .social-media i, footer #footer-row .footer-items .social-media img {
+footer #footer-row .footer-items .social-media i,
+footer #footer-row .footer-items .social-media img {
   margin-right: 40px;
   font-size: 55px;
   color: #000;
 }
 
 footer #to-top {
+  display: none;
   -webkit-transition: all ease-out 0.25s;
   transition: all ease-out 0.25s;
   position: absolute;
   right: 12vw;
   top: 100px;
   font-size: 50px;
-  color: #EC7363;
+  color: #ec7363;
 }
 
 footer #to-top:hover {
@@ -283,6 +285,14 @@ footer #msg {
   background-image: url("../images/msg.svg");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 700px) {
+  #footer-about-me {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+  }
 }
 
 #body-animation-load {

@@ -23,20 +23,20 @@ footer {
         .footer-items {
             margin-right: 200px;
 
-
             h3 {
                 font-size: 25px;
                 margin: 0 0 50px 0;
                 padding: 0;
                 font-weight: 400;
             }
-        
+
             .social-media {
                 margin-top: 50px;
                 display: flex;
                 flex-direction: row;
-        
-                i, img {
+
+                i,
+                img {
                     margin-right: 40px;
                     font-size: 55px;
                     color: $standardTextColor;
@@ -46,12 +46,13 @@ footer {
     }
 
     #to-top {
+        display: none;
         transition: all ease-out 0.25s;
         position: absolute;
         right: 12vw;
         top: 100px;
         font-size: 50px;
-        color: #EC7363;
+        color: #ec7363;
 
         &:hover {
             top: 90px;
@@ -66,7 +67,16 @@ footer {
         right: 10vw;
         top: 200px;
         background-image: url($msgBg);
-        background-size:contain;
+        background-size: contain;
         background-repeat: no-repeat;
+    }
+}
+
+
+#footer-about-me {
+    @media (max-width: 700px) {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
     }
 }
