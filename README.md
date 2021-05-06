@@ -1,14 +1,8 @@
-# Portfolio
+# Portfolios
 
-## Portfolio Loïc
+[Loïc](https://portfoliob1.herokuapp.com/loic-load)
 
-[Link to Loïc portfolio](https://portfoliob1.herokuapp.com/loic-load)
+[Chloé](https://portfoliob1.herokuapp.com/chloe-load)
 
-## Portfolio Chloé
-
-[Link to Chloé portfolio](https://portfoliob1.herokuapp.com/chloe-load)
-
-## Portfolio Jeanne
-
-[Link to Jeanne portfolio](https://portfoliob1.herokuapp.com/jeanne-load)
+[Jeanne](https://portfoliob1.herokuapp.com/jeanne-load)
 
