@@ -486,9 +486,11 @@ footer #msg {
   background-repeat: no-repeat;
   background-size: 100vw auto;
   background-position: top;
+  overflow-x: hidden;
 }
 
 .texts-portfolio {
+  overflow-x: hidden;
   width: 75vw;
   margin: 200px 20vw;
 }
@@ -518,6 +520,7 @@ footer #msg {
 }
 
 #portfolio-projects {
+  overflow-x: hidden;
   width: 100vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -589,9 +592,11 @@ footer #msg {
   background-repeat: no-repeat;
   background-size: 100vw auto;
   background-position: top;
+  overflow-x: hidden;
 }
 
 #single-project {
+  overflow-x: hidden;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -698,11 +703,13 @@ footer #msg {
   background-repeat: no-repeat;
   background-size: 100vw auto;
   background-position: top;
+  overflow-x: hidden;
 }
 
 #about-me {
   height: auto;
   margin: 150px 0 200px 15vw;
+  overflow-x: hidden;
 }
 
 #about-me h1 {

@@ -19,6 +19,7 @@
 #games {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 
     .line-game {
         display: flex;

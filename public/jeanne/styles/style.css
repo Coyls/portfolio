@@ -529,6 +529,7 @@ footer #msg {
 }
 
 #portfolio-projects {
+  overflow-x: hidden;
   width: 100vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -607,6 +608,7 @@ footer #msg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-x: hidden;
 }
 
 #single-project #texts {
@@ -694,6 +696,7 @@ footer #msg {
 #about-me {
   height: auto;
   margin: 150px 0 200px 15vw;
+  overflow-x: hidden;
 }
 
 #about-me h1 {
