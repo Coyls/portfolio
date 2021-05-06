@@ -98,8 +98,8 @@ header .logo {
   background-image: url("https://portfoliob1.herokuapp.com/jeanne/images/logo_jeanne_txt.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 200px;
-  width: 450px;
+  height: 150px;
+  width: 320px;
 }
 
 header nav {
@@ -125,6 +125,18 @@ header nav ul {
           flex-direction: row;
 }
 
+header nav ul img {
+  -webkit-transition: -webkit-transform 4s;
+  transition: -webkit-transform 4s;
+  transition: transform 4s;
+  transition: transform 4s, -webkit-transform 4s;
+}
+
+header nav ul:hover img {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 header nav ul li {
   margin: 0 15px;
   display: -webkit-box;
@@ -145,11 +157,33 @@ header nav ul li a .line {
   transition: width 0.25s ease-out;
   height: 2px;
   width: 0;
-  background-color: #000;
+  background-color: #EB7263;
 }
 
 header nav ul li a:hover .line {
   width: 100%;
+}
+
+@-webkit-keyframes nav-icon {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes nav-icon {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 footer {
@@ -172,7 +206,7 @@ footer {
 
 footer h2 {
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 footer #footer-row {
@@ -194,6 +228,7 @@ footer #footer-row .footer-items h3 {
   font-size: 25px;
   margin: 0 0 50px 0;
   padding: 0;
+  font-weight: 400;
 }
 
 footer #footer-row .footer-items .social-media {
@@ -372,7 +407,7 @@ footer #msg {
 }
 
 .home-projects .text-wrap .panel-text p {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .home-projects .text-wrap .panel-text .tags-row {
@@ -449,7 +484,7 @@ footer #msg {
 }
 
 .texts-portfolio p {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #frame-right-portfolio {
@@ -628,16 +663,16 @@ footer #msg {
 }
 
 #about-me h1 {
-  font-size: 60px;
+  font-size: 50px;
 }
 
 #about-me h2 {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 #about-me p {
   width: 46vw;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #about-me #img-absolute {

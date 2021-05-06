@@ -21,7 +21,7 @@ export const headerFooterCreation = () => {
   const footer = document.querySelector("footer");
 
   footer.innerHTML = `
-    <h2>Come chat with me !</h2>
+    <h2>Chat with me !</h2>
     <div id="footer-row">
         <div class="footer-items">
             <h3>loic.greco@sfr.fr</h3>

@@ -14,8 +14,8 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
 
-    height: 200px;
-    width: 450px;
+    height: 150px;
+    width: 320px;
   }
 
   nav {
@@ -27,10 +27,23 @@ header {
       display: flex;
       flex-direction: row;
 
+      img {
+        transition: transform 4s;
+      }
+
+      &:hover {
+
+        img {
+          transform: rotate(360deg);
+        }
+      }
+
       li {
         margin: 0 15px;
         display: flex;
         align-items: center;
+
+        
 
         a {
           color: $standardTextColor;
@@ -40,7 +53,7 @@ header {
             transition: width 0.25s ease-out;
             height: 2px;
             width: 0;
-            background-color: #000;
+            background-color: #EB7263;
           }
 
           &:hover {
@@ -51,5 +64,14 @@ header {
         }
       }
     }
+  }
+}
+
+@keyframes nav-icon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
