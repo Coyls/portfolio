@@ -65,11 +65,11 @@ section {
 }
 
 ::-webkit-scrollbar {
-  background-color: #0c5f65;
+  background-color: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #35aca4;
+  background-color: #A38360;
 }
 
 #body-animation-load {

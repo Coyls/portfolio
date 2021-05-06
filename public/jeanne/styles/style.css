@@ -63,11 +63,11 @@ section {
 }
 
 ::-webkit-scrollbar {
-  background-color: #0c5f65;
+  background-color: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #35aca4;
+  background-color: #B1DDEB;
 }
 
 .bg-txt {
@@ -96,7 +96,7 @@ header {
 }
 
 header .logo {
-  background-image: url("https://portfoliob1.herokuapp.com/jeanne/images/logo_jeanne_txt.svg");
+  background-image: url("../images/logo_jeanne.svg");
   background-size: contain;
   background-repeat: no-repeat;
   height: 150px;
@@ -199,7 +199,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #FFF;
-  background-image: url("https://portfoliob1.herokuapp.com/jeanne/images/footer_bg.svg");
+  background-image: url("../images/footer_bg.svg");
   background-size: contain;
   background-repeat: no-repeat;
   color: #000;
@@ -272,7 +272,7 @@ footer #msg {
   width: 100px;
   right: 10vw;
   top: 200px;
-  background-image: url("https://portfoliob1.herokuapp.com/jeanne/images/msg.svg");
+  background-image: url("../images/msg.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -344,7 +344,7 @@ footer #msg {
   bottom: 10vh;
   width: 110px;
   height: 110px;
-  background-image: url("https://portfoliob1.herokuapp.com/jeanne/images/scroll.svg");
+  background-image: url("../images/scroll.svg");
   background-size: contain;
   background-repeat: no-repeat;
   -webkit-transform-origin: center;
