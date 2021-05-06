@@ -288,6 +288,25 @@ footer #msg {
   background-repeat: no-repeat;
 }
 
+#home #srcoll-indicator {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 161px;
+  bottom: 70px;
+  text-align: center;
+}
+
+#home #srcoll-indicator #scroll-txt {
+  -webkit-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+  opacity: 0;
+}
+
+#home #srcoll-indicator:hover #scroll-txt {
+  opacity: 1;
+}
+
 #home .about {
   position: relative;
   width: 1000px;
@@ -369,6 +388,8 @@ footer #msg {
   border-radius: 5px;
   padding: 0 10px;
   margin: 0 60px 0 0;
+  color: #fff;
+  font-size: 20px;
 }
 
 .home-projects .p-wrap {
@@ -647,16 +668,16 @@ footer #msg {
 }
 
 #about-me h1 {
-  font-size: 60px;
+  font-size: 50px;
 }
 
 #about-me h2 {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 #about-me p {
   width: 46vw;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 #about-me #img-absolute {

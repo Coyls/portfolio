@@ -7,6 +7,26 @@
   background-position: bottom;
   background-repeat: no-repeat;
 
+  #srcoll-indicator {
+    position: absolute; 
+    width: 100px;
+    height: 100px;
+    right: 161px;
+    bottom: 70px;
+    text-align: center;
+
+    #scroll-txt {
+      transition: opacity 0.25s ease-in-out;
+      opacity: 0;
+    }
+
+    &:hover {
+      #scroll-txt {
+        opacity: 1;
+      }
+    }
+  }
+
   .about {
     position: relative;
     width: 1000px;
