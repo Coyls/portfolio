@@ -41,9 +41,17 @@ header {
       display: flex;
       flex-direction: row;
 
+     &:hover {
+        img {
+          animation: 1s linear infinite normal nav-img;
+        }
+     }
+
       li {
         margin: 0 15px;
         display: flex;
+
+        
 
         a {
           color: $standardTextColor;
@@ -64,5 +72,20 @@ header {
         }
       }
     }
+  }
+}
+
+@keyframes nav-img {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(75deg);
+  }
+  100% {
+    transform: rotate(60deg);
   }
 }

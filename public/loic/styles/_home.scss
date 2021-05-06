@@ -30,15 +30,22 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    animation: 4s linear 0s infinite normal scroll-indicator-roll;
+    animation: 1s linear infinite normal scroll-indicator-roll;
   }
 
   @keyframes scroll-indicator-roll { 
-    from { 
+    0% { 
       transform: rotate(0deg); 
-    } to { 
-      transform: rotate(360deg);  
-    }  
+    } 
+    50% { 
+      transform: rotate(0deg);  
+    } 
+    90% { 
+      transform: rotate(75deg);  
+    }
+    100% { 
+      transform: rotate(60deg);  
+    } 
   }
 
 }
