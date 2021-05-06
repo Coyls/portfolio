@@ -261,7 +261,7 @@ footer #footer-row .footer-items .social-media img {
 }
 
 footer #to-top {
-  display: none;
+  opacity: 0;
   -webkit-transition: all ease-out 0.25s;
   transition: all ease-out 0.25s;
   position: absolute;

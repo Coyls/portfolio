@@ -46,7 +46,7 @@ footer {
     }
 
     #to-top {
-        display: none;
+        opacity: 0;
         transition: all ease-out 0.25s;
         position: absolute;
         right: 12vw;
