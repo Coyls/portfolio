@@ -632,6 +632,7 @@ footer #msg {
 
 .portfolio-skills {
   height: auto;
+  overflow-x: hidden;
 }
 
 #header-single-project,
@@ -729,6 +730,7 @@ footer #msg {
 
 .single-project-skills {
   height: auto;
+  overflow-x: hidden;
 }
 
 .tags-row {

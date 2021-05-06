@@ -555,6 +555,7 @@ footer #msg {
 .portfolio-skills {
   height: auto;
   font-weight: 500;
+  overflow-x: hidden;
 }
 
 #header-single-project,
@@ -633,6 +634,7 @@ footer #msg {
 .single-project-skills {
   height: auto;
   font-weight: 500;
+  overflow-x: hidden;
 }
 
 .tags-row {
