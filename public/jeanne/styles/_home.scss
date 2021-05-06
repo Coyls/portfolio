@@ -31,8 +31,12 @@
     background-repeat: no-repeat;
     transform-origin: center;
 
+    img {
+      height: 100%;
+      width: 100%;
 
-    animation: 4s linear 0s infinite normal scroll-indicator-roll;
+      animation: 10s linear 0s infinite normal scroll-indicator-roll;
+    }
   }
 
   @keyframes scroll-indicator-roll { 

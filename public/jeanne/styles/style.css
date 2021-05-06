@@ -333,8 +333,13 @@ footer #msg {
   background-repeat: no-repeat;
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-animation: 4s linear 0s infinite normal scroll-indicator-roll;
-          animation: 4s linear 0s infinite normal scroll-indicator-roll;
+}
+
+#home .scroll-indicator img {
+  height: 100%;
+  width: 100%;
+  -webkit-animation: 10s linear 0s infinite normal scroll-indicator-roll;
+          animation: 10s linear 0s infinite normal scroll-indicator-roll;
 }
 
 @-webkit-keyframes scroll-indicator-roll {
