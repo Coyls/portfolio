@@ -25,7 +25,8 @@ export const aboutMeCreation = (getUser) => {
         // Text To Strong
         textToStrong(experiences, experiencesParagraph)
 
-        document.getElementById
+      
+
 
     })
 
