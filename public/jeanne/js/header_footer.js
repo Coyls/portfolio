@@ -37,9 +37,4 @@ export const headerFooterCreation = () => {
     <a id="msg" href="mailto:jeanne.vdp@outlook.fr"></a>`;
 
   scrollTop();
-
-  headerAnimationLogo(
-    ".logo",
-    `${location}/chloe/animations/animation_logo_chloe.json`
-  );
 };
