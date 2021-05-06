@@ -13,7 +13,7 @@ export const headerFooterCreation = () => {
             <li><a href="${location}/chloe/pages/portfolio.html">Portfolio<div class="line"></div></a></li>
             <li><a href="${location}/chloe/pages/about_me.html">À propos<div class="line"></div></a></li>
             <li><a href="mailto:chloe.aitsiahmed@gmail.com">Contact<div class="line"></div></a></li>
-            <li><img src="${location}/chloe/images/leaf_nav.svg" alt=""></li>
+            <li><img id="img-basic" src="${location}/chloe/images/leaf_nav.svg" alt=""><img id="img-hover" src="${location}/chloe/images/leaf_nav_hover.svg" alt=""></li>
         </ul>
     </nav>`;
 

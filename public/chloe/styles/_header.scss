@@ -39,9 +39,33 @@ header {
       display: flex;
       flex-direction: row;
 
+      &:hover {
+        #img-basic {
+          opacity: 0;
+        }
+        
+        #img-hover {
+          opacity: 1;
+        }
+      }
+
       li {
         margin: 0 15px;
         display: flex;
+
+        #img-basic {
+          transition: opacity 0.25s ease-out;
+          position: absolute;
+
+          opacity: 1;
+        }
+
+        #img-hover {
+          transition: opacity 0.25s ease-out;
+          position: absolute;
+
+          opacity: 0;
+        }
 
         a {
           color: $standardTextColor;

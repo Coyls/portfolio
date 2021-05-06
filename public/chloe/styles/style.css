@@ -155,11 +155,33 @@ header nav ul {
           flex-direction: row;
 }
 
+header nav ul:hover #img-basic {
+  opacity: 0;
+}
+
+header nav ul:hover #img-hover {
+  opacity: 1;
+}
+
 header nav ul li {
   margin: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+header nav ul li #img-basic {
+  -webkit-transition: opacity 0.25s ease-out;
+  transition: opacity 0.25s ease-out;
+  position: absolute;
+  opacity: 1;
+}
+
+header nav ul li #img-hover {
+  -webkit-transition: opacity 0.25s ease-out;
+  transition: opacity 0.25s ease-out;
+  position: absolute;
+  opacity: 0;
 }
 
 header nav ul li a {
