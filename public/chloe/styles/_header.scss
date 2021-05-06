@@ -20,7 +20,7 @@ header {
 
     svg {
       display: none;
-    }
+      }
 
     &:hover {
       background-image: none;
@@ -43,7 +43,7 @@ header {
         #img-basic {
           opacity: 0;
         }
-        
+
         #img-hover {
           opacity: 1;
         }

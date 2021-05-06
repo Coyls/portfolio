@@ -1,3 +1,4 @@
+import { headerAnimationLogo } from "../../globals_assets/js/header_animation_logo.js";
 import { scrollTop } from "../../globals_assets/js/scroll_top.js";
 
 export const headerFooterCreation = () => {
@@ -36,4 +37,9 @@ export const headerFooterCreation = () => {
     <a id="msg" href="mailto:jeanne.vdp@outlook.fr"></a>`;
 
   scrollTop();
+
+  headerAnimationLogo(
+    ".logo",
+    `${location}/chloe/animations/animation_logo_chloe.json`
+  );
 };

@@ -16,7 +16,20 @@ header {
 
     height: 150px;
     width: 320px;
-  }
+    background-position: center;
+    background-repeat: no-repeat;
+
+    svg {
+      display: none;
+    }
+
+    &:hover {
+      background-image: none;
+      svg {
+        display: block;
+      }
+    }
+  }   
 
   nav {
     display: flex;
@@ -32,7 +45,6 @@ header {
       }
 
       &:hover {
-
         img {
           transform: rotate(360deg);
         }
@@ -43,8 +55,6 @@ header {
         display: flex;
         align-items: center;
 
-        
-
         a {
           color: $standardTextColor;
           font-size: 25px;
@@ -53,7 +63,7 @@ header {
             transition: width 0.25s ease-out;
             height: 2px;
             width: 0;
-            background-color: #EB7263;
+            background-color: #eb7263;
           }
 
           &:hover {

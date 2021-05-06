@@ -100,6 +100,20 @@ header .logo {
   background-repeat: no-repeat;
   height: 150px;
   width: 320px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header .logo svg {
+  display: none;
+}
+
+header .logo:hover {
+  background-image: none;
+}
+
+header .logo:hover svg {
+  display: block;
 }
 
 header nav {
@@ -157,7 +171,7 @@ header nav ul li a .line {
   transition: width 0.25s ease-out;
   height: 2px;
   width: 0;
-  background-color: #EB7263;
+  background-color: #eb7263;
 }
 
 header nav ul li a:hover .line {
