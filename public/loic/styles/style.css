@@ -290,7 +290,7 @@ footer #msg {
   background-repeat: no-repeat;
 }
 
-body {
+#body-animation-load {
   height: 100vh;
   overflow: hidden;
   display: -webkit-box;
