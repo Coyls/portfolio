@@ -125,7 +125,7 @@ header {
 }
 
 header .logo {
-  background-image: url("https://portfoliob1.herokuapp.com/chloe/images/logo_chloe.svg");
+  background-image: url("../images/logo_chloe.svg");
   background-size: contain;
   height: 150px;
   width: 150px;
@@ -225,7 +225,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: transparent;
-  background-image: url("https://portfoliob1.herokuapp.com/chloe/images/footer_bg.svg");
+  background-image: url("../images/footer_bg.svg");
   background-size: 100vw auto;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -304,7 +304,7 @@ footer #msg {
   width: 100px;
   right: 10vw;
   top: 200px;
-  background-image: url("https://portfoliob1.herokuapp.com/chloe/images/msg.svg");
+  background-image: url("../images/msg.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -317,7 +317,7 @@ footer #msg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("https://portfoliob1.herokuapp.com/chloe/images/scroll.svg");
+  background-image: url("../images/scroll.svg");
   background-size: 100vw auto;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -374,7 +374,7 @@ footer #msg {
   -ms-flex-align: center;
   align-items: center;
   background-color: #fff;
-  background-image: url("https://portfoliob1.herokuapp.com/chloe/images/top_home_bg.svg"), url("https://portfoliob1.herokuapp.com/chloe/images/bot_home_bg.svg");
+  background-image: url("../images/top_home_bg.svg"), url("../images/bot_home_bg.svg");
   background-size: 100vw auto, 100vw auto;
   background-position: top, bottom;
   background-repeat: no-repeat, no-repeat;
@@ -450,7 +450,7 @@ footer #msg {
   overflow-x: hidden;
   margin-bottom: 5vh;
   padding-top: 10vh;
-  background-image: url("https://portfoliob1.herokuapp.com/chloe/images/caroussel_bg.svg");
+  background-image: url("../images/caroussel_bg.svg");
   background-size: 100vw auto;
   background-position: top;
   background-repeat: no-repeat;
@@ -482,7 +482,7 @@ footer #msg {
 }
 
 #portfolio-body {
-  background-image: url("https://portfoliob1.herokuapp.com/chloe/images/bg-portfolio.svg");
+  background-image: url("../images/bg-portfolio.svg");
   background-repeat: no-repeat;
   background-size: 100vw auto;
   background-position: top;
@@ -588,7 +588,7 @@ footer #msg {
 }
 
 #single-project-body {
-  background-image: url("https://portfoliob1.herokuapp.com/chloe/images/bg-about.svg");
+  background-image: url("../images/bg-about.svg");
   background-repeat: no-repeat;
   background-size: 100vw auto;
   background-position: top;
@@ -699,7 +699,7 @@ footer #msg {
 }
 
 #about-body {
-  background-image: url("https://portfoliob1.herokuapp.com/chloe/images/bg-about.svg");
+  background-image: url("../images/bg-about.svg");
   background-repeat: no-repeat;
   background-size: 100vw auto;
   background-position: top;
