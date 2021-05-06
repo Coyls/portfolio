@@ -1,0 +1,45 @@
+@media (max-width: 700px) {
+    #about-body,
+    html {
+        background-size: 100vw auto;
+        overflow-x: hidden;
+    }
+
+    // -- Loïc -- //
+    .hexagone-3 {
+        height: 20px;
+    }
+
+    #frame-left-about-me {
+        display: none;
+    }
+    // ----------- //
+
+    #about-me {
+        margin: 50px 0 15px 9vw;
+
+        // -- Jeanne -- //
+        .bg-txt {
+            display: none;
+        }
+        // ------------ //
+
+        h1 {
+            font-size: 20px;
+        }
+        h2 {
+            margin-top: 34px;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        p {
+            width: 80vw;
+            font-size: 13px;
+        }
+
+        #img-absolute {
+            display: none;
+        }
+    }
+}

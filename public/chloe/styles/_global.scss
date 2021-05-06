@@ -60,8 +60,10 @@ section {
 
 ::-webkit-scrollbar {
   background-color: $scrollbarColor;
+  width: 0 !important;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: $scrollbarThumbColor;
+   width: 0 !important;
 }

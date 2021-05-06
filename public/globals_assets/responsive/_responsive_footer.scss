@@ -1,0 +1,98 @@
+@media (max-width: 700px) {
+    footer {
+        background-size: cover;
+        height: 200px;
+        padding-left: 10vw;
+
+        h2 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+
+        #footer-row {
+            flex-direction: column;
+            margin-top: 20px;
+
+            .footer-items {
+                margin-right: 0;
+
+                h3 {
+                    font-size: 13px;
+                    margin: 0 0 15px 0;
+                    padding: 0;
+                    font-weight: 400;
+                }
+
+                .social-media {
+                    margin-top: 0;
+                    display: flex;
+                    flex-direction: row;
+
+                    i,
+                    img {
+                        margin-right: 40px;
+                        font-size: 40px;
+                        height: 35px;
+                        width: 35px;
+                    }
+                }
+            }
+        }
+
+        #to-top {
+            position: absolute;
+            right: 12vw;
+            top: 10px;
+            font-size: 40px;
+            color: #000;
+
+            &:hover {
+                top: 12px;
+                cursor: pointer;
+            }
+        }
+
+        #msg {
+            height: 60px;
+            width: 60px;
+            right: 10vw;
+            top: 100px;
+        }
+
+        // Chloe
+        #footer-container {
+            margin-bottom: 0vh;
+
+            h2 {
+                font-size: 20px;
+            }
+
+            #footer-row {
+                flex-direction: column;
+                margin-top: 0;
+
+                .footer-items {
+                    margin-right: 0;
+
+                    h3 {
+                        font-size: 13px;
+                        margin: 0 0 15px 0;
+                        padding: 0;
+                    }
+
+                    .social-media {
+                        margin-top: 0;
+
+                        i,
+                        img {
+                            margin-right: 40px;
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

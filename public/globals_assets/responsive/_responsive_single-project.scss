@@ -1,0 +1,51 @@
+@media (max-width: 700px) {
+    #single-project {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+
+        #frame-right-single-project, #frame-left-single-project {
+            display: none;
+        }
+
+        #texts {
+            margin: 60px 0 30px 0;
+            width: 80vw;
+
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 13px;
+            }
+        }
+
+        .img-project {
+            width: 140vw;
+        }
+
+        #row-tag {
+            margin: 20px 0;
+            width: 100vw;
+            height: 50px;
+            font-size: 13px;
+            font-weight: 500;
+
+            .link-project {
+
+                font-size: 13px;
+
+            }
+        }
+    }
+
+    .tags-row {
+        .tag {
+            border-radius: 5px;
+            padding: 0 10px;
+            margin: 0 20px 0 0;
+        }
+    }
+}

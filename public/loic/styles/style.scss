@@ -9,7 +9,19 @@
 @import "./portfolio";
 @import "./single-project";
 @import "./about-me";
-@import "./_games";
+@import "./games";
+
+//////////////////////// Responsive ////////////////////////
+@import "../../globals_assets/responsive/_responsive_header";
+@import "../../globals_assets/responsive/_responsive_footer";
+@import "../../globals_assets/responsive/_responsive_about-me";
+@import "../../globals_assets/responsive/_responsive_home";
+@import "../../globals_assets/responsive/_responsive_home-projects";
+@import "../../globals_assets/responsive/_responsive_portfolio";
+@import "../../globals_assets/responsive/_responsive_single-project";
+@import "../../globals_assets/responsive/_responsive_games";
+
+
 
 
 

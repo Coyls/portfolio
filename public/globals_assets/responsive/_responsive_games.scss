@@ -1,0 +1,39 @@
+@media (max-width: 700px) {
+
+    #games-presentation {
+        width: 75vw;
+        margin: 60px 0 20px 15vw;
+
+        h1 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 13px;
+        }
+
+    }
+
+    #games {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        margin-bottom: 50px;
+
+        .line-game {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin: 0;
+
+            .game {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                .game-texts {
+                    width: 100vw;
+                }
+            }
+        }
+    }
+}

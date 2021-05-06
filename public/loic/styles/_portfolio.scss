@@ -6,9 +6,13 @@
     width: 75vw;
     margin: 200px 15vw;
 
-    h1 {font-size: 60px;}
-    p {font-size: 30px;}
+    h1 {
+        font-size: 60px;
 
+    }
+    p {
+        font-size: 30px;
+    }
 }
 
 #frame-left-portfolio {
@@ -35,9 +39,8 @@
     width: 100vw;
     justify-content: center;
     height: auto;
-    display: grid; 
+    display: grid;
     margin-bottom: 50px;
-   
 
     column-gap: 30px;
     row-gap: 50px;
@@ -55,7 +58,7 @@
 
         .hover-project {
             transition: background-color 0.25s ease-out;
-            background-color : rgba(18,79,123,0);
+            background-color: rgba(18, 79, 123, 0);
             height: 100%;
             width: 100%;
             z-index: 50;
@@ -68,12 +71,11 @@
             }
 
             &:hover {
-                background-color : rgba(18,79,123,0.9);
+                background-color: rgba(18, 79, 123, 0.9);
 
                 .title-portfolio {
                     opacity: 1;
                 }
-                
             }
         }
     }

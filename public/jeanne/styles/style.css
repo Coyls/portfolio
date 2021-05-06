@@ -64,10 +64,12 @@ section {
 
 ::-webkit-scrollbar {
   background-color: #fff;
+  width: 0 !important;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #B1DDEB;
+  width: 0 !important;
 }
 
 .bg-txt {
@@ -103,6 +105,12 @@ header .logo {
   width: 320px;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 700px) {
+  header .logo {
+    background-image: url("../../jeanne/images/logo_jeanne.svg");
+  }
 }
 
 header nav {
@@ -711,5 +719,361 @@ footer #msg {
 
 #about-me .reveal {
   opacity: 0;
+}
+
+@media (max-width: 700px) {
+  header {
+    padding: 3vh 3vw 0 6vw;
+    width: 90vw;
+  }
+  header .logo {
+    background-size: 40px 40px;
+    height: 40px;
+    width: 40px;
+  }
+  header nav ul li {
+    margin: 0 10px;
+  }
+  header nav ul li a {
+    font-size: 13px;
+  }
+  header nav ul img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  footer {
+    background-size: cover;
+    height: 200px;
+    padding-left: 10vw;
+  }
+  footer h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  footer #footer-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px;
+  }
+  footer #footer-row .footer-items {
+    margin-right: 0;
+  }
+  footer #footer-row .footer-items h3 {
+    font-size: 13px;
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-weight: 400;
+  }
+  footer #footer-row .footer-items .social-media {
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer #footer-row .footer-items .social-media i,
+  footer #footer-row .footer-items .social-media img {
+    margin-right: 40px;
+    font-size: 40px;
+    height: 35px;
+    width: 35px;
+  }
+  footer #to-top {
+    position: absolute;
+    right: 12vw;
+    top: 10px;
+    font-size: 40px;
+    color: #000;
+  }
+  footer #to-top:hover {
+    top: 12px;
+    cursor: pointer;
+  }
+  footer #msg {
+    height: 60px;
+    width: 60px;
+    right: 10vw;
+    top: 100px;
+  }
+  footer #footer-container {
+    margin-bottom: 0vh;
+  }
+  footer #footer-container h2 {
+    font-size: 20px;
+  }
+  footer #footer-container #footer-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
+  }
+  footer #footer-container #footer-row .footer-items {
+    margin-right: 0;
+  }
+  footer #footer-container #footer-row .footer-items h3 {
+    font-size: 13px;
+    margin: 0 0 15px 0;
+    padding: 0;
+  }
+  footer #footer-container #footer-row .footer-items .social-media {
+    margin-top: 0;
+  }
+  footer #footer-container #footer-row .footer-items .social-media i,
+  footer #footer-container #footer-row .footer-items .social-media img {
+    margin-right: 40px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  #home {
+    background-image: none;
+    height: 30vh;
+    margin-bottom: 7vh;
+  }
+  #home #srcoll-indicator,
+  #home .scroll-indicator {
+    display: none;
+  }
+  #home .about {
+    position: relative;
+    width: 80vw;
+    margin-left: 10vw;
+    top: 60px;
+    margin-top: 0;
+  }
+  #home .about .bg-txt {
+    display: none;
+  }
+  #home .about h1 {
+    font-size: 20px;
+  }
+  #home .about h1 img {
+    height: 20px;
+  }
+  #home .about p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 700px) {
+  #about-body,
+  html {
+    background-size: 100vw auto;
+    overflow-x: hidden;
+  }
+  .hexagone-3 {
+    height: 20px;
+  }
+  #frame-left-about-me {
+    display: none;
+  }
+  #about-me {
+    margin: 50px 0 15px 9vw;
+  }
+  #about-me .bg-txt {
+    display: none;
+  }
+  #about-me h1 {
+    font-size: 20px;
+  }
+  #about-me h2 {
+    margin-top: 34px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  #about-me p {
+    width: 80vw;
+    font-size: 13px;
+  }
+  #about-me #img-absolute {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-projects {
+    height: 100vh;
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: none, none;
+  }
+  .home-projects #frame-left,
+  .home-projects #frame-right,
+  .home-projects #frame-circle {
+    display: none;
+  }
+  .home-projects .text-wrap {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 100vw;
+    height: 20vh;
+    margin-bottom: 10vh;
+    margin-left: 0;
+  }
+  .home-projects .text-wrap .panel-text {
+    width: 100%;
+    height: 100%;
+  }
+  .home-projects .text-wrap .panel-text h2 {
+    font-size: 20px;
+  }
+  .home-projects .text-wrap .panel-text p {
+    display: none;
+  }
+  .home-projects .text-wrap .panel-text .tags-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .home-projects .text-wrap .panel-text .tags-row .tag {
+    padding: 0 10px;
+    margin: 0 20px 0 0;
+    font-size: 13px;
+  }
+  .home-projects .p-wrap {
+    width: 100vw;
+    height: 80vh;
+    border-radius: 0;
+    margin-right: 0;
+  }
+  .home-projects .p-wrap .panel {
+    width: 100%;
+    height: 100%;
+    background-size: auto 100%;
+  }
+  .next-section {
+    height: auto;
+    overflow-x: hidden;
+    margin: 0 0 0 0;
+    padding-top: 0;
+    background-image: none;
+  }
+  .wrapper p {
+    font-size: 24px;
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  #portfolio-body {
+    background-image: none;
+  }
+  .texts-portfolio {
+    width: 75vw;
+    margin: 60px 0 40px 15vw;
+  }
+  .texts-portfolio h1 {
+    font-size: 20px;
+  }
+  .texts-portfolio h1 img {
+    height: 20px;
+  }
+  .texts-portfolio p {
+    font-size: 13px;
+  }
+  .texts-portfolio #p-1 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .texts-portfolio #p-2 {
+    margin-left: 50px;
+  }
+  .texts-portfolio #p-3 {
+    margin-left: 100px;
+    font-weight: 600;
+  }
+  #frame-left-portfolio,
+  #frame-right-portfolio,
+  .bg-txt {
+    display: none;
+  }
+  #portfolio-projects {
+    overflow-x: hidden;
+    margin-bottom: 16px;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+    row-gap: 0;
+  }
+  #portfolio-projects .project {
+    border-radius: 0;
+  }
+  #portfolio-projects .project .hover-project .title-portfolio {
+    font-size: 30px;
+  }
+  .portfolio-skills {
+    height: auto;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 700px) {
+  #single-project {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-x: hidden;
+  }
+  #single-project #frame-right-single-project, #single-project #frame-left-single-project {
+    display: none;
+  }
+  #single-project #texts {
+    margin: 60px 0 30px 0;
+    width: 80vw;
+  }
+  #single-project #texts h1 {
+    font-size: 20px;
+  }
+  #single-project #texts p {
+    font-size: 13px;
+  }
+  #single-project .img-project {
+    width: 140vw;
+  }
+  #single-project #row-tag {
+    margin: 20px 0;
+    width: 100vw;
+    height: 50px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  #single-project #row-tag .link-project {
+    font-size: 13px;
+  }
+  .tags-row .tag {
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 0 20px 0 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

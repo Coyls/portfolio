@@ -1,0 +1,29 @@
+@media (max-width: 700px) {
+    header {
+        padding: 3vh 3vw 0 6vw;
+        width: 90vw;
+
+        .logo {
+            background-size: 40px 40px;
+
+            height: 40px;
+            width: 40px;
+        }
+
+        nav {
+            ul {
+                li {
+                    margin: 0 10px;
+                    a {
+                        font-size: 13px;
+                    }
+                }
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}

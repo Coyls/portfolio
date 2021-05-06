@@ -1,0 +1,61 @@
+@media (max-width: 700px) {
+    #portfolio-body {
+        background-image: none;
+    }
+
+    .texts-portfolio {
+        width: 75vw;
+        margin: 60px 0 40px 15vw;
+
+        h1 {
+            font-size: 20px;
+            img {
+                height: 20px;
+            }
+        }
+        p {
+            font-size: 13px;
+        }
+
+        #p-1 {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+
+        #p-2 {
+            margin-left: 50px;
+        }
+
+        #p-3 {
+            margin-left: 100px;
+            font-weight: 600;
+        }
+    }
+
+    #frame-left-portfolio,
+    #frame-right-portfolio,
+    .bg-txt {
+        display: none;
+    }
+
+    #portfolio-projects {
+        overflow-x: hidden;
+        margin-bottom: 16px;
+        column-gap: 0;
+        row-gap: 0;
+
+        .project {
+            border-radius: 0;
+            .hover-project {
+                .title-portfolio {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    .portfolio-skills {
+        height: auto;
+        overflow-x: hidden;
+    }
+}
